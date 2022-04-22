@@ -4,6 +4,7 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import Nav from "./components/Nav";
 import Layout from "./components/Layout";
+import portrait from "../public/portrait.png";
 
 export default function Home() {
   return (
@@ -17,9 +18,13 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <Nav />
       <Layout>
         <motion.h1>Welcome</motion.h1>
+        <Image
+          src={portrait}
+          objectFit="fill"
+          alt="Portrait of Aeon Yuon Miller"
+        />
       </Layout>
     </div>
   );

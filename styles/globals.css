@@ -14,13 +14,14 @@
   --primary: #6D709A;
   --secondary: #4C4F7B;
   --tertiary: #000333;
+  --type: hsl(230, 10%, 60%);
   --medium: hsl(0, 0%, 94%);
   --bg: hsl(0, 0%, 99%);
 }
 
 html,
 body {
-  background: var(--bg);
+  background: var(--medium);
   color: var(--tertiary);
   padding: 0;
   margin: 0;
@@ -32,23 +33,31 @@ body {
 h1{ margin:0; }
 
 nav{
-  height: 80px;
+  position: fixed;
+  left: calc(50% - 190px);
+  height: 75px;
+  width: 380px;
   display: flex;
   justify-content: center;
   align-items: center;
+  border-bottom: 1px solid white;
 }
 
 nav a{
   position: relative;
-  color: var(--secondary);
+  font-size: 12px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--type);
   transition: all ease .4s;
-  bottom: 3px;
+  bottom: -2px;
 }
 
 nav a:hover, 
 nav a:focus{
   color: var(--secondary);
-  bottom: 6px;
+  bottom: 0;
 }
 
 nav a::after {
@@ -61,8 +70,10 @@ nav a::after {
   bottom: var(--tap-increment);
 }
 
-svg {
+nav svg {
+  position: relative;
   margin-right: 1em;
+  bottom: -5px;
 }
 
 a {
@@ -77,10 +88,10 @@ a {
 
 .layout{
   position: absolute;
+  top: 120px;
   width: 90%;
   left: 5%;
   grid-template-columns: repeat(4,1fr);
   gap: 1em;
-  background: rgba(0, 128, 0, 0.1);
   display: grid;
 }

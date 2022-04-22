@@ -5,12 +5,11 @@ import Layout from "./components/Layout"
 const about = () => {
     return (
     <>
-        <Nav />
         <Layout>
-                <div>about</div>
+                <div>about me</div>
                 <div>2</div>
-                <div>3</div>
-                <div>4</div>
+                <div>three</div>
+                <div>four</div>
         </Layout>
     </>
   )
