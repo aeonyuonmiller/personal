@@ -1,31 +1,35 @@
 @import url('https://fonts.googleapis.com/css2?family=Alumni+Sans:wght@100&family=Azeret+Mono:wght@100;500&display=swap');
 
 ::selection {
-  color: var(--secondary);
+  color: var(--tertiary);
   background: var(--primary);
 }
 
 ::-moz-selection {
-  color: var(--secondary);
+  color: var(--tertiary);
   background: var(--primary);
 }
 
 :root {
-  --primary: hsl(70, 100%, 60%);
-  --secondary: #006d75;
-  --medium: hsl(0, 0%, 50%);
-  --bg: hsl(0, 0%, 95%);
+  --primary: #6D709A;
+  --secondary: #4C4F7B;
+  --tertiary: #000333;
+  --medium: hsl(0, 0%, 94%);
+  --bg: hsl(0, 0%, 99%);
 }
 
 html,
 body {
-  background: #F0F0F0;
+  background: var(--bg);
+  color: var(--tertiary);
   padding: 0;
   margin: 0;
   box-sizing: border-box;
   font-family: Azeret Mono, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
+
+h1{ margin:0; }
 
 nav{
   height: 80px;
@@ -36,14 +40,15 @@ nav{
 
 nav a{
   position: relative;
-  color: hsl(330, 100%, 20%);
+  color: var(--secondary);
   transition: all ease .4s;
-  bottom: 0;
+  bottom: 3px;
 }
 
-nav a:hover{
-  color: hsl(330, 80%, 95%);
-  bottom: 3px;
+nav a:hover, 
+nav a:focus{
+  color: var(--secondary);
+  bottom: 6px;
 }
 
 nav a::after {
@@ -72,8 +77,8 @@ a {
 
 .layout{
   position: absolute;
-  width: 100%;
-  padding: 0 5em;
+  width: 90%;
+  left: 5%;
   grid-template-columns: repeat(4,1fr);
   gap: 1em;
   background: rgba(0, 128, 0, 0.1);

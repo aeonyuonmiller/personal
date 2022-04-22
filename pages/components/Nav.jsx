@@ -5,7 +5,7 @@ import Logo from "./Logo"
 const Nav = () => {
     return (
         <nav>
-            <Logo color="#fff" width="90" />
+            <Logo color="var(--primary)" width="90" />
             <Link href="/">Home</Link>
             <Link href="/about">About</Link>
             <Link href="/work">Work</Link>
