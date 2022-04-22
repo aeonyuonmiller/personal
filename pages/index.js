@@ -1,12 +1,13 @@
 import Head from "next/head";
 import Image from "next/image";
-import styles from "../styles/Home.module.css";
+// import styles from "../styles/Home.module.css";
 import { motion } from "framer-motion";
 import Nav from "./components/Nav";
+import Layout from "./components/Layout";
 
 export default function Home() {
   return (
-    <div className={styles.container}>
+    <div>
       <Head>
         <title>personal</title>
         <meta
@@ -17,9 +18,9 @@ export default function Home() {
       </Head>
 
       <Nav />
-      <main className={styles.main}>
-        <motion.h1 className={styles.title}>Welcome</motion.h1>
-      </main>
+      <Layout>
+        <motion.h1>Welcome</motion.h1>
+      </Layout>
     </div>
   );
 }

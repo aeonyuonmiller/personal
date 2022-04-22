@@ -1,17 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans:wght@100&family=Azeret+Mono:wght@100;500&display=swap');
+
+::selection {
+  color: var(--secondary);
+  background: var(--primary);
+}
+
+::-moz-selection {
+  color: var(--secondary);
+  background: var(--primary);
+}
+
+:root {
+  --primary: hsl(70, 100%, 60%);
+  --secondary: #006d75;
+  --medium: hsl(0, 0%, 50%);
+  --bg: hsl(0, 0%, 95%);
+}
+
 html,
 body {
   background: #F0F0F0;
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+  box-sizing: border-box;
+  font-family: Azeret Mono, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+nav{
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav a{
+  position: relative;
+  color: hsl(330, 100%, 20%);
+  transition: all ease .4s;
+  bottom: 0;
+}
+
+nav a:hover{
+  color: hsl(330, 80%, 95%);
+  bottom: 3px;
+}
+
+nav a::after {
+  --tap-increment: -16px;
+  content: "";
+  position: absolute;
+  top: var(--tap-increment);
+  left: var(--tap-increment);
+  right: var(--tap-increment);
+  bottom: var(--tap-increment);
+}
+
+svg {
+  margin-right: 1em;
 }
 
 a {
   color: inherit;
   text-decoration: none;
+  margin-right: 1em;
 }
 
 * {
   box-sizing: border-box;
+}
+
+.layout{
+  position: absolute;
+  width: 100%;
+  padding: 0 5em;
+  grid-template-columns: repeat(4,1fr);
+  gap: 1em;
+  background: rgba(0, 128, 0, 0.1);
+  display: grid;
 }
