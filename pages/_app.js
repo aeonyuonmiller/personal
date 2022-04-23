@@ -5,10 +5,10 @@ import Nav from "./components/Nav";
 function MyApp({ Component, pageProps, router }) {
   return (
     <>
-      <Nav />
       <AnimatePresence exitBeforeEnter>
         <Component {...pageProps} key={router.route} />
       </AnimatePresence>
+      <Nav />
     </>
   );
 }
