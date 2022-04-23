@@ -1,8 +1,6 @@
 import Head from "next/head";
 import Image from "next/image";
-// import styles from "../styles/Home.module.css";
 import { motion } from "framer-motion";
-import Nav from "./components/Nav";
 import Layout from "./components/Layout";
 import portrait from "../public/portrait.png";
 import Logo from "./components/Logo";
