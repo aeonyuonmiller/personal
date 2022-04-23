@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 import Nav from "./components/Nav";
 import Layout from "./components/Layout";
 import portrait from "../public/portrait.png";
+import Logo from "./components/Logo";
 
 export default function Home() {
   return (
@@ -20,7 +21,9 @@ export default function Home() {
 
       <Layout>
         <motion.h1>Welcome</motion.h1>
+        <Logo color="var(--foreground)" width="100%" />
         <Image
+          quality={100}
           src={portrait}
           objectFit="fill"
           alt="Portrait of Aeon Yuon Miller"
