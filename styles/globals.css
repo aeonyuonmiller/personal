@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Alumni+Sans:wght@100&family=Azeret+Mono:wght@100;300;500&display=swap');
 
 ::selection {
-  color: var(--tertiary);
+  color: var(--bg);
   background: var(--primary);
 }
 
 ::-moz-selection {
-  color: var(--tertiary);
+  color: var(--bg);
   background: var(--primary);
 }
 
@@ -30,6 +30,19 @@ body {
   font-family: Azeret Mono, Droid Sans, Helvetica Neue, sans-serif;
 }
 
+.portrait{
+  position: absolute;
+  display: flex;
+  justify-content: end;
+  align-items: flex-end;
+  height: 100vh;
+  width: 50%;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  overflow: hidden;
+}
+
 h1{ margin: 0; }
 
 h2{ 
@@ -41,11 +54,15 @@ h2{
 }
 
 p{ 
-  font-weight: 300; 
+  font-weight: 100; 
   line-height: 1.4em; 
   letter-spacing: -0.03em; 
   margin-bottom: 1.4em;
   max-width: 55ch;
+}
+
+ul li{
+  list-style: square inside;
 }
 
 nav{
@@ -110,4 +127,10 @@ a {
   grid-template-columns: repeat(2,1fr);
   gap: 1em;
   display: grid;
+}
+
+@media (max-width: 800px) {
+  .layout {
+    grid-template-columns: 1fr;
+  }
 }

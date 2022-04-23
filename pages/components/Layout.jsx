@@ -2,7 +2,7 @@ import React from 'react'
 import { motion } from 'framer-motion'
 
 const transition = {
-    intro: { opacity: 0, y: 10, transition: { staggerChildren: 0.2 }},
+  intro: { opacity: 0, y: 50 },
   show: { opacity: 1, y: 0, transition:{ type: "tween", duration: 0.2 }},
   exit: { opacity: 0, y: -30, transition:{ type: "tween", duration: 0.5 }}
 }
