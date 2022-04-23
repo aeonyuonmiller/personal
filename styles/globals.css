@@ -15,6 +15,7 @@
   --secondary: #4C4F7B;
   --tertiary: #000333;
   --type: hsl(230, 10%, 60%);
+  --foreground: hsl(0, 0%, 91%);
   --medium: hsl(0, 0%, 94%);
   --bg: hsl(0, 0%, 99%);
 }
@@ -26,8 +27,7 @@ body {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: Azeret Mono, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: Azeret Mono, Droid Sans, Helvetica Neue, sans-serif;
 }
 
 h1{ margin:0; }
@@ -91,7 +91,7 @@ a {
   top: 120px;
   width: 90%;
   left: 5%;
-  grid-template-columns: repeat(4,1fr);
+  grid-template-columns: repeat(2,1fr);
   gap: 1em;
   display: grid;
 }
