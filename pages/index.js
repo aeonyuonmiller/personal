@@ -44,7 +44,7 @@ export default function Home() {
       </motion.div>
 
       <Layout>
-        <h2 className="end">Digital designer / developer</h2>
+        <h2 className="end">digital designer / frontend developer</h2>
         <Logo color="var(--foreground)" width="50%" />
       </Layout>
     </div>
