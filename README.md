@@ -3,5 +3,11 @@
 this is my personal website
 
 - [x] add framer-motion
-- [ ] add transitions
-- [ ] add navigation
+- [x] add transitions
+- [x] add navigation
+- [ ] create 3d-visual for index
+- [ ] insert 3d
+- [ ] add "work" layout
+- [ ] case page
+  - [ ] close btn
+  - [ ] smooth scroll
