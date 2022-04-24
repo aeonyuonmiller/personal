@@ -2,7 +2,7 @@ import React from 'react'
 import Link from 'next/link'
 // import Logo from "./Logo"
 import Lottie from 'react-lottie';
-import animationData from '../../public/white-logo.json';
+import animationData from '../../public/LOGO.json';
 import { motion } from "framer-motion";
 
     const defaultOptions = {

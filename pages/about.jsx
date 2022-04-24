@@ -11,12 +11,12 @@ const about = () => {
               inspired by winamp skins back in the days.</p>
             <p>Worked for large-scale international and national
               companies. Ranging from automotive, insurance, banking,
-              agencies, travel, pharma and fashion.</p>
-            <p>I enjoy bridging multifunctional teams, creating high-fidelity
-              prototypes, video, the possibilities of frontend code
+              travel, pharma and fashion.</p>
+            <p>I enjoy helping cross-functional teams, creating high-fidelity
+              prototypes, video, sound, the possibilities of frontend code
               and working with strategy in mind throughout to launch.</p>
           </div>
-          <h2>Clients</h2>
+          {/* <h2>Clients</h2>
           <ul>
             <li>Lufthansa</li>
             <li>Land Rover</li>
@@ -29,7 +29,7 @@ const about = () => {
             <li>AVIS</li>
             <li>DER Touristik</li>
             <li>REWE Group</li>
-          </ul>
+          </ul> */}
         </Layout>
     </>
   )
