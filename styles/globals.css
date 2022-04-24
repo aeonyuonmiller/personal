@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans:wght@100&family=Azeret+Mono:wght@100;300;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500&display=swap');
 
 ::selection {
   color: var(--bg);
@@ -27,7 +27,7 @@ body {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: Azeret Mono, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: Roboto, Droid Sans, Helvetica Neue, sans-serif;
 }
 
 h1{ margin: 0; }
@@ -43,10 +43,10 @@ h2{
 p{ 
   font-weight: 100; 
   line-height: 1.4em; 
-  letter-spacing: -0.03em; 
+  letter-spacing: 0.02em; 
   margin-bottom: 1.4em;
   margin-top: 0;
-  max-width: 55ch;
+  max-width: 60ch;
 }
 
 ul li{
@@ -122,12 +122,19 @@ a {
 
 .layout{
   position: absolute;
-  top: 120px;
+  bottom: 5em;
   width: 90%;
   left: 5%;
   grid-template-columns: 1fr 2fr;
   gap: 1em;
   display: grid;
+  /* border: 1px solid hotpink; */
+}
+
+.layout .end{
+  display: flex;
+  align-items: flex-end;
+  /* border: 1px solid green; */
 }
 
 @media (max-width: 800px) {

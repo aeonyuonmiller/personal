@@ -10,7 +10,7 @@ const imageAnim = {
   show: {
     opacity: 1,
     x: 0,
-    transition: { type: "tween", duration: 1, delay: 0.1 },
+    transition: { type: "tween", duration: 1, delay: 0.2 },
   },
   exit: { opacity: 0, x: 30, transition: { type: "tween", duration: 1 } },
 };
@@ -27,9 +27,6 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <Layout>
-        <Logo color="var(--foreground)" width="100%" />
-      </Layout>
       <motion.div
         variants={imageAnim}
         initial="intro"
@@ -45,6 +42,11 @@ export default function Home() {
           alt="Portrait of Aeon Yuon Miller"
         />
       </motion.div>
+
+      <Layout>
+        <h2 className="end">Digital designer / developer</h2>
+        <Logo color="var(--foreground)" width="50%" />
+      </Layout>
     </div>
   );
 }
