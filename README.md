@@ -5,9 +5,10 @@ this is my personal website
 - [x] add framer-motion
 - [x] add transitions
 - [x] add navigation
+- [x] custom error page
+- [ ] close btn
 - [ ] create 3d-visual for index
 - [ ] insert 3d
 - [ ] add "work" layout
 - [ ] case page
-  - [ ] close btn
   - [ ] smooth scroll

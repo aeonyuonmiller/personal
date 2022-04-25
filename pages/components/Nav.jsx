@@ -14,22 +14,28 @@ import { motion } from "framer-motion";
         }
     };
 
+    const container = {
+        show: {
+            transition: { staggerChildren: 0.1 }
+        }    
+    };
+
     const items = {
         intro: { opacity: 0, y: 20 },
-        show: { opacity: 1, y: 0, transition: { type: "tween", duration: 0.2 }},
+        show: { opacity: 1, y: 0, transition: { type: "easeInOut", duration: 0.2 }},
     };
 
 const Nav = () => {
     
     return (
-        <nav>
+        <motion.nav variants={container} initial="intro" animate="show">
             {/* <Logo color="#fff" width="90" /> */}
             <Lottie options={defaultOptions} width={90} height={34} />
-            <motion.span variants={items} initial="intro" animate="show"><Link href="/">Home</Link></motion.span>
-            <motion.span variants={items} initial="intro" animate="show"><Link href="/about">About</Link></motion.span>
-            <motion.span variants={items} initial="intro" animate="show"><Link href="/work">Work</Link></motion.span>
-            <motion.span variants={items} initial="intro" animate="show"><a href="mailto:aym1@mail.com">Mail</a></motion.span>
-        </nav>
+            <motion.span variants={items}><Link href="/">Home</Link></motion.span>
+            <motion.span variants={items}><Link href="/work">Work</Link></motion.span>
+            <motion.span variants={items}><Link href="/about">About</Link></motion.span>
+            <motion.span variants={items}><a href="mailto:aym1@mail.com">Mail</a></motion.span>
+        </motion.nav>
   )
 }
 

@@ -3,6 +3,7 @@ import React from "react";
 function Logo({color, width}) {
   return (
     <svg
+      className="remove"
       xmlns="http://www.w3.org/2000/svg"
       width={width}
       fill={color}

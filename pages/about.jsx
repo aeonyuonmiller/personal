@@ -7,10 +7,10 @@ const about = () => {
         <Layout>
           <h2>Andreas Y. Müller</h2>
           <div>
-            <p>At the age of eleven I learned photoshop from being
-              inspired by winamp skins back in the days.</p>
-            <p>Worked for large-scale international and national
-              companies. Ranging from automotive, insurance, banking,
+            <p><strong>At the age of eleven I learned photoshop from being
+              inspired by winamp skins back in the days.</strong></p>
+            <p>Have worked for large-scale international and national
+              companies. Ranging from automotive, banking, insurance,
               travel, pharma and fashion.</p>
             <p>I enjoy helping cross-functional teams, creating high-fidelity
               prototypes, video, sound, the possibilities of frontend code

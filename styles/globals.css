@@ -41,12 +41,20 @@ h2{
 }
 
 p{ 
+  font-size: 20px;
   font-weight: 100; 
   line-height: 1.4em; 
   letter-spacing: 0.02em; 
   margin-bottom: 1.4em;
   margin-top: 0;
-  max-width: 60ch;
+  max-width: 50ch;
+}
+p strong{
+  font-weight: 500;
+  color: var(--primary);
+}
+p:last-child{
+  margin-bottom:0;
 }
 
 ul li{
@@ -72,13 +80,13 @@ nav a{
   letter-spacing: 0.08em;
   color: var(--type);
   transition: all ease .4s;
-  bottom: -2px;
+  /* bottom: -2px; */
 }
 
 nav a:hover, 
 nav a:focus{
   color: var(--secondary);
-  bottom: 0;
+  /* bottom: 0; */
 }
 
 nav a::after {
@@ -122,7 +130,7 @@ a {
 
 .layout{
   position: absolute;
-  bottom: 5em;
+  bottom: 4.5em;
   width: 90%;
   left: 5%;
   grid-template-columns: 1fr 2fr;
@@ -131,11 +139,13 @@ a {
   /* border: 1px solid hotpink; */
 }
 
-.layout .end{
+.end{
   display: flex;
   align-items: flex-end;
   /* border: 1px solid green; */
 }
+
+
 
 @media (max-width: 800px) {
   .layout {
@@ -143,5 +153,8 @@ a {
   }
   .portrait{
     width: 100%;
+  }
+  .remove {
+    display: none;
   }
 }
