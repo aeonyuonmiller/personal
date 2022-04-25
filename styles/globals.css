@@ -134,13 +134,11 @@ a {
   grid-template-columns: 1fr 1fr;
   gap: 1em;
   display: grid;
-  /* border: 1px solid hotpink; */
 }
 
 .end{
   display: flex;
   align-items: flex-end;
-  /* border: 1px solid green; */
 }
 
 .move{
