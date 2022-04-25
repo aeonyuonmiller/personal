@@ -21,8 +21,8 @@ import { motion } from "framer-motion";
     };
 
     const items = {
-        intro: { opacity: 0, y: 20 },
-        show: { opacity: 1, y: 0, transition: { type: "easeInOut", duration: 0.2 }},
+        intro: { opacity: 0, y: 30 },
+        show: { opacity: 1, y: 0, transition: { type: "ease", duration: 0.2 }},
     };
 
 const Nav = () => {

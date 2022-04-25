@@ -1,9 +1,9 @@
 import Head from "next/head";
-import Image from "next/image";
-import { motion } from "framer-motion";
 import Layout from "./components/Layout";
-import portrait from "../public/portrait.png";
 import Logo from "./components/Logo";
+import { motion } from "framer-motion";
+import portrait from "../public/portrait.png";
+import Image from "next/image";
 
 const imageAnim = {
   intro: { opacity: 0, x: 20 },
@@ -45,7 +45,9 @@ export default function Home() {
 
       <Layout>
         <h2 className="end">digital designer / frontend developer</h2>
-        <Logo color="var(--foreground)" width="50%" />
+        <div className="move">
+          <Logo color="var(--bg)" width="70%" />
+        </div>
       </Layout>
     </div>
   );
