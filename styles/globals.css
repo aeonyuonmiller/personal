@@ -131,7 +131,7 @@ a {
   bottom: 4.5em;
   width: 90%;
   left: 5%;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: 1fr 1fr;
   gap: 1em;
   display: grid;
   /* border: 1px solid hotpink; */
@@ -145,7 +145,7 @@ a {
 
 
 
-@media (max-width: 800px) {
+@media (max-width: 900px) {
   .layout {
     grid-template-columns: 1fr;
   }
