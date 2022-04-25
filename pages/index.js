@@ -1,9 +1,20 @@
 import Head from "next/head";
 import Layout from "./components/Layout";
-import Logo from "./components/Logo";
+// import Logo from "./components/Logo";
 import { motion } from "framer-motion";
 import portrait from "../public/portrait.png";
 import Image from "next/image";
+import Lottie from "react-lottie";
+import animationData from "../public/LOGO.json";
+
+const defaultOptions = {
+  loop: false,
+  autoplay: true,
+  animationData: animationData,
+  rendererSettings: {
+    preserveAspectRatio: "xMidYMid slice",
+  },
+};
 
 const imageAnim = {
   intro: { opacity: 0, x: 20 },
@@ -45,9 +56,21 @@ export default function Home() {
 
       <Layout>
         <h2 className="end">digital designer / frontend developer</h2>
-        <div className="move">
-          <Logo color="var(--bg)" width="70%" />
-        </div>
+        <motion.div
+          whileHover={{ cursor: "grab" }}
+          whileTap={{ cursor: "grabbing" }}
+          drag
+          dragConstraints={{
+            top: 0,
+            right: 0,
+            bottom: 0,
+            left: 0,
+          }}
+          className="move remove"
+        >
+          {/* <Logo color="var(--bg)" width="70%" /> */}
+          <Lottie options={defaultOptions} />
+        </motion.div>
       </Layout>
     </div>
   );

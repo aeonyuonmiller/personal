@@ -1,9 +1,9 @@
 import React from 'react'
 import Link from 'next/link'
 // import Logo from "./Logo"
+import { motion } from "framer-motion";
 import Lottie from 'react-lottie';
 import animationData from '../../public/LOGO.json';
-import { motion } from "framer-motion";
 
     const defaultOptions = {
         loop: false,
