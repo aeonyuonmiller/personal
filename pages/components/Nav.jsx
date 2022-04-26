@@ -31,10 +31,10 @@ const Nav = () => {
         <motion.nav variants={container} initial="intro" animate="show">
             {/* <Logo color="#fff" width="90" /> */}
             <Lottie options={defaultOptions} width={90} height={34} />
-            <motion.span variants={items}><Link href="/work">Work</Link></motion.span>
-            <motion.span variants={items}><Link href="/about">About</Link></motion.span>
-            <motion.span variants={items}><a href="mailto:aym1@mail.com">Mail</a></motion.span>
-            <Link href="/"><a className="go-home" /></Link>
+            <motion.span variants={items}><Link href="/work" tabIndex="0">Work</Link></motion.span>
+            <motion.span variants={items}><Link href="/about" tabIndex="0">About</Link></motion.span>
+            <motion.span variants={items}><a href="mailto:aym1@mail.com" tabIndex="0">Mail</a></motion.span>
+            <Link href="/"><a className="go-home" tabIndex="0" /></Link>
         </motion.nav>
   )
 }
