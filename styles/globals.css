@@ -65,7 +65,7 @@ nav{
   position: fixed;
   left: calc(50% - 190px);
   height: 75px;
-  width: 380px;
+  width: 350px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -144,6 +144,13 @@ a {
 .move{
   position: relative;
   top: 70px;
+}
+
+.go-home{
+  position: absolute;
+  left: 0;
+  width: 130px;
+  height: 40px;
 }
 
 
