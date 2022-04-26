@@ -101,7 +101,7 @@ nav a::after {
 
 nav svg {
   position: relative;
-  margin-right: 1em;
+  margin-right: -2em;
   bottom: -5px;
 }
 
@@ -157,6 +157,7 @@ a {
 
 @media (max-width: 900px) {
   .layout {
+    top: 6em;
     grid-template-columns: 1fr;
   }
   .portrait{
