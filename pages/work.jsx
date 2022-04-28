@@ -1,4 +1,4 @@
-import React from 'react'
+import { motion } from "framer-motion";
 import Layout from './components/Layout'
 
 const work = () => {
@@ -8,11 +8,11 @@ const work = () => {
             <h2>Work</h2>
         </Layout>
           
-        <div className='scroller'>
+        <motion.div className='scroller'>
             <div className='scroller-item'>hehe</div>
             <div className='scroller-item'>hehe</div>
             <div className='scroller-item'>hehe</div>  
-        </div>
+        </motion.div>
       </>
   )
 }

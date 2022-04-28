@@ -148,6 +148,14 @@ a {
   top: 70px;
 }
 
+.big{
+  position: absolute;
+  top: calc(10% + 20px);
+  left: 5%;
+  width: 90%;
+  height: auto;
+}
+
 .go-home{
   position: absolute;
   left: 2.5em;
