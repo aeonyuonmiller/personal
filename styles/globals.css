@@ -14,11 +14,13 @@
   --primary: #6D709A;
   --secondary: #4C4F7B;
   --tertiary: #000333;
-  --type: hsl(230, 10%, 60%);
+  --type: hsl(231, 10%, 60%);
   --foreground: hsl(0, 0%, 91%);
   --medium: hsl(0, 0%, 94%);
   --bg: hsl(0, 0%, 99%);
+  --grad:linear-gradient(330deg, rgba(240, 240, 240, 1) 0%, rgba(143, 146, 163, 1) 100%);
 }
+
 
 html,
 body {
@@ -151,6 +153,14 @@ a {
   left: 2.5em;
   width: 100px;
   height: 40px;
+}
+
+.scroller{
+  scroll-snap-type: y mandatory;
+}
+
+.scroller-item{
+  scroll-snap-align: start;
 }
 
 

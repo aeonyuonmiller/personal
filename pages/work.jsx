@@ -5,7 +5,7 @@ const work = () => {
   return (
       <>
         <Layout>
-            work
+            <h2>Work</h2>
         </Layout>
       </>
   )

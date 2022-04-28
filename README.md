@@ -6,7 +6,7 @@ this is my personal website
 - [x] add transitions
 - [x] add navigation
 - [x] custom error page
-- [ ] correct mobile view of "about"
+- [x] correct mobile view of "about"
 - [ ] close btn
 - [ ] create 3d-visual for index
 - [ ] insert 3d
