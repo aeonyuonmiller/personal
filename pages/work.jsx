@@ -7,6 +7,12 @@ const work = () => {
         <Layout>
             <h2>Work</h2>
         </Layout>
+          
+        <div className='scroller'>
+            <div className='scroller-item'>hehe</div>
+            <div className='scroller-item'>hehe</div>
+            <div className='scroller-item'>hehe</div>  
+        </div>
       </>
   )
 }
