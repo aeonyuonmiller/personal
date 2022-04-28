@@ -13,11 +13,11 @@ const defaultOptions = {
 };
 
 
-const about = () => {
+const info = () => {
     return (
       <>
         <motion.div
-          exit={{opacity:0, y:-50, transition:{ease:"circIn", duration:0.5, delay: 0.2}}}
+          exit={{opacity:0, y:-50, transition:{ease:"circIn", duration:0.5, delay: 0.15}}}
           whileHover={{ cursor: "grab" }}
           whileTap={{ cursor: "grabbing" }}
           drag
@@ -62,4 +62,4 @@ const about = () => {
   )
 }
 
-export default about
+export default info

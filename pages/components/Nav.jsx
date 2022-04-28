@@ -33,7 +33,7 @@ const Nav = () => {
             <Lottie options={defaultOptions} width={90} height={34} />
             <Link href="/"><a className="go-home" tabIndex="0" /></Link>
             <motion.span variants={items}><Link href="/work" tabIndex="0">Work</Link></motion.span>
-            <motion.span variants={items}><Link href="/about" tabIndex="0">About</Link></motion.span>
+            <motion.span variants={items}><Link href="/info" tabIndex="0">Info</Link></motion.span>
             <motion.span variants={items}><a href="mailto:aym1@mail.com" tabIndex="0">Mail</a></motion.span>
         </motion.nav>
   )
