@@ -40,7 +40,7 @@ const info = () => {
               companies. Ranging from automotive, banking, insurance,
               travel, pharma and fashion.</p>
             <p>Currently I am learning to become a web-developer (React).
-              My focus is on responsiveness and motion. And reducing the time
+              My focus is on responsiveness and motion – Reducing the time
               from conception to launch.
             </p>
           </div>
