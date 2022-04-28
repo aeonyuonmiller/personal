@@ -23,7 +23,11 @@ const imageAnim = {
     x: 0,
     transition: { type: "tween", duration: 1, delay: 0.2 },
   },
-  exit: { opacity: 0, x: 30, transition: { type: "tween", duration: 1 } },
+  exit: {
+    opacity: 0,
+    x: 30,
+    transition: { type: "tween", duration: 1, delay: 0.2 },
+  },
 };
 
 export default function Home() {
