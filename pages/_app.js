@@ -6,7 +6,7 @@ function MyApp({ Component, pageProps, router }) {
   return (
     <>
       <MotionConfig reducedMotion="user">
-        <AnimatePresence exitBeforeEnter={false}>
+        <AnimatePresence exitBeforeEnter={true}>
           <Component {...pageProps} key={router.route} />
         </AnimatePresence>
       </MotionConfig>
