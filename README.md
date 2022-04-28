@@ -2,6 +2,8 @@
 
 this is my personal website
 
+> [aeonyuonmiller.com](http://www.aeonyuonmiller.com)
+
 - [x] add framer-motion
 - [x] add transitions
 - [x] add navigation
