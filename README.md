@@ -1,4 +1,4 @@
-# Personal
+### Personal
 
 this is my personal website
 
@@ -6,9 +6,12 @@ including buttery-smooth animations with framer-motion, intersectionObserver loa
 
 > [aeonyuonmiller.com](http://www.aeonyuonmiller.com)
 
+##### ToDo
+
 - [x] add framer-motion
 - [x] add transitions
 - [x] add navigation
+- [ ] active link setting
 - [x] custom error page
 - [x] correct mobile view of "about"
 - [ ] close btn
