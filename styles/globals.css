@@ -126,6 +126,8 @@ a {
   max-width: 750px;
   right: 0;
   bottom: 0;
+  pointer-events: none;
+  user-select: none;
 }
 
 .layout{
