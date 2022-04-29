@@ -36,7 +36,7 @@ const info = () => {
           <div>
             <p><strong>At the age of eleven I learned photoshop from being
               inspired by winamp skins and GUIs back in the days.</strong></p>
-            <p>Have worked for large-scale international and national
+            <p>I have worked for large-scale international and national
               companies. Ranging from automotive, banking, insurance,
               travel, pharma and fashion.</p>
             <p>Currently I am learning to become a web-developer (React).
@@ -44,20 +44,6 @@ const info = () => {
               from conception to launch.
             </p>
           </div>
-          {/* <h2>Clients</h2>
-          <ul>
-            <li>Lufthansa</li>
-            <li>Land Rover</li>
-            <li>Jaguar</li>
-            <li>Merck</li>
-            <li>Lotto</li>
-            <li>Sparkasse</li>
-            <li>Abro</li>
-            <li>HansaInvest</li>
-            <li>AVIS</li>
-            <li>DER Touristik</li>
-            <li>REWE Group</li>
-          </ul> */}
         </Layout>
     </>
   )
