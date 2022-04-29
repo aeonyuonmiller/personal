@@ -35,7 +35,7 @@ const info = () => {
           <h2>Andreas Y. Müller</h2>
           <div>
             <p><strong>At the age of eleven I learned photoshop from being
-              inspired by winamp skins back in the days.</strong></p>
+              inspired by winamp skins and GUIs back in the days.</strong></p>
             <p>Have worked for large-scale international and national
               companies. Ranging from automotive, banking, insurance,
               travel, pharma and fashion.</p>
