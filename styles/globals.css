@@ -80,7 +80,7 @@ ul li{
 
 nav{
   position: fixed;
-  left: calc(50% - 190px);
+  left: calc(50% - 175px);
   height: 75px;
   width: 350px;
   display: flex;
