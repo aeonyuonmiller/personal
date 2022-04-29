@@ -2,6 +2,8 @@
 
 this is my personal website
 
+including buttery-smooth animations with framer-motion, intersectionObserver loading-screen, react-three-fiber and a variable font.
+
 > [aeonyuonmiller.com](http://www.aeonyuonmiller.com)
 
 - [x] add framer-motion
@@ -12,6 +14,7 @@ this is my personal website
 - [ ] close btn
 - [ ] create 3d-visual for index
 - [ ] insert 3d
-- [ ] add "work" layout
+- [x] add "work" layout
 - [ ] case page
 - [ ] smooth scroll
+- [ ] carousel
