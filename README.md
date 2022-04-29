@@ -18,6 +18,7 @@ including buttery-smooth animations with framer-motion, intersectionObserver loa
 - [ ] create 3d-visual for index
 - [ ] insert 3d
 - [x] add "work" layout
-- [ ] case page
-- [ ] smooth scroll
+- [ ] case-layout
+- [ ] smooth-scrolling
 - [ ] carousel
+- [ ] inView animations
