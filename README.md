@@ -22,3 +22,4 @@ including buttery-smooth animations with framer-motion, intersectionObserver loa
 - [ ] smooth-scrolling
 - [ ] carousel
 - [ ] inView animations
+- [ ] added splitbee

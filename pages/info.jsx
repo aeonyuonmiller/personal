@@ -29,7 +29,7 @@ const info = () => {
           }}
           className="big remove"
         >
-          <Lottie options={defaultOptions} />
+        <Lottie options={defaultOptions} />
         </motion.div>
         <Layout>
           <h2>Andreas Y. Müller</h2>

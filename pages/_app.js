@@ -1,4 +1,5 @@
 import "../styles/globals.css";
+// import splitbee from "@splitbee/web";
 import { AnimatePresence, MotionConfig } from "framer-motion";
 import Nav from "./components/Nav";
 

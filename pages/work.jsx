@@ -26,9 +26,9 @@ const work = () => {
         </Layout>
           
         <motion.div variants={variants} initial="intro" animate="animate" exit="exit" className='scroller'>
-            <motion.div variants={items} className='scroller-item'>hehe</motion.div>
-            <motion.div variants={items} className='scroller-item'>hehe</motion.div>
-            <motion.div variants={items} className='scroller-item'>hehe</motion.div>  
+            <motion.div variants={items} className='scroller-item'>Discogs Redesign</motion.div>
+            <motion.div variants={items} className='scroller-item'>Klassik Radio</motion.div>
+            <motion.div variants={items} className='scroller-item'>Suzuki</motion.div>  
         </motion.div>
       </>
   )

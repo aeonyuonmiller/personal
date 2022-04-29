@@ -40,6 +40,7 @@ export default function Home() {
           content="Personal portfolio from Aeon Yuon Miller"
         />
         <link rel="icon" href="/favicon.ico" />
+        <script async src="https://cdn.splitbee.io/sb.js"></script>
       </Head>
 
       <motion.div
