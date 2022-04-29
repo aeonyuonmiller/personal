@@ -19,6 +19,12 @@
   --medium: hsl(0, 0%, 94%);
   --bg: hsl(0, 0%, 99%);
   --grad:linear-gradient(330deg, rgba(240, 240, 240, 1) 0%, rgba(143, 146, 163, 1) 100%);
+  --shadow: 2.8px 2.8px 2.2px rgba(0, 0, 0, 0.011),
+  6.7px 6.7px 5.3px rgba(0, 0, 0, 0.016),
+  12.5px 12.5px 10px rgba(0, 0, 0, 0.02),
+  22.3px 22.3px 17.9px rgba(0, 0, 0, 0.024),
+  41.8px 41.8px 33.4px rgba(0, 0, 0, 0.029),
+  100px 100px 80px rgba(0, 0, 0, 0.04);
 }
 
 
@@ -169,8 +175,8 @@ a {
   position: absolute;
   display: flex;
   gap: 2em;
-  padding: 2em;
-  top: 7em;
+  padding: 0 0 0 5em;
+  top: 8em;
   scroll-snap-type: y mandatory;
   width: 100%;
   height: 70vh;
@@ -178,10 +184,15 @@ a {
 
 .scroller-item{
   scroll-snap-align: start;
+  display: flex;
+  align-items: end;
   background: blue;
+  color: var(--bg);
   border-radius: 20px;
+  padding: 3em;
   width: 700px;
   height: 500px;
+  box-shadow: var(--shadow);
 }
 
 

@@ -5,8 +5,8 @@ import Layout from './components/Layout'
 
 const variants = {
     intro: { opacity: 0, y: 50 },
-    animate: { opacity: 1, y: 0, transition: { ease:"easeOut", duration: 0.6, staggerChildren: 0.3 }},
-    exit: { opacity: 0, y: -50, transition: { ease:"easeIn", duration: 0.4 }}
+    animate: { opacity: 1, y: 0, transition: { ease:"easeOut", duration: 2, staggerChildren: 0.3 }},
+    exit: { opacity: 0, y: -50, transition: { ease:"easeIn", duration: 0.6 }}
 };
 
 const items = {
