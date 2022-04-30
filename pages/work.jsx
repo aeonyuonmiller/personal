@@ -22,7 +22,8 @@ const work = () => {
 
     return (
       <>
-            <CloseButton>Close</CloseButton>
+        <CloseButton>Close</CloseButton>
+            
         <Layout>
             <h2 className="fixed">Work</h2>
         </Layout>
