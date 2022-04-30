@@ -8,18 +8,19 @@ including buttery-smooth animations with framer-motion, intersectionObserver loa
 
 ##### ToDo
 
-- [x] add framer-motion
-- [x] add transitions
-- [x] add navigation
-- [ ] active link setting
+- [x] logo animation
+- [x] framer-motion
+- [x] transitions
+- [x] navigation
 - [x] custom error page
 - [x] correct mobile view of "about"
-- [ ] close btn
+- [ ] active link setting
+- [x] close btn
 - [ ] create 3d-visual for index
-- [ ] insert 3d
-- [x] add "work" layout
+- [ ] implement 3d
+- [x] "work" layout
 - [ ] case-layout
 - [ ] smooth-scrolling
 - [ ] carousel
 - [ ] inView animations
-- [ ] added splitbee
+- [x] splitbee
