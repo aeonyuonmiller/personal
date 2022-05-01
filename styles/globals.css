@@ -71,7 +71,7 @@ button::after {
 button span{
   opacity: 0;
   margin-left: 8px;
-  transition: opacity cubic-bezier(1, -0.01, .33, .99) 0.3s;
+  transition: opacity cubic-bezier(1, -0.01, .33, .99) 0.15s;
 }
 
 button:hover, button:focus{
@@ -81,7 +81,8 @@ button:hover, button:focus{
 
 button:hover span, button:focus span {
   opacity: 1;
-  transition: opacity cubic-bezier(1, -0.01, .33, .99) 0.6s;
+  transition: opacity cubic-bezier(1, -0.01, .33, .99) 0.3s;
+  transition-delay: .2s;
 }
 
 .close{
@@ -252,6 +253,12 @@ a {
   width: 700px;
   height: 500px;
   box-shadow: var(--shadow);
+  transition: all ease .4s;
+}
+
+.scroller-item:hover{
+  background: blue;
+  transition-delay: 0s;
 }
 
 @media (max-width: 900px) {

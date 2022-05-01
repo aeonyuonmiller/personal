@@ -1,6 +1,7 @@
 import React from "react";
+import { motion } from "framer-motion";
 
-function Logo({color, width}) {
+function Logo({ color, width }) {
   return (
     <svg
       className="remove"
