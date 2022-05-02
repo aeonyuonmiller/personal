@@ -23,7 +23,7 @@ including buttery-smooth animations with framer-motion, intersectionObserver loa
 - [ ] carousel
 - [x] splitbee
 
-##### Nice to have
+##### Bonus
 
 - [ ] create 3D-visual for index
 - [ ] implement 3D

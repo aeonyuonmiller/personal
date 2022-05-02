@@ -11,7 +11,7 @@ const variants = {
 
 const items = {
     intro: { opacity:0, y: 50 },
-    animate: { opacity: 1, y: 0, transition: { ease: "easeOut", duration: 0.6 }},
+    animate: { opacity: 1, y: 0, transition: { ease: "easeOut", duration: 0.6 } },
 }
 
 const work = () => {
@@ -25,9 +25,9 @@ const work = () => {
         </Layout>
                       
         <motion.div variants={variants} initial="intro" animate="animate" exit="exit" className='scroller'>
-            <motion.div variants={items} className='scroller-item'>Discogs Redesign</motion.div>
+            <motion.div variants={items} className='scroller-item'>Discogs Redesign</motion.div>
             <motion.div variants={items} className='scroller-item'>Klassik Radio</motion.div>
-            <motion.div variants={items} className='scroller-item'>Suzuki</motion.div>
+            <motion.div variants={items} className='scroller-item'>Studio Plum</motion.div>
             <motion.div variants={items} className='scroller-item'>Suzuki</motion.div>    
         </motion.div>
       </>

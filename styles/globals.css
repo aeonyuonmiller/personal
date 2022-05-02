@@ -223,35 +223,45 @@ a {
 
 .go-home{
   position: absolute;
-  left: 2.5em;
+  left: 3em;
   width: 100px;
-  height: 40px;
+  height: 60px;
 }
 
 .scroller{
   position: absolute;
-  display: flex;
-  gap: 2em;
+  display: grid;
+  grid-auto-flow: column;
+  gap: 4em;
   padding: 0 0 0 5em;
   top: 8em;
   width: 100%;
-  height: calc(100vh - 8em);
-  scroll-snap-type: y mandatory;
+  height: 550px;
+
   overflow-x: auto;
+  overscroll-behavior-inline: contain;
+  
+  padding-inline: 150px;
+  scroll-padding-inline: 150px;
+  padding-block-end: 50px;
+  
+  scroll-snap-type: inline mandatory;
 }
 
 .scroller-item{
-  scroll-snap-align: start;
+  scroll-snap-align: center;
+
   display: inline-block;
   align-items: end;
   background: var(--primary);
   color: var(--bg);
   text-transform: uppercase;
   letter-spacing: 0.08em;
-  border-radius: 20px;
+  border-radius: 10px;
   padding: 2.5em 3em;
-  width: 700px;
-  height: 500px;
+  /* width: 650px; */
+  aspect-ratio: 16/9;
+  height: 380px;
   box-shadow: var(--shadow);
   transition: all ease .4s;
 }
@@ -259,6 +269,18 @@ a {
 .scroller-item:hover{
   background: blue;
   transition-delay: 0s;
+}
+
+.scroller-item:last-child::after{
+  content: "";
+  position: absolute;
+
+  inline-size: var(--gap);
+  block-size: 100%;
+
+  inset-block-start: 150px;
+  right: calc(var(--gap) * -1);
+  inset-inline-end: calc(var(--gap) * -1);
 }
 
 @media (max-width: 900px) {
