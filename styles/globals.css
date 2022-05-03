@@ -215,7 +215,7 @@ a {
 
 .big{
   position: absolute;
-  top: calc(10% - 2vw);
+  top: calc(10% - 1vw);
   left: 10%;
   width: 80%;
   height: auto;
