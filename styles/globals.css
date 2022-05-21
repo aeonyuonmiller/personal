@@ -183,7 +183,7 @@ a {
 .portrait {
   position: absolute;
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
   align-items: flex-end;
   height: 80vh;
   max-width: 750px;
@@ -197,6 +197,7 @@ a {
   position: absolute;
   bottom: 4.5em;
   width: 90%;
+  height: fit-content;
   left: 5%;
   grid-template-columns: 1fr 1fr;
   gap: 1em;
@@ -252,7 +253,7 @@ a {
   scroll-snap-align: center;
 
   display: inline-block;
-  align-items: end;
+  align-items: flex-end;
   background: var(--primary);
   color: var(--bg);
   text-transform: uppercase;
@@ -291,7 +292,7 @@ a {
     width: 100%;
   }
   .layout {
-    top: 6em;
+    top: 8em;
     grid-template-columns: 1fr;
   }
   .portrait{
