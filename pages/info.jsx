@@ -1,7 +1,7 @@
 import { motion } from "framer-motion"
 import Layout from "./components/Layout"
 import Lottie from "react-lottie";
-import animationData from "../public/LOGO.json";
+import animationData from "../public/outline-logo.json";
 
 const defaultOptions = {
   loop: false,
