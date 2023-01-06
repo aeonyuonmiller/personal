@@ -6,7 +6,6 @@ import Image from 'next/image'
 // components
 import Nav from "./components/Nav"
 import Layout from "./components/Layout"
-// import Chars from "./components/Chars"
 
 // cms
 // import { PrismicRichText } from '@prismicio/react'
@@ -32,12 +31,11 @@ const about = () => {
               exit={{ scale: 1, opacity: 0, transition:{ ease: [.63, 0, .17, .99], duration: .8, delay: .2 }}}
               className='portrait'
         >
-          <Image alt="Portrait shot of Aeon Yuon Miller" fill priority src="./portrait.png" />
+          <Image alt="Portrait shot of Aeon Yuon Miller" fill src="./portrait.png" />
         </m.div>
 
         <div className='content'>
           <h1>About</h1>
-          {/* <Chars text="About" /> */}
           <m.p initial={{ opacity: 0, y: 20 }}
             animate={{ scale: 1, opacity: 1, y: 0, transition:{ ease: [.64, .62, .23, .99], duration: .8, delay: .4 } }}
             exit={{ opacity: 0, y: 10, transition: { ease: [.63, 0, .17, .99], duration: .6 } }}>
