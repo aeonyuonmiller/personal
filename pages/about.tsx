@@ -37,8 +37,7 @@ const about = () => {
         </m.div>
 
         <div className='content'>
-          {/* <h1>About</h1> */}
-          <AnimatedText text="About" />
+          <h1>About</h1>
           <m.p initial={{ opacity: 0, y: 20 }}
             animate={{ scale: 1, opacity: 1, y: 0, transition:{ ease: [.64, .62, .23, .99], duration: .8, delay: .4 } }}
             exit={{ opacity: 0, y: 10, transition: { ease: [.63, 0, .17, .99], duration: .6 } }}>
