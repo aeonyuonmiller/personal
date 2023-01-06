@@ -6,7 +6,7 @@ import Head from 'next/head'
 // components
 import Nav from "./components/Nav"
 import Layout from "./components/Layout"
-// import AnimatedChars from "./components/AnimatedChars"
+import Chars from "./components/Chars"
 
 // cms
 // import { PrismicRichText } from '@prismicio/react'
@@ -37,7 +37,7 @@ const about = () => {
 
         <div className='content'>
           <h1>About</h1>
-          {/* <AnimatedChars text="About" /> */}
+          <Chars text="About" />
           <m.p initial={{ opacity: 0, y: 20 }}
             animate={{ scale: 1, opacity: 1, y: 0, transition:{ ease: [.64, .62, .23, .99], duration: .8, delay: .4 } }}
             exit={{ opacity: 0, y: 10, transition: { ease: [.63, 0, .17, .99], duration: .6 } }}>
