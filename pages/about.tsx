@@ -6,7 +6,6 @@ import Image from 'next/image'
 // components
 import Nav from "./components/Nav"
 import Layout from "./components/Layout"
-import AnimatedText from "./components/AnimatedText"
 
 
 // cms
