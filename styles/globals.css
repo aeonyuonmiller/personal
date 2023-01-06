@@ -349,6 +349,7 @@ a {
   .connect {
     position: absolute;
     bottom: 50px;
+    top: calc(100vh - 60px);
     left: calc(50% - 30px);
   }
 
