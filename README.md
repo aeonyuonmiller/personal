@@ -1,6 +1,6 @@
 ## portfolio of aeon yuon miller
 
-[https://personal-aym.vercel.app/](Visit here)
+[Visit here](https://personal-aym.vercel.app)
 
 ##### includes
 
