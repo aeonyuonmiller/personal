@@ -41,6 +41,18 @@ interface AboutDocumentData {
  * @typeParam Lang - Language API ID of the document.
  */
 export type AboutDocument<Lang extends string = string> = prismicT.PrismicDocumentWithoutUID<Simplify<AboutDocumentData>, "about", Lang>;
+/** Content for Homepage documents */
+type HomepageDocumentData = Record<string, never>;
+/**
+ * Homepage document from Prismic
+ *
+ * - **API ID**: `homepage`
+ * - **Repeatable**: `false`
+ * - **Documentation**: https://prismic.io/docs/core-concepts/custom-types
+ *
+ * @typeParam Lang - Language API ID of the document.
+ */
+export type HomepageDocument<Lang extends string = string> = prismicT.PrismicDocumentWithoutUID<Simplify<HomepageDocumentData>, "homepage", Lang>;
 /** Content for Project documents */
 interface ProjectDocumentData {
     /**
@@ -103,7 +115,7 @@ type ProjectDocumentDataSlicesSlice = ImageSectionSlice;
  * @typeParam Lang - Language API ID of the document.
  */
 export type ProjectDocument<Lang extends string = string> = prismicT.PrismicDocumentWithoutUID<Simplify<ProjectDocumentData>, "project", Lang>;
-export type AllDocumentTypes = AboutDocument | ProjectDocument;
+export type AllDocumentTypes = AboutDocument | HomepageDocument | ProjectDocument;
 /**
  * Primary content in ImageSection → Primary
  *
@@ -168,6 +180,6 @@ declare module "@prismicio/client" {
         (repositoryNameOrEndpoint: string, options?: prismic.ClientConfig): prismic.Client<AllDocumentTypes>;
     }
     namespace Content {
-        export type { AboutDocumentData, AboutDocument, ProjectDocumentData, ProjectDocumentDataSlicesSlice, ProjectDocument, AllDocumentTypes, ImageSectionSliceDefaultPrimary, ImageSectionSliceDefault, ImageSectionSliceVariation, ImageSectionSlice };
+        export type { AboutDocumentData, AboutDocument, HomepageDocumentData, HomepageDocument, ProjectDocumentData, ProjectDocumentDataSlicesSlice, ProjectDocument, AllDocumentTypes, ImageSectionSliceDefaultPrimary, ImageSectionSliceDefault, ImageSectionSliceVariation, ImageSectionSlice };
     }
 }

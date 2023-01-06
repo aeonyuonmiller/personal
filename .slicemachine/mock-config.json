@@ -14,7 +14,8 @@
           "blocks": 1
         }
       }
-    }
+    },
+    "homepage": {}
   },
   "slices": {
     "ImageSection": {}
