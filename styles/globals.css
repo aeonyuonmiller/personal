@@ -30,6 +30,7 @@ body {
   font-family: 'Inter', Helvetica Neue, sans-serif;
 
   height: 100%;
+  height: -webkit-fill-available;
   overflow: hidden;
 }
 
