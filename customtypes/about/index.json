@@ -1,0 +1,28 @@
+{
+  "id": "about",
+  "label": "About",
+  "repeatable": false,
+  "status": true,
+  "json": {
+    "Main": {
+      "title": {
+        "type": "StructuredText",
+        "config": {
+          "label": "Title",
+          "placeholder": "",
+          "allowTargetBlank": true,
+          "single": "heading1"
+        }
+      },
+      "copy": {
+        "type": "StructuredText",
+        "config": {
+          "label": "Copy",
+          "placeholder": "",
+          "allowTargetBlank": true,
+          "single": "paragraph,heading5,strong,em,heading4,heading3"
+        }
+      }
+    }
+  }
+}

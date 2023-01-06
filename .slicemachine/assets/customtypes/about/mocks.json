@@ -1,0 +1,24 @@
+{
+  "title": {
+    "__TYPE__": "StructuredTextContent",
+    "value": [
+      {
+        "type": "heading1",
+        "content": {
+          "text": "Freedom"
+        }
+      }
+    ]
+  },
+  "copy": {
+    "__TYPE__": "StructuredTextContent",
+    "value": [
+      {
+        "type": "paragraph",
+        "content": {
+          "text": "Adipisicing pariatur ullamco voluptate consequat ea consectetur dolore proident amet quis deserunt enim fugiat irure sint. Commodo quis consectetur eiusmod tempor enim mollit voluptate dolore minim pariatur qui sint id adipisicing."
+        }
+      }
+    ]
+  }
+}

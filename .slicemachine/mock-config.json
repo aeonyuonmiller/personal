@@ -1,0 +1,22 @@
+{
+  "_cts": {
+    "project": {},
+    "about": {
+      "copy": {
+        "config": {
+          "patternType": "PARAGRAPH",
+          "blocks": 1
+        }
+      },
+      "title": {
+        "config": {
+          "patternType": "HEADING",
+          "blocks": 1
+        }
+      }
+    }
+  },
+  "slices": {
+    "ImageSection": {}
+  }
+}

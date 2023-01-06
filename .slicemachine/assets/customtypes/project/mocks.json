@@ -1,0 +1,93 @@
+{
+  "project_title": {
+    "__TYPE__": "StructuredTextContent",
+    "value": [
+      {
+        "type": "paragraph",
+        "content": {
+          "text": "Laborum est do ea ex consectetur excepteur ipsum pariatur mollit."
+        }
+      }
+    ]
+  },
+  "date": {
+    "__TYPE__": "FieldContent",
+    "type": "Date",
+    "value": "2012-02-23"
+  },
+  "insight": {
+    "__TYPE__": "StructuredTextContent",
+    "value": [
+      {
+        "type": "paragraph",
+        "content": {
+          "text": "Adipisicing in id sunt nulla voluptate ullamco id cillum."
+        }
+      }
+    ]
+  },
+  "slices": {
+    "__TYPE__": "SliceContentType",
+    "value": [
+      {
+        "key": "image_section$0b918f0f-0d7b-422c-bec8-29de1ce233c4",
+        "name": "image_section",
+        "widget": {
+          "__TYPE__": "SharedSliceContent",
+          "variation": "default",
+          "primary": {
+            "title": {
+              "__TYPE__": "StructuredTextContent",
+              "value": [
+                {
+                  "type": "heading1",
+                  "content": {
+                    "text": "Source"
+                  }
+                }
+              ]
+            },
+            "description": {
+              "__TYPE__": "StructuredTextContent",
+              "value": [
+                {
+                  "type": "paragraph",
+                  "content": {
+                    "text": "Excepteur pariatur dolore irure labore id aute qui magna ipsum."
+                  }
+                }
+              ]
+            },
+            "image": {
+              "__TYPE__": "ImageContent",
+              "origin": {
+                "id": "main",
+                "url": "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d",
+                "width": 4076,
+                "height": 2712
+              },
+              "url": "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d",
+              "width": 4076,
+              "height": 2712,
+              "edit": {
+                "zoom": 1,
+                "crop": {
+                  "x": 0,
+                  "y": 0
+                },
+                "background": "transparent"
+              },
+              "thumbnails": {}
+            }
+          },
+          "items": [
+            {
+              "__TYPE__": "GroupItemContent",
+              "value": []
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

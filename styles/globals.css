@@ -28,7 +28,6 @@ body {
   background: rgb(195, 195, 195);
   color: #3D3D3D;
   font-family: 'Inter', Helvetica Neue, sans-serif;
-
   height: 100vh;
   height: -webkit-fill-available;
   overflow: hidden;
@@ -116,6 +115,7 @@ a::after {
   align-items: center;
   gap: 1em;
 
+  color: white;
   background: rgba(255, 255, 255, 0.3);
   width: 602px;
   height: 340px;
@@ -124,6 +124,14 @@ a::after {
   margin: 25vh 150px;
   scroll-snap-align: center;
   transition: all ease-in-out .4s;
+
+box-shadow:
+    0px 0.7px 2.2px rgba(0, 0, 0, 0.02),
+    0px 1.8px 5.3px rgba(0, 0, 0, 0.028),
+    0px 3.4px 10px rgba(0, 0, 0, 0.035),
+    0px 6px 17.9px rgba(0, 0, 0, 0.042),
+    0px 11.3px 33.4px rgba(0, 0, 0, 0.05),
+    0px 27px 80px rgba(0, 0, 0, 0.07);
 }
 
 .thumbnail-container .arrow {
@@ -215,7 +223,6 @@ nav:hover a span:nth-child(2) {
 
 /* bg-video */
 .chrome {
-  /* border: 5px solid red; */
   width: auto;
   height: 50vh;
   position: fixed;

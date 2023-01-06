@@ -1,12 +1,15 @@
 import Head from 'next/head'
-import Image from 'next/image'
+// import Image from 'next/image'
 import Nav from "./components/Nav"
 // import styles from '../styles/Home.module.css'
+// import { motion as m, useScroll, useTransform } from "framer-motion"
 import { motion as m } from "framer-motion"
 
 import Thumbnail from "./components/Thumbnail"
 
 export default function Home() {
+  // const { scrollYProgress } = useScroll();
+  // const x = useTransform(scrollYProgress, [0, 1], [0, 600]);
   
   return (
     <>
@@ -18,8 +21,9 @@ export default function Home() {
       </Head>
 
       <m.video
+        // style={{ x }}
         initial={{ scale: 1.3, opacity: 0 }}
-        animate={{ scale: 1, opacity: 1, transition:{ ease: [.64, .62, .23, .99], duration: .8 } }}
+        animate={{ scale: 1, opacity: 1, transition:{ ease: [.64, .62, .23, .99], duration: .8 }}}
         exit={{ scale: 0.95, opacity: 0, transition:{ ease: [.63, 0, .17, .99], duration: .8, delay: .4 }}}
         className='chrome'
         width="700px"
