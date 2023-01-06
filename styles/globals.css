@@ -35,8 +35,8 @@ body {
 
 h1 {
   font-size: clamp(4rem, 8vw + 2rem, 4rem);
-  letter-spacing: -0.05em;
-  color: #eeedeeac;
+  letter-spacing: -0.03em;
+  color: #fff;
   margin-bottom: 1rem;
 }
 

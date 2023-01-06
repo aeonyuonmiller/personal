@@ -4,6 +4,14 @@
   "repeatable": false,
   "status": true,
   "json": {
-    "Main": {}
+    "Main": {
+      "uid": {
+        "type": "UID",
+        "config": {
+          "label": "home",
+          "placeholder": ""
+        }
+      }
+    }
   }
 }
