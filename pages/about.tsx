@@ -5,6 +5,7 @@ import Image from 'next/image'
 
 // components
 import Nav from "./components/Nav"
+import Anim from "./components/Anim"
 import Layout from "./components/Layout"
 
 // cms
@@ -35,7 +36,8 @@ const about = () => {
         </m.div>
 
         <div className='content'>
-          <h1>About</h1>
+          {/* <h1>About</h1> */}
+          <Anim text="About" />
           <m.p initial={{ opacity: 0, y: 20 }}
             animate={{ scale: 1, opacity: 1, y: 0, transition:{ ease: [.64, .62, .23, .99], duration: .8, delay: .4 } }}
             exit={{ opacity: 0, y: 10, transition: { ease: [.63, 0, .17, .99], duration: .6 } }}>
