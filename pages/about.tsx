@@ -31,7 +31,7 @@ const about = () => {
               exit={{ scale: 1, opacity: 0, transition:{ ease: [.63, 0, .17, .99], duration: .8, delay: .2 }}}
               className='portrait'
         >
-          <Image alt="Portrait shot of Aeon Yuon Miller" fill src="./portrait.png" />
+          <Image alt="Portrait shot of Aeon Yuon Miller" width="300" fill src="./portrait.png" />
         </m.div>
 
         <div className='content'>
