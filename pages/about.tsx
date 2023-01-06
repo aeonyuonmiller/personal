@@ -1,7 +1,7 @@
 import React from 'react'
 import { motion as m } from "framer-motion"
 import Head from 'next/head'
-// import Image from 'next/image'
+import Image from 'next/image'
 
 // components
 import Nav from "./components/Nav"
@@ -31,7 +31,7 @@ const about = () => {
               exit={{ scale: 1, opacity: 0, transition:{ ease: [.63, 0, .17, .99], duration: .8, delay: .2 }}}
               className='portrait'
         >
-          <img alt="Portrait shot of Aeon Yuon Miller" src="./portrait.png" />
+          <Image fill width='100' height='100' alt="Portrait shot of Aeon Yuon Miller" src="./portrait.png" />
         </m.div>
 
         <div className='content'>
