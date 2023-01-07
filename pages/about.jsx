@@ -7,15 +7,14 @@ import Image from 'next/image'
 import Nav from "./components/Nav"
 import Layout from "./components/Layout"
 
-
 // cms
-// import { PrismicRichText } from '@prismicio/react'
+import { PrismicRichText } from '@prismicio/react'
+import { createClient } from '../prismicio'
 // import { SliceZone } from '@prismicio/react'
-// import { createClient } from '../prismicio'
 // import { components } from '../slices'
 
 // view
-const about = () => {
+const about = ({ page }) => {
   return (
     <>
       <script async defer src="https://static.cdn.prismic.io/prismic.js?new=true&repo=aeonyuonmiller"></script>
@@ -36,7 +35,8 @@ const about = () => {
         </m.div>
 
         <div className='content'>
-          <h1>About</h1>
+          <h1><PrismicRichText field={page.title} /></h1>
+          
           <m.p initial={{ opacity: 0, y: 20 }}
             animate={{ scale: 1, opacity: 1, y: 0, transition:{ ease: [.64, .62, .23, .99], duration: .8, delay: .4 } }}
             exit={{ opacity: 0, y: 10, transition: { ease: [.63, 0, .17, .99], duration: .6 } }}>
@@ -53,13 +53,13 @@ const about = () => {
 
 export default about
 
-// fetch data
-// export async function getStaticProps({ previewData }) {
-//   const client = createClient({ previewData })
-//   const page = await client.getSingle('about')
-//   return {
-//     props: {
-//       page
-//     }
-//   }
-// }
+// fetch content
+export async function getStaticProps() {
+  const client = createClient()
+  const page = await client.getSingle("about", "about-us")
+// const page = await client.getByUID('UID', 'API ID')
+
+  return {
+    props: { page },
+  }
+}

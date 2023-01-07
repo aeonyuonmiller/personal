@@ -5,11 +5,18 @@
   "status": true,
   "json": {
     "Main": {
+      "uid": {
+        "type": "UID",
+        "config": {
+          "label": "about-us",
+          "placeholder": ""
+        }
+      },
       "title": {
         "type": "StructuredText",
         "config": {
           "label": "Title",
-          "placeholder": "",
+          "placeholder": "Placeholding",
           "allowTargetBlank": true,
           "single": "heading1"
         }
@@ -21,6 +28,13 @@
           "placeholder": "",
           "allowTargetBlank": true,
           "single": "paragraph,heading5,strong,em,heading4,heading3"
+        }
+      },
+      "check": {
+        "type": "Text",
+        "config": {
+          "label": "check",
+          "placeholder": "Checking"
         }
       }
     }

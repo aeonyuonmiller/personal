@@ -1,6 +1,11 @@
 {
   "uid": {
     "__TYPE__": "UIDContent",
-    "value": "treated"
+    "value": "middle"
+  },
+  "test": {
+    "__TYPE__": "FieldContent",
+    "value": "coming",
+    "type": "Text"
   }
 }

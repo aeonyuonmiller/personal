@@ -1,10 +1,12 @@
 import Head from 'next/head'
-// import Image from 'next/image'
 import Nav from "./components/Nav"
-// import styles from '../styles/Home.module.css'
-// import { motion as m, useScroll, useTransform } from "framer-motion"
 import { motion as m } from "framer-motion"
+// import { motion as m, useScroll, useTransform } from "framer-motion"
 
+import { PrismicText, PrismicRichText } from '@prismicio/react'
+import { createClient } from '../prismicio'
+
+// components
 import Thumbnail from "./components/Thumbnail"
 
 export default function Home() {

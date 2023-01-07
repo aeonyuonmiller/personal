@@ -11,6 +11,13 @@
           "label": "home",
           "placeholder": ""
         }
+      },
+      "test": {
+        "type": "Text",
+        "config": {
+          "label": "Test",
+          "placeholder": ""
+        }
       }
     }
   }

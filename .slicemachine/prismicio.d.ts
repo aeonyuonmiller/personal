@@ -12,7 +12,7 @@ interface AboutDocumentData {
      * Title field in *About*
      *
      * - **Field Type**: Title
-     * - **Placeholder**: *None*
+     * - **Placeholder**: Placeholding
      * - **API ID Path**: about.title
      * - **Tab**: Main
      * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
@@ -30,6 +30,17 @@ interface AboutDocumentData {
      *
      */
     copy: prismicT.RichTextField;
+    /**
+     * check field in *About*
+     *
+     * - **Field Type**: Text
+     * - **Placeholder**: Checking
+     * - **API ID Path**: about.check
+     * - **Tab**: Main
+     * - **Documentation**: https://prismic.io/docs/core-concepts/key-text
+     *
+     */
+    check: prismicT.KeyTextField;
 }
 /**
  * About document from Prismic
@@ -40,9 +51,21 @@ interface AboutDocumentData {
  *
  * @typeParam Lang - Language API ID of the document.
  */
-export type AboutDocument<Lang extends string = string> = prismicT.PrismicDocumentWithoutUID<Simplify<AboutDocumentData>, "about", Lang>;
+export type AboutDocument<Lang extends string = string> = prismicT.PrismicDocumentWithUID<Simplify<AboutDocumentData>, "about", Lang>;
 /** Content for Homepage documents */
-type HomepageDocumentData = Record<string, never>;
+interface HomepageDocumentData {
+    /**
+     * Test field in *Homepage*
+     *
+     * - **Field Type**: Text
+     * - **Placeholder**: *None*
+     * - **API ID Path**: homepage.test
+     * - **Tab**: Main
+     * - **Documentation**: https://prismic.io/docs/core-concepts/key-text
+     *
+     */
+    test: prismicT.KeyTextField;
+}
 /**
  * Homepage document from Prismic
  *
