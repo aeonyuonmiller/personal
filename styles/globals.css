@@ -33,6 +33,28 @@ body {
   overflow: hidden;
 }
 
+
+.copyright{
+  position: absolute;
+  bottom: 50px;
+  color: grey;
+  font-size: 8px;
+  left: 80px;
+}
+.copyright span{
+  position: relative;
+  top: 1.4px;
+  font-size: 12px;
+}
+.copyright a{
+  color: white;
+  text-decoration: none;
+  margin-left: 2em;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
 .marquee {
   position: relative;
   width: 100vw;

@@ -11,6 +11,17 @@
           "label": "Test",
           "placeholder": ""
         }
+      },
+      "slices": {
+        "type": "Slices",
+        "fieldset": "Slice Zone",
+        "config": {
+          "choices": {
+            "thumbnail": {
+              "type": "SharedSlice"
+            }
+          }
+        }
       }
     }
   }

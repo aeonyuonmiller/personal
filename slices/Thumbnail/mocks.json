@@ -9,8 +9,10 @@
           {
             "type": "heading1",
             "content": {
-              "text": "Solution"
-            }
+              "text": "Kiwi",
+              "spans": []
+            },
+            "direction": "ltr"
           }
         ]
       },
@@ -26,24 +28,26 @@
         ]
       },
       "image": {
-        "__TYPE__": "ImageContent",
         "origin": {
-          "id": "main",
-          "url": "https://images.unsplash.com/photo-1496181133206-80ce9b88a853",
-          "width": 5243,
-          "height": 3495
+          "id": "a9rxefN9vgY",
+          "url": "https://images.unsplash.com/photo-1618897996318-5a901fa6ca71?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwzMzc0NjN8MHwxfHNlYXJjaHwxOXx8ZnJ1aXR8ZW58MHx8fHwxNjczMzExNDI3&ixlib=rb-4.0.3&q=80",
+          "width": 4800,
+          "height": 6000
         },
-        "url": "https://images.unsplash.com/photo-1496181133206-80ce9b88a853",
-        "width": 5243,
-        "height": 3495,
+        "url": "https://images.unsplash.com/photo-1618897996318-5a901fa6ca71?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwzMzc0NjN8MHwxfHNlYXJjaHwxOXx8ZnJ1aXR8ZW58MHx8fHwxNjczMzExNDI3&ixlib=rb-4.0.3&q=80",
+        "width": 4800,
+        "height": 6000,
         "edit": {
+          "background": "transparent",
           "zoom": 1,
           "crop": {
             "x": 0,
             "y": 0
-          },
-          "background": "transparent"
+          }
         },
+        "credits": null,
+        "alt": "kiwis flying with blueberries",
+        "__TYPE__": "ImageContent",
         "thumbnails": {}
       }
     },

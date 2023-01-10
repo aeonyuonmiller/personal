@@ -5,6 +5,8 @@ import { AnimatePresence, MotionConfig } from "framer-motion";
 // components
 import Logo from "./components/Logo"
 import Connect from "./components/Connect"
+import Copyright from "./components/Copyright"
+
 
 export default function App({ Component, pageProps, router }: AppProps) {
   return <>
@@ -14,6 +16,7 @@ export default function App({ Component, pageProps, router }: AppProps) {
         </AnimatePresence>
       <Connect />
       <Logo />
+      <Copyright />
       </MotionConfig>
   </>
 }

@@ -1,7 +1,8 @@
 {
-  "apiEndpoint": "https://aeonyuonmiller.prismic.io/api/v2",
+  "_latest": "0.3.0",
+  "apiEndpoint": "https://project.prismic.io/api/v2",
   "libraries": [
     "@/slices"
   ],
-  "_latest": "0.6.0"
+  "localSliceSimulatorURL": "http://localhost:3000/slice-simulator"
 }

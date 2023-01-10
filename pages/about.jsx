@@ -35,7 +35,8 @@ const about = ({ page }) => {
         </m.div>
 
         <div className='content'>
-          <h1><PrismicRichText field={page.title} /></h1>
+          {/* <h1><PrismicRichText field={page.data.title} /></h1> */}
+          <h1>About</h1>
           
           <m.p initial={{ opacity: 0, y: 20 }}
             animate={{ scale: 1, opacity: 1, y: 0, transition:{ ease: [.64, .62, .23, .99], duration: .8, delay: .4 } }}
@@ -53,13 +54,13 @@ const about = ({ page }) => {
 
 export default about
 
-// fetch content
-export async function getStaticProps() {
-  const client = createClient()
-  const page = await client.getSingle("about")
-// const page = await client.getByUID('UID', 'API ID')
+// // fetch content
+// export async function getStaticProps() {
+//   const client = createClient()
+//   const page = await client.getSingle("about")
+// // const page = await client.getByUID('UID', 'API ID')
 
-  return {
-    props: { page },
-  }
-}
+//   return {
+//     props: { page },
+//   }
+// }

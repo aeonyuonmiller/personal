@@ -4,6 +4,8 @@ import { motion as m } from "framer-motion"
 // import { motion as m, useScroll, useTransform } from "framer-motion"
 
 import { PrismicText, PrismicRichText } from '@prismicio/react'
+import { SliceZone } from '@prismicio/react'
+// import { components } from "@/slices/index"
 import { createClient } from '../prismicio'
 
 // components
@@ -46,17 +48,18 @@ export default function Home() {
         <Thumbnail motive="./img1.png" title="Klassik Radio" description="New app for a online radio" />
         <Thumbnail motive="./img2.png" title="RuhrNachrichten" description="News app for ruhr area" />
         <Thumbnail motive="./img3.png" title="Uhkey" description="Wuuud" />
+        {/* <SliceZone slices={page.data.slices} components={components} /> */}
       </m.div>
     </>
   )
 }
 
 // fetch content
-export async function getStaticProps() {
-  const client = createClient()
-  const page = await client.getSingle("homepage")
+// export async function getStaticProps() {
+//   const client = createClient()
+//   const page = await client.getSingle("homepage")
 
-  return {
-    props: { page },
-  }
-}
+//   return {
+//     props: { page },
+//   }
+// }

@@ -65,7 +65,23 @@ interface HomepageDocumentData {
      *
      */
     test: prismicT.KeyTextField;
+    /**
+     * Slice Zone field in *Homepage*
+     *
+     * - **Field Type**: Slice Zone
+     * - **Placeholder**: *None*
+     * - **API ID Path**: homepage.slices[]
+     * - **Tab**: Main
+     * - **Documentation**: https://prismic.io/docs/core-concepts/slices
+     *
+     */
+    slices: prismicT.SliceZone<HomepageDocumentDataSlicesSlice>;
 }
+/**
+ * Slice for *Homepage → Slice Zone*
+ *
+ */
+type HomepageDocumentDataSlicesSlice = ThumbnailSlice;
 /**
  * Homepage document from Prismic
  *
@@ -198,11 +214,70 @@ type ImageSectionSliceVariation = ImageSectionSliceDefault;
  *
  */
 export type ImageSectionSlice = prismicT.SharedSlice<"image_section", ImageSectionSliceVariation>;
+/**
+ * Primary content in Thumbnail → Primary
+ *
+ */
+interface ThumbnailSliceDefaultPrimary {
+    /**
+     * Title field in *Thumbnail → Primary*
+     *
+     * - **Field Type**: Title
+     * - **Placeholder**: This is where it all begins...
+     * - **API ID Path**: thumbnail.primary.title
+     * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
+     *
+     */
+    title: prismicT.TitleField;
+    /**
+     * Description field in *Thumbnail → Primary*
+     *
+     * - **Field Type**: Rich Text
+     * - **Placeholder**: A nice description of your feature
+     * - **API ID Path**: thumbnail.primary.description
+     * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
+     *
+     */
+    description: prismicT.RichTextField;
+    /**
+     * Image field in *Thumbnail → Primary*
+     *
+     * - **Field Type**: Image
+     * - **Placeholder**: *None*
+     * - **API ID Path**: thumbnail.primary.image
+     * - **Documentation**: https://prismic.io/docs/core-concepts/image
+     *
+     */
+    image: prismicT.ImageField<never>;
+}
+/**
+ * Default variation for Thumbnail Slice
+ *
+ * - **API ID**: `default`
+ * - **Description**: `Thumbnail`
+ * - **Documentation**: https://prismic.io/docs/core-concepts/reusing-slices
+ *
+ */
+export type ThumbnailSliceDefault = prismicT.SharedSliceVariation<"default", Simplify<ThumbnailSliceDefaultPrimary>, never>;
+/**
+ * Slice variation for *Thumbnail*
+ *
+ */
+type ThumbnailSliceVariation = ThumbnailSliceDefault;
+/**
+ * Thumbnail Shared Slice
+ *
+ * - **API ID**: `thumbnail`
+ * - **Description**: `Thumbnail`
+ * - **Documentation**: https://prismic.io/docs/core-concepts/reusing-slices
+ *
+ */
+export type ThumbnailSlice = prismicT.SharedSlice<"thumbnail", ThumbnailSliceVariation>;
 declare module "@prismicio/client" {
     interface CreateClient {
         (repositoryNameOrEndpoint: string, options?: prismic.ClientConfig): prismic.Client<AllDocumentTypes>;
     }
     namespace Content {
-        export type { AboutDocumentData, AboutDocument, HomepageDocumentData, HomepageDocument, ProjectDocumentData, ProjectDocumentDataSlicesSlice, ProjectDocument, AllDocumentTypes, ImageSectionSliceDefaultPrimary, ImageSectionSliceDefault, ImageSectionSliceVariation, ImageSectionSlice };
+        export type { AboutDocumentData, AboutDocument, HomepageDocumentData, HomepageDocumentDataSlicesSlice, HomepageDocument, ProjectDocumentData, ProjectDocumentDataSlicesSlice, ProjectDocument, AllDocumentTypes, ImageSectionSliceDefaultPrimary, ImageSectionSliceDefault, ImageSectionSliceVariation, ImageSectionSlice, ThumbnailSliceDefaultPrimary, ThumbnailSliceDefault, ThumbnailSliceVariation, ThumbnailSlice };
     }
 }
