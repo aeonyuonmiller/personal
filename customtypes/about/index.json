@@ -14,6 +14,13 @@
           "single": "heading1"
         }
       },
+      "check": {
+        "type": "Text",
+        "config": {
+          "label": "check",
+          "placeholder": "Checking"
+        }
+      },
       "copy": {
         "type": "StructuredText",
         "config": {
@@ -21,13 +28,6 @@
           "placeholder": "",
           "allowTargetBlank": true,
           "single": "paragraph,heading5,strong,em,heading4,heading3"
-        }
-      },
-      "check": {
-        "type": "Text",
-        "config": {
-          "label": "check",
-          "placeholder": "Checking"
         }
       }
     }

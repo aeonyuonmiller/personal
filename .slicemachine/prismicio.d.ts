@@ -20,17 +20,6 @@ interface AboutDocumentData {
      */
     title: prismicT.TitleField;
     /**
-     * Copy field in *About*
-     *
-     * - **Field Type**: Rich Text
-     * - **Placeholder**: *None*
-     * - **API ID Path**: about.copy
-     * - **Tab**: Main
-     * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
-     *
-     */
-    copy: prismicT.RichTextField;
-    /**
      * check field in *About*
      *
      * - **Field Type**: Text
@@ -41,6 +30,17 @@ interface AboutDocumentData {
      *
      */
     check: prismicT.KeyTextField;
+    /**
+     * Copy field in *About*
+     *
+     * - **Field Type**: Rich Text
+     * - **Placeholder**: *None*
+     * - **API ID Path**: about.copy
+     * - **Tab**: Main
+     * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
+     *
+     */
+    copy: prismicT.RichTextField;
 }
 /**
  * About document from Prismic
@@ -55,7 +55,7 @@ export type AboutDocument<Lang extends string = string> = prismicT.PrismicDocume
 /** Content for Homepage documents */
 interface HomepageDocumentData {
     /**
-     * Test field in *Homepage*
+     * Text field in *Homepage*
      *
      * - **Field Type**: Text
      * - **Placeholder**: *None*
@@ -95,17 +95,6 @@ export type HomepageDocument<Lang extends string = string> = prismicT.PrismicDoc
 /** Content for Project documents */
 interface ProjectDocumentData {
     /**
-     * Project Title field in *Project*
-     *
-     * - **Field Type**: Rich Text
-     * - **Placeholder**: *None*
-     * - **API ID Path**: project.project_title
-     * - **Tab**: Main
-     * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
-     *
-     */
-    project_title: prismicT.RichTextField;
-    /**
      * Date field in *Project*
      *
      * - **Field Type**: Date
@@ -116,6 +105,17 @@ interface ProjectDocumentData {
      *
      */
     date: prismicT.DateField;
+    /**
+     * Project Title field in *Project*
+     *
+     * - **Field Type**: Rich Text
+     * - **Placeholder**: *None*
+     * - **API ID Path**: project.project_title
+     * - **Tab**: Main
+     * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
+     *
+     */
+    project_title: prismicT.RichTextField;
     /**
      * Insight field in *Project*
      *

@@ -5,7 +5,7 @@ const Copyright = () => {
   return (
       <div className="copyright">
         <span>&copy;</span> 2023
-        <Link href="#">Imprint</Link>
+        <Link href="/imprint">Imprint</Link>
       </div>
   )
 }

@@ -6,6 +6,7 @@ import Image from 'next/image'
 // components
 import Nav from "./components/Nav"
 import Layout from "./components/Layout"
+import LogoParade from "./components/LogoParade"
 
 // cms
 import { PrismicRichText } from '@prismicio/react'
@@ -36,14 +37,19 @@ const about = ({ page }) => {
 
         <div className='content'>
           {/* <h1><PrismicRichText field={page.data.title} /></h1> */}
-          <h1>About</h1>
+          <h1>Hi there!</h1>
           
-          <m.p initial={{ opacity: 0, y: 20 }}
+          <m.div initial={{ opacity: 0, y: 20 }}
             animate={{ scale: 1, opacity: 1, y: 0, transition:{ ease: [.64, .62, .23, .99], duration: .8, delay: .4 } }}
             exit={{ opacity: 0, y: 10, transition: { ease: [.63, 0, .17, .99], duration: .6 } }}>
             {/* <PrismicRichText field={data.copy} /> */}
-            okie dokie
-          </m.p>
+            <p className='intro'>My name is Andreas Y. Müller or aeonyuonmiller and I am a UI designer with over 10 years of experience working in agencies. I have a strong background in design and frontend development, specifically with React and Next.js.</p>
+            <p>I have a passion for creating smooth animations and building consistent design systems that provide a seamless user experience. I pride myself on my ability to translate complex design concepts into intuitive and visually appealing interfaces.</p>
+            <p>In my past work, I have successfully collaborated with cross-functional teams to deliver high-quality products on time and on budget. I am confident in my ability to adapt to new challenges and thrive in a fast-paced environment.</p>
+            <h5>Clients include</h5>
+            <LogoParade />
+            <p>I am excited to bring my skills and experience to new projects and help bring visions to life.</p>
+          </m.div>
         </div>
       </Layout>
         

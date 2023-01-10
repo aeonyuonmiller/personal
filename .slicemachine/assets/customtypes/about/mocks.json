@@ -5,10 +5,15 @@
       {
         "type": "heading1",
         "content": {
-          "text": "Arrow"
+          "text": "Bread"
         }
       }
     ]
+  },
+  "check": {
+    "__TYPE__": "FieldContent",
+    "value": "helpful",
+    "type": "Text"
   },
   "copy": {
     "__TYPE__": "StructuredTextContent",
@@ -16,14 +21,9 @@
       {
         "type": "paragraph",
         "content": {
-          "text": "Veniam proident pariatur et occaecat incididunt tempor laboris voluptate reprehenderit nostrud qui veniam ut."
+          "text": "Officia reprehenderit magna id consequat minim anim proident nisi enim."
         }
       }
     ]
-  },
-  "check": {
-    "__TYPE__": "FieldContent",
-    "value": "breath",
-    "type": "Text"
   }
 }

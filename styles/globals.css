@@ -12,7 +12,7 @@
 
 :root {
   --primary: #6D709A;
-  --bg: #ffffff;
+  --bg: #EEEDEE;
 }
 
 * {
@@ -26,16 +26,16 @@
 html,
 body {
   background: rgb(195, 195, 195);
-  color: #3D3D3D;
+  color: rgb(94, 94, 94);
   font-family: 'Inter', Helvetica Neue, sans-serif;
   height: 100vh;
   height: -webkit-fill-available;
-  overflow: hidden;
+  overflow: scroll;
 }
 
 
 .copyright{
-  position: absolute;
+  position: fixed;
   bottom: 50px;
   color: grey;
   font-size: 8px;
@@ -47,7 +47,7 @@ body {
   font-size: 12px;
 }
 .copyright a{
-  color: white;
+  color: var(--bg);
   text-decoration: none;
   margin-left: 2em;
   text-transform: uppercase;
@@ -83,16 +83,35 @@ h1 {
   /* viewport 320 to 1600 = font-size 32px to 80px */
   font-size: calc(32px + (60 - 32) * ((100vw - 320px) / (1600 - 320)));
   letter-spacing: -0.05em;
-  color: #fff;
+  color: var(--bg);
   margin-bottom: 10px;
 }
 
+h5{
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin: 2em 0;
+  color: #EEEDEE;
+}
 p {
   width: 100%;
   max-width: 60ch;
-  font-size: 22px;
-  letter-spacing: .3;
-  line-height: 2.2rem;
+  /* viewport 320 to 1600 = font-size 32px to 80px */
+  font-size: calc(16px + (26 - 16) * ((100vw - 320px) / (1600 - 320)));
+  letter-spacing: .3%;
+  line-height: 1.6em;
+  margin-bottom: 1.4em;
+}
+p.intro{
+  font-weight: 400;
+  color: rgb(94, 94, 94);
+  width: 100%;
+  max-width: 60ch;
+  /* viewport 320 to 1600 = font-size 32px to 80px */
+  font-size: calc(18px + (30 - 18) * ((100vw - 320px) / (1600 - 320)));
+  letter-spacing: .1%;
+  line-height: 1.6em;
+  margin-bottom: 1.4em;
 }
 
 img,
@@ -130,10 +149,17 @@ a::after {
 
 .content {
   position: absolute;
-  top: 200px;
+  top: 46vh;
   left: 400px;
   width: 40%;
   grid-column: 2 / span 2;
+  overflow: scroll;
+}
+.content p:last-child{
+  margin-bottom: 40vh;
+}
+.content::-webkit-scrollbar {
+  display: none;
 }
 
 .scrollcontainer {

@@ -8,7 +8,7 @@
       "test": {
         "type": "Text",
         "config": {
-          "label": "Test",
+          "label": "Text",
           "placeholder": ""
         }
       },
