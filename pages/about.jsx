@@ -56,7 +56,7 @@ export default about
 // fetch content
 export async function getStaticProps() {
   const client = createClient()
-  const page = await client.getSingle("about", "about-us")
+  const page = await client.getSingle("about")
 // const page = await client.getByUID('UID', 'API ID')
 
   return {

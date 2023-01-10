@@ -50,3 +50,13 @@ export default function Home() {
     </>
   )
 }
+
+// fetch content
+export async function getStaticProps() {
+  const client = createClient()
+  const page = await client.getSingle("homepage")
+
+  return {
+    props: { page },
+  }
+}
