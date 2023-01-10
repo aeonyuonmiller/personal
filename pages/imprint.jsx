@@ -1,7 +1,9 @@
 import React from 'react'
 import Head from 'next/head'
+import Nav from "./components/Nav"
 
 const imprint = () => {
+  
   return (
     <>
       <Head>
@@ -12,9 +14,9 @@ const imprint = () => {
       <div className='content'>
         <h1>Imprint</h1>
         <h5>This website is owned and operated by</h5>
-      <p>Andreas Y. Müller<br />
+      <p><strong>Andreas Y. Müller<br />
         Stuttgarter Strasse 41<br />
-      aym1@mail.com</p>
+      aym1@mail.com</strong></p>
       <br />
         <p>Andreas Y. Müller or aeonyuonmiller is not responsible for the content of external websites.</p>
         <p>Andreas Y. Müller or aeonyuonmiller does not endorse or assume any liability for the content of external websites.</p>
@@ -24,6 +26,8 @@ const imprint = () => {
         <p>Andreas Y. Müller or aeonyuonmiller reserves the right to change the content of this website at any time and without notice.</p>
         <h5>&copy; 2023</h5>
       </div>
+
+      <Nav url="/" title="/ Imprint" gototitle="-> Back" />
     </>
   )
 }
