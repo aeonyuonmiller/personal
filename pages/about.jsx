@@ -1,5 +1,6 @@
 import React from 'react'
-import { motion as m } from "framer-motion"
+import { motion as m, scrollY } from "framer-motion"
+
 import Head from 'next/head'
 import Image from 'next/image'
 
@@ -16,21 +17,23 @@ import { createClient } from '../prismicio'
 
 // view
 const about = ({ page }) => {
+  // const { scrollYProgress } = scrollY();
+  // const x = UseTransform(scrollYProgress, [0, 1], [0, 600]);
+
   return (
     <>
       <script async defer src="https://static.cdn.prismic.io/prismic.js?new=true&repo=aeonyuonmiller"></script>
       <Head>
-        <title>aym / about</title>
+        <title>/ about</title>
         <meta name="description" content="website of aeon yuon miller" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Layout>
         <m.div
-          drag dragConstraints={{ top: 0, bottom: 0, left: 0, right: 0 }}
-              initial={{ scale: 1.05, opacity: 0 }}
-              animate={{ scale: 1.025, opacity: 1, transition:{ ease: [.64, .62, .23, .99], duration: .8 } }}
-              exit={{ scale: 1, opacity: 0, transition:{ ease: [.63, 0, .17, .99], duration: .8, delay: .2 }}}
-              className='portrait'
+          initial={{ scale: 1.05, opacity: 0 }}
+          animate={{ scale: 1.025, opacity: 1, transition:{ ease: [.64, .62, .23, .99], duration: .8 } }}
+          exit={{ scale: 1, opacity: 0, transition: { ease: [.63, 0, .17, .99], duration: .8, delay: .2 } }}
+          className='portrait'
         >
           <img alt="Portrait shot of Aeon Yuon Miller" src="./portrait.png"/>
         </m.div>
