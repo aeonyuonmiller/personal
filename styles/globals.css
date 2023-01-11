@@ -13,6 +13,8 @@
 :root {
   --primary: #6D709A;
   --bg: #EEEDEE;
+  --secondary: #a4a4a4;
+  --tertiary: #8f8f8f;
 }
 
 * {
@@ -63,7 +65,7 @@ h1 {
   /* viewport 320 to 1600 = font-size 32px to 80px */
   font-size: calc(32px + (60 - 32) * ((100vw - 320px) / (1600 - 320)));
   letter-spacing: -0.05em;
-  color: var(--bg);
+  color: var(--secondary);
   margin-bottom: 30px;
 }
 
@@ -71,7 +73,7 @@ h5{
   text-transform: uppercase;
   letter-spacing: 1px;
   margin: 2em 0;
-  color: #EEEDEE;
+  color: var(--tertiary);
 }
 p {
   width: 100%;
