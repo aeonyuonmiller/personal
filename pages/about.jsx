@@ -23,6 +23,7 @@ const about = ({ page }) => {
   return (
     <>
       {/* <script async defer src="https://static.cdn.prismic.io/prismic.js?new=true&repo=aeonyuonmiller"></script> */}
+      <script async defer src="https://static.cdn.prismic.io/prismic.js?new=true&repo=person"></script>
       <Head>
         <title>/ about</title>
         <meta name="description" content="website of aeon yuon miller" />

@@ -17,7 +17,7 @@ export default function Home() {
   
   return (
     <>
-      <script async defer src="https://static.cdn.prismic.io/prismic.js?new=true&repo=aeonyuonmiller"></script>
+      <script async defer src="https://static.cdn.prismic.io/prismic.js?new=true&repo=person"></script>
       <Head>
         <title>aym</title>
         <meta name="description" content="website of aeon yuon miller" />

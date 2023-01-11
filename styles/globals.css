@@ -137,7 +137,7 @@ a::after {
 }
 .content p:last-child, 
 .content h5:last-child{
-  margin-bottom: 48.5vh;
+  margin-bottom: 48.3vh;
 }
 .content::-webkit-scrollbar {
   display: none;
@@ -156,11 +156,9 @@ a::after {
   scrollbar-width: none;
   /* Firefox */
 }
-
 .scrollcontainer::-webkit-scrollbar {
   display: none;
 }
-
 .thumbnail-container {
   position: relative;
   display: flex;
@@ -170,7 +168,7 @@ a::after {
   gap: 1em;
 
   color: white;
-  background: rgba(255, 255, 255, 0.3);
+  background: rgba(0, 0, 0, 1);
   width: 600px;
   height: 340px;
   border-radius: 8px;
@@ -187,7 +185,6 @@ box-shadow:
     0px 11.3px 33.4px rgba(0, 0, 0, 0.05),
     0px 27px 80px rgba(0, 0, 0, 0.07);
 }
-
 .thumbnail-container .arrow {
   position: absolute;
   right: 30px;
@@ -196,7 +193,6 @@ box-shadow:
   opacity: 0;
   transition: opacity ease .4s .2s;
 }
-
 .thumbnail-container img {
   height: 100%;
   width: 100%;
@@ -204,7 +200,6 @@ box-shadow:
   position: absolute;
   object-fit: cover;
 }
-
 .thumbnail-container h5 {
   position: absolute;
   bottom: 1em;
@@ -212,7 +207,6 @@ box-shadow:
   transform: translateY(5px);
   transition: opacity ease .4s, transform ease-in-out .2s;
 }
-
 .thumbnail-container:hover h5,
 .thumbnail-container:hover .arrow {
   opacity: 1;
