@@ -6,7 +6,9 @@ const Anim = ({ children }) => {
     <div>
       {words.map((word, index) => (
         <motion.h1
-          style={{marginBottom:"1em"}}
+          initial={{ opacity: 0 }}
+          animate={{opacity:1}}
+          style={{marginBottom:0}}
           key={index}
         >
           {word.split('').map((letter, index) => (
