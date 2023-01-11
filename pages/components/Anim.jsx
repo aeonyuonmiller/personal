@@ -8,8 +8,8 @@ const Anim = ({ children }) => {
       {words.map((word, index) => (
         <motion.h1
           initial={{ opacity: 0 }}
-          animate={{opacity:1}}
-          style={{marginBottom:0}}
+          animate={{ opacity:1 }}
+          style={{ marginBottom: 0, marginRight: "1rem", display: "inline-block", whiteSpace: "no-wrap" }}
           key={index}
         >
           {word.split('').map((letter, index) => (
@@ -29,7 +29,6 @@ const Anim = ({ children }) => {
     </div>
   );
 }
-
 
 // export default Anim
 export default dynamic (() => Promise.resolve(Anim), {ssr: false})
