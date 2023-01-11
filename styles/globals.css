@@ -11,8 +11,8 @@
 }
 
 :root {
-  --primary: #6D709A;
   --bg: #EEEDEE;
+  --primary: #6D709A;
   --secondary: #a4a4a4;
   --tertiary: #8f8f8f;
 }
@@ -86,7 +86,7 @@ p {
 }
 p.intro{
   font-weight: 400;
-  color: rgb(94, 94, 94);
+  color: var(--tertiary);
   width: 100%;
   max-width: 60ch;
   /* viewport 320 to 1600 = font-size 32px to 80px */
@@ -368,7 +368,7 @@ a {
   text-decoration: none;
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
   }
@@ -377,7 +377,7 @@ a {
     color: #EEEDEE;
     background: black;
   }
-}
+} */
 
 @media screen and (max-width:1060px) {
   h1 {
