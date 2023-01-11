@@ -1,6 +1,8 @@
 import React from 'react'
 import Head from 'next/head'
 import Nav from "./components/Nav"
+import Anim from "./components/Anim"
+
 
 const imprint = () => {
   
@@ -12,7 +14,7 @@ const imprint = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className='content'>
-        <h1>Imprint</h1>
+        <Anim>Imprint</Anim>
         <h5>This website is owned and operated by</h5>
       <p><strong>Andreas Y. Müller<br />
         Stuttgarter Strasse 41<br />
@@ -27,7 +29,7 @@ const imprint = () => {
         <h5>&copy; {new Date().getFullYear()}</h5>
       </div>
 
-      <Nav url="/" title="/ Imprint" gototitle="-> Index" />
+      <Nav url="/" title="/ Imprint" gototitle="-> Back" />
     </>
   )
 }

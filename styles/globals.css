@@ -159,7 +159,7 @@ a::after {
   grid-column: 2 / span 2;
   overflow: scroll;
 }
-.content *:last-child{
+.content p:last-child, .content h5:last-child{
   margin-bottom: 49vh;
 }
 .content::-webkit-scrollbar {
