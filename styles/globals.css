@@ -137,7 +137,7 @@ a::after {
 }
 .content p:last-child, 
 .content h5:last-child{
-  margin-bottom: 48vh;
+  margin-bottom: 48.5vh;
 }
 .content::-webkit-scrollbar {
   display: none;
