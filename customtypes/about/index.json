@@ -14,13 +14,6 @@
           "single": "heading1"
         }
       },
-      "check": {
-        "type": "Text",
-        "config": {
-          "label": "check",
-          "placeholder": "Checking"
-        }
-      },
       "copy": {
         "type": "StructuredText",
         "config": {

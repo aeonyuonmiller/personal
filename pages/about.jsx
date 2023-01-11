@@ -5,9 +5,9 @@ import Head from 'next/head'
 // import Image from 'next/image'
 
 // components
-import Nav from "./components/Nav"
-import Layout from "./components/Layout"
-import Anim from "./components/Anim"
+import Nav from "/components/Nav"
+import Layout from "/components/Layout"
+import Anim from "/components/Anim"
 
 // cms
 // import { PrismicRichText } from '@prismicio/react'

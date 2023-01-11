@@ -20,17 +20,6 @@ interface AboutDocumentData {
      */
     title: prismicT.TitleField;
     /**
-     * check field in *About*
-     *
-     * - **Field Type**: Text
-     * - **Placeholder**: Checking
-     * - **API ID Path**: about.check
-     * - **Tab**: Main
-     * - **Documentation**: https://prismic.io/docs/core-concepts/key-text
-     *
-     */
-    check: prismicT.KeyTextField;
-    /**
      * Copy field in *About*
      *
      * - **Field Type**: Rich Text

@@ -5,15 +5,10 @@
       {
         "type": "heading1",
         "content": {
-          "text": "Bread"
+          "text": "Produce"
         }
       }
     ]
-  },
-  "check": {
-    "__TYPE__": "FieldContent",
-    "value": "helpful",
-    "type": "Text"
   },
   "copy": {
     "__TYPE__": "StructuredTextContent",
@@ -21,7 +16,7 @@
       {
         "type": "paragraph",
         "content": {
-          "text": "Officia reprehenderit magna id consequat minim anim proident nisi enim."
+          "text": "Officia ullamco ut occaecat consectetur eu in cupidatat et. Ea labore excepteur et eiusmod officia et anim adipisicing ad velit."
         }
       }
     ]

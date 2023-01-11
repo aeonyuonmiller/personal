@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import Nav from "./components/Nav"
+import Nav from "/components/Nav"
 import { motion as m } from "framer-motion"
 // import { motion as m, useScroll, useTransform } from "framer-motion"
 
@@ -9,7 +9,7 @@ import { SliceZone } from '@prismicio/react'
 import { createClient } from '../prismicio'
 
 // components
-import Thumbnail from "./components/Thumbnail"
+import Thumbnail from "/components/Thumbnail"
 
 export default function Home() {
   // const { scrollYProgress } = useScroll();
