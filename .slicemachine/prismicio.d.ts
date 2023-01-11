@@ -92,6 +92,41 @@ type HomepageDocumentDataSlicesSlice = ThumbnailSlice;
  * @typeParam Lang - Language API ID of the document.
  */
 export type HomepageDocument<Lang extends string = string> = prismicT.PrismicDocumentWithoutUID<Simplify<HomepageDocumentData>, "homepage", Lang>;
+/** Content for Imprint documents */
+interface ImprintDocumentData {
+    /**
+     * Title field in *Imprint*
+     *
+     * - **Field Type**: Text
+     * - **Placeholder**: *None*
+     * - **API ID Path**: imprint.title
+     * - **Tab**: Main
+     * - **Documentation**: https://prismic.io/docs/core-concepts/key-text
+     *
+     */
+    title: prismicT.KeyTextField;
+    /**
+     * Copy field in *Imprint*
+     *
+     * - **Field Type**: Rich Text
+     * - **Placeholder**: *None*
+     * - **API ID Path**: imprint.copy
+     * - **Tab**: Main
+     * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
+     *
+     */
+    copy: prismicT.RichTextField;
+}
+/**
+ * Imprint document from Prismic
+ *
+ * - **API ID**: `imprint`
+ * - **Repeatable**: `false`
+ * - **Documentation**: https://prismic.io/docs/core-concepts/custom-types
+ *
+ * @typeParam Lang - Language API ID of the document.
+ */
+export type ImprintDocument<Lang extends string = string> = prismicT.PrismicDocumentWithoutUID<Simplify<ImprintDocumentData>, "imprint", Lang>;
 /** Content for Project documents */
 interface ProjectDocumentData {
     /**
@@ -154,7 +189,7 @@ type ProjectDocumentDataSlicesSlice = ImageSectionSlice;
  * @typeParam Lang - Language API ID of the document.
  */
 export type ProjectDocument<Lang extends string = string> = prismicT.PrismicDocumentWithoutUID<Simplify<ProjectDocumentData>, "project", Lang>;
-export type AllDocumentTypes = AboutDocument | HomepageDocument | ProjectDocument;
+export type AllDocumentTypes = AboutDocument | HomepageDocument | ImprintDocument | ProjectDocument;
 /**
  * Primary content in ImageSection → Primary
  *
@@ -278,6 +313,6 @@ declare module "@prismicio/client" {
         (repositoryNameOrEndpoint: string, options?: prismic.ClientConfig): prismic.Client<AllDocumentTypes>;
     }
     namespace Content {
-        export type { AboutDocumentData, AboutDocument, HomepageDocumentData, HomepageDocumentDataSlicesSlice, HomepageDocument, ProjectDocumentData, ProjectDocumentDataSlicesSlice, ProjectDocument, AllDocumentTypes, ImageSectionSliceDefaultPrimary, ImageSectionSliceDefault, ImageSectionSliceVariation, ImageSectionSlice, ThumbnailSliceDefaultPrimary, ThumbnailSliceDefault, ThumbnailSliceVariation, ThumbnailSlice };
+        export type { AboutDocumentData, AboutDocument, HomepageDocumentData, HomepageDocumentDataSlicesSlice, HomepageDocument, ImprintDocumentData, ImprintDocument, ProjectDocumentData, ProjectDocumentDataSlicesSlice, ProjectDocument, AllDocumentTypes, ImageSectionSliceDefaultPrimary, ImageSectionSliceDefault, ImageSectionSliceVariation, ImageSectionSlice, ThumbnailSliceDefaultPrimary, ThumbnailSliceDefault, ThumbnailSliceVariation, ThumbnailSlice };
     }
 }

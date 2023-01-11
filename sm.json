@@ -1,6 +1,6 @@
 {
   "_latest": "0.3.0",
-  "apiEndpoint": "https://project.prismic.io/api/v2",
+  "apiEndpoint": "https://person.prismic.io/api/v2",
   "libraries": [
     "@/slices"
   ],

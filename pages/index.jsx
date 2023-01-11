@@ -39,7 +39,7 @@ export default function Home() {
         Your browser does not support HTML5 video.
       </m.video>
 
-      <Nav url="about" title="/ Works" gototitle="-> About" />
+      <Nav url="about" title="/ Work" gototitle="-> About" />
 
       <m.div className='scrollcontainer'
         initial={{ y: 50, opacity: 0 }}

@@ -1,0 +1,18 @@
+{
+  "title": {
+    "__TYPE__": "FieldContent",
+    "value": "chapter",
+    "type": "Text"
+  },
+  "copy": {
+    "__TYPE__": "StructuredTextContent",
+    "value": [
+      {
+        "type": "paragraph",
+        "content": {
+          "text": "Culpa et ad aute non. Elit ad ipsum nisi est cupidatat dolore reprehenderit exercitation ullamco adipisicing non. Sint cillum tempor sint amet est commodo et consequat occaecat magna esse Lorem dolore deserunt."
+        }
+      }
+    ]
+  }
+}

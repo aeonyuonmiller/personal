@@ -15,7 +15,8 @@
         }
       }
     },
-    "homepage": {}
+    "homepage": {},
+    "imprint": {}
   },
   "slices": {
     "ImageSection": {}
