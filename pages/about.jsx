@@ -2,7 +2,7 @@ import React from 'react'
 import { motion as m } from "framer-motion"
 
 import Head from 'next/head'
-import Image from 'next/image'
+// import Image from 'next/image'
 
 // components
 import Nav from "./components/Nav"
@@ -35,7 +35,7 @@ const about = ({ page }) => {
           animate={{ scale: 1.025, opacity: 1, transition: { ease: [.64, .62, .23, .99], duration: .8 } }}
           exit={{ scale: 1, opacity: 0, transition: { ease: [.63, 0, .17, .99], duration: .8, delay: .2 } }}
           className='portrait'>
-          <Image alt="Portrait shot of Aeon Yuon Miller" src="/portrait.png" fill />
+          <img alt="Portrait shot of Aeon Yuon Miller" src="./portrait.png" />
         </m.div>
 
         <div className='content'>
@@ -44,7 +44,7 @@ const about = ({ page }) => {
           
           <m.div initial={{ opacity: 0, y: 20 }}
             animate={{ scale: 1, opacity: 1, y: 0, transition:{ ease: [.64, .62, .23, .99], duration: .8, delay: .4 } }}
-            exit={{ opacity: 0, y: 10, transition: { ease: [.63, 0, .17, .99], duration: .6 } }}>
+            exit={{ opacity: 0, y: 5, transition: { ease: "linear", duration: .4, delay: .3 } }}>
             {/* <PrismicRichText field={data.copy} /> */}
             <p className='intro'>My name is Andreas Y. Müller or aeonyuonmiller and I am a UI designer with over 10 years of experience working in agencies. I have a strong background in design and frontend development, specifically with React and Next.js.</p>
             <p>I have a passion for creating smooth animations and building consistent design systems that provide a seamless user experience. I pride myself on my ability to translate complex design concepts into intuitive and visually appealing interfaces.</p>
