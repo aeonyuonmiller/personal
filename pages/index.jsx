@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import Nav from "/components/Nav"
+import Nav from "../components/Nav"
 import { motion as m } from "framer-motion"
 // import { motion as m, useScroll, useTransform } from "framer-motion"
 
