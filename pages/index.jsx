@@ -9,7 +9,7 @@ import { SliceZone } from '@prismicio/react'
 import { createClient } from '../prismicio'
 
 // components
-import Thumbnail from "/components/Thumbnail"
+import Thumbnail from "./components/Thumbnail"
 
 export default function Home() {
   // const { scrollYProgress } = useScroll();

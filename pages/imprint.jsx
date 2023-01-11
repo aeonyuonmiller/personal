@@ -1,8 +1,8 @@
 import React from 'react'
 import { motion as m } from "framer-motion"
 import Head from 'next/head'
-import Nav from "../components/Nav"
-import Anim from "../components/Anim"
+import Nav from "./components/Nav"
+import Anim from "./components/Anim"
 
 
 const imprint = () => {
