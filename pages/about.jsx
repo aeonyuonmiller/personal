@@ -1,8 +1,7 @@
 import React from 'react'
-import { motion as m } from "framer-motion"
-
-import Head from 'next/head'
+import { motion as m, useScroll } from "framer-motion"
 // import Image from 'next/image'
+import Head from 'next/head'
 
 // components
 import Nav from "./components/Nav"
@@ -17,9 +16,7 @@ import Anim from "./components/Anim"
 
 // view
 const about = ({ page }) => {
-  // const { scrollYProgress } = scrollY();
-  // const x = UseTransform(scrollYProgress, [0, 1], [0, 600]);
-
+  
   return (
     <>
       <script async defer src="https://static.cdn.prismic.io/prismic.js?new=true&repo=person"></script>
