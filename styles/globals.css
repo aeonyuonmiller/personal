@@ -125,9 +125,15 @@ a::after {
   height: 100vh;
 }
 
-.portrait {
+/* .portrait {
   grid-column: -2 / span 2;
   align-self: end;
+} */
+.portrait{
+  width: 78vh;
+  position: fixed;
+  right: 0;
+  bottom: 0;
 }
 
 .content {
