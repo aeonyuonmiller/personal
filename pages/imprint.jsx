@@ -21,7 +21,7 @@ const imprint = () => {
           animate={{ scale: 1, opacity: 1, y: 0, transition:{ ease: [.64, .62, .23, .99], duration: .8, delay: .4 } }}
           exit={{ opacity: 0, y: 5, transition: { ease: "linear", duration: .4, delay: .3 } }}>
           <h5>This website is owned and operated by</h5>
-          <p><strong>Andreas Y. Müller<br />
+          <p className='intro'><strong>Andreas Y. Müller<br />
           Stuttgarter Strasse 41<br />
           aym1@mail.com</strong></p>
           <br />
