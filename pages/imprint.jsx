@@ -6,10 +6,13 @@ import Anim from "./components/Anim"
 
 
 const imprint = () => {
+
   
   return (
     <>
+      
       <script async defer src="https://static.cdn.prismic.io/prismic.js?new=true&repo=person"></script>
+
       <Head>
         <title>/ imprint</title>
         <meta name="description" content="website of aeon yuon miller" />

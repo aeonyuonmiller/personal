@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400&display=swap');
 
+html{ scroll-behavior: initial; }
+
 ::selection {
   color: var(--bg);
   background: var(--primary);
@@ -31,12 +33,12 @@ body {
   color: rgb(94, 94, 94);
   font-family: 'Inter', Helvetica Neue, sans-serif;
   font-weight: 300;
-  height: 100vh;
-  height: 100svh;
-  height: -webkit-fill-available;
+  min-height: 100vh;
+  min-height: 100dvh;
+  /* height: -webkit-fill-available; */
   overflow: scroll;
+  overscroll-behavior-y: none;
 }
-
 
 .copyright{
   position: fixed;
