@@ -1,12 +1,13 @@
 import React from 'react'
 import { motion as m } from "framer-motion"
-// import Image from 'next/image'
+import Image from 'next/image'
 import Head from 'next/head'
 
 // components
 import Nav from "./components/Nav"
 import Layout from "./components/Layout"
 import Anim from "./components/Anim"
+
 
 // cms
 // import { PrismicRichText } from '@prismicio/react'
@@ -27,14 +28,15 @@ const about = ({ page }) => {
       </Head>
 
       <Layout>
+        
         <m.div
           className='portrait'
           initial={{ scale: 1.05, opacity: 0 }}
           animate={{ scale: 1.025, opacity: 1, y:0, transition: { ease: [.64, .62, .23, .99], duration: .8 } }}
-          exit={{ scale: 1, opacity: 0, transition: { ease: [.63, 0, .17, .99], duration: .8, delay: .2 } }}
-        >
-          <img alt="Portrait shot of Aeon Yuon Miller" src="./portrait.png" />
+          exit={{ scale: 1, opacity: 0, transition: { ease: [.63, 0, .17, .99], duration: .8, delay: .2 } }}>
+            <img alt="Portrait shot of Aeon Yuon Miller" src="/portrait.png" />
         </m.div>
+        
 
         <div className='content'>
           {/* <h1><PrismicRichText field={page.data.title} /></h1> */}

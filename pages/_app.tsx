@@ -9,11 +9,12 @@ import Copyright from "./components/Copyright"
 
 
 export default function App({ Component, pageProps, router }: AppProps) {
+  
   return <>
       <MotionConfig reducedMotion="user">
-        <AnimatePresence mode="wait">
+      <AnimatePresence mode="wait">
           <Component {...pageProps} key={router.route} />
-        </AnimatePresence>
+      </AnimatePresence>
       <Connect />
       <Logo />
       <Copyright />

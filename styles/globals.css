@@ -130,7 +130,7 @@ a::after {
   align-self: end;
 } */
 .portrait{
-  width: 78vh;
+  width: 75vh;
   position: fixed;
   right: 0;
   bottom: 0;
