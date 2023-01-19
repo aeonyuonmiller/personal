@@ -131,8 +131,15 @@ a::after {
   grid-column: -2 / span 2;
   align-self: end;
 } */
-.portrait{
+/* .portrait {
   width: 75vh;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+} */
+.portrait {
+  width: 500px;
+  height: auto;
   position: fixed;
   right: 0;
   bottom: 0;
@@ -227,7 +234,7 @@ box-shadow:
   transform: translateY(0px);
 }
 .thumbnail-container:hover img{
-  opacity: .8;
+  opacity: .6;
 }
 
 nav {
