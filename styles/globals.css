@@ -210,9 +210,12 @@ box-shadow:
   padding: -2rem;
   position: absolute;
   object-fit: cover;
+  opacity: 1;
+  transition: opacity ease .8s;
 }
 .thumbnail-container h5 {
   position: absolute;
+  color: white;
   bottom: 1em;
   opacity: 0;
   transform: translateY(5px);
@@ -222,6 +225,9 @@ box-shadow:
 .thumbnail-container:hover .arrow {
   opacity: 1;
   transform: translateY(0px);
+}
+.thumbnail-container:hover img{
+  opacity: .8;
 }
 
 nav {
