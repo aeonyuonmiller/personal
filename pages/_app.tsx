@@ -1,5 +1,6 @@
 import '../styles/globals.css'
 import type { AppProps } from 'next/app'
+import { Analytics } from '@vercel/analytics/react';
 import { AnimatePresence, MotionConfig } from "framer-motion";
 
 // components
@@ -12,7 +13,8 @@ export default function App({ Component, pageProps, router }: AppProps) {
   return <>
       <MotionConfig reducedMotion="user">
       <AnimatePresence mode="wait">
-          <Component {...pageProps} key={router.route} />
+        <Component {...pageProps} key={router.route} />
+        <Analytics />
       </AnimatePresence>
       <Connect />
       <Logo />
