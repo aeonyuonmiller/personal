@@ -48,8 +48,8 @@ const about = ({ page }) => {
             {/* <PrismicRichText field={data.copy} /> */}
             <p className='intro'>My name is Andreas Y. Müller or aeonyuonmiller and I am a UI designer with over 10 years of experience.</p>
             <p>Also I work with code, specifically with React (Next.js), Framer-Motion, Prismic and Snipcart.</p>
-            <p>I have a passion for creating smooth animations and building consistent design systems that provide a seamless user experience. I pride myself on my ability to translate complex design concepts into intuitive and visually appealing interfaces.</p>
-            <p>In my past work, I have successfully collaborated with cross-functional teams to deliver high-quality products on time and on budget. I am confident in my ability to adapt to new challenges and thrive in a fast-paced environment.</p>
+            <p>I have a passion for creating smooth interactive products and building consistent design-systems that provide a seamless user experience. I pride myself on my ability to translate complex design concepts into intuitive and visually appealing interfaces.</p>
+            <p>In my past work, I have successfully collaborated with cross-functional teams to deliver high-quality products. Through my past experience in agencies i am confident in my ability to adapt to new challenges and thrive in a fast-paced environment.</p>
             <p>I am excited to bring my skills and experience to new projects and help bring visions to life.</p>
           </m.div>
         </div>
