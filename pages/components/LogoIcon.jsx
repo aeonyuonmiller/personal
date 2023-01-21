@@ -1,16 +1,15 @@
-import React from "react";
 import { motion as m } from "framer-motion"
 
 function Icon() {
   
 const group = {
-  show: { opacity: 1, transition:{ staggerChildren: 0.15, } },
   hide: { opacity: 0 },
+  show: { opacity: 1, transition:{ staggerChildren: 0.3, }}
 }
 
 const item = {
-  show: { x: 0, transition: { ease: [.71, .01, .42, .99], duration: 2, }},
-  hide: { x: "100%" },
+  hide: { scale: 0.5, opacity: 0 },
+  show: { scale: 1, opacity: 1, transition:{ ease: [.64, .62, .23, .99], duration: .8 }}
 }
   return (
     <m.svg

@@ -1,5 +1,6 @@
 import React from 'react'
 import { motion as m } from "framer-motion"
+import ArrowIcon from "./ArrowIcon"
 
 const Thumbnail = ({ title, description, motive }) => {
     const zoom = {
@@ -12,7 +13,7 @@ const Thumbnail = ({ title, description, motive }) => {
         <m.img variants={zoom} initial="hidden" whileInView="show" viewport={{ amount: 0.4 }} exit="hidden" src={motive} />
         <m.h3 initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }}>{title}</m.h3>
         <h5>{description}</h5>
-        <span className="arrow">•</span>
+        <span className="arrow"><ArrowIcon /></span>
     </m.div>
   )
 }

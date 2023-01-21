@@ -205,11 +205,13 @@ box-shadow:
 }
 .thumbnail-container .arrow {
   position: absolute;
-  right: 30px;
+  right: 20px;
   bottom: 20px;
   font-size: 50px;
-  opacity: 0;
-  transition: opacity ease .4s .2s;
+  opacity: 1;
+  width: 40px;
+  scale: .8;
+  transition: opacity ease .4s .2s, transform ease .3s, scale ease .2s;
 }
 .thumbnail-container img {
   height: 100%;
@@ -228,10 +230,13 @@ box-shadow:
   transform: translateY(5px);
   transition: opacity ease .4s, transform ease-in-out .2s;
 }
-.thumbnail-container:hover h5,
-.thumbnail-container:hover .arrow {
+.thumbnail-container:hover h5{
   opacity: 1;
   transform: translateY(0px);
+}
+.thumbnail-container:hover .arrow{
+  transform: translate(2px,2px);
+  scale: 1;
 }
 .thumbnail-container:hover img{
   opacity: .6;
