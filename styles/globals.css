@@ -210,7 +210,7 @@ box-shadow:
   font-size: 50px;
   opacity: 1;
   width: 40px;
-  scale: .8;
+  scale: .5;
   transition: opacity ease .4s .2s, transform ease .3s, scale ease .2s;
 }
 .thumbnail-container img {
@@ -225,7 +225,7 @@ box-shadow:
 .thumbnail-container h5 {
   position: absolute;
   color: white;
-  bottom: 1em;
+  bottom: 8px;
   opacity: 0;
   transform: translateY(5px);
   transition: opacity ease .4s, transform ease-in-out .2s;
@@ -235,8 +235,8 @@ box-shadow:
   transform: translateY(0px);
 }
 .thumbnail-container:hover .arrow{
-  transform: translate(2px,2px);
-  scale: 1;
+  /* transform: translate(2px,2px); */
+  scale: .6;
 }
 .thumbnail-container:hover img{
   opacity: .6;
