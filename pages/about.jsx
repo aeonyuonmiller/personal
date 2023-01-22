@@ -7,7 +7,7 @@ import Head from 'next/head'
 import Nav from "./components/Nav"
 import Layout from "./components/Layout"
 import Anim from "./components/Anim"
-
+import Scroll1 from "./components/Scroll1"
 
 // cms
 // import { PrismicRichText } from '@prismicio/react'
@@ -40,7 +40,7 @@ const about = ({ page }) => {
 
         <div className='content'>
           {/* <h1><PrismicRichText field={page.data.title} /></h1> */}
-          <h1><Anim>About</Anim></h1>
+          <Scroll1><Anim>About</Anim></Scroll1>
           
           <m.div initial={{ opacity: 0, y: 20 }}
             animate={{ scale: 1, opacity: 1, y: 0, transition:{ ease: [.64, .62, .23, .99], duration: .8, delay: .4 } }}

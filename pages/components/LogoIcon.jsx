@@ -4,12 +4,12 @@ function Icon() {
   
 const group = {
   hide: { opacity: 0 },
-  show: { opacity: 1, transition:{ staggerChildren: 0.3, }}
+  show: { opacity: 1, transition:{ staggerChildren: 0.1, }}
 }
 
 const item = {
   hide: { scale: 0.5, opacity: 0 },
-  show: { scale: 1, opacity: 1, transition:{ ease: [.64, .62, .23, .99], duration: .8 }}
+  show: { scale: 1, opacity: 1, transition:{ ease: [.3, .62, .23, .99], duration: .8 }}
 }
   return (
     <m.svg
