@@ -17,6 +17,7 @@ html{ scroll-behavior: initial; }
   --primary: #6D709A;
   --secondary: #a4a4a4;
   --tertiary: #8f8f8f;
+  --accent: #ff8c00;
   --gradient-linear: linear-gradient(90deg, #b2ff42 20%, #0d8773 100%);
 }
 
