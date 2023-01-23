@@ -58,9 +58,20 @@ body {
   justify-content: center;
 }
 
+.scrollbar{
+  position: fixed;
+  display: inline-block;
+  right: 2em;
+  top: 2em;
+  width: 5px;
+  height: 1px;
+  transform-origin: top;
+  background: rgba(0, 0, 0, 0.15);
+}
+
 .copyright{
   position: fixed;
-  bottom: 80px;
+  bottom: 70px;
   color: grey;
   font-size: 8px;
   left: 80px;

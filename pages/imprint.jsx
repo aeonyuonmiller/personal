@@ -1,15 +1,17 @@
 import React from 'react'
 import { motion as m } from "framer-motion"
 import Head from 'next/head'
+
+// components
 import Nav from "./components/Nav"
 import Anim from "./components/Anim"
 import Scroll1 from "./components/Scroll1"
+import Scrollbars from './components/Scrollbars'
 
 const imprint = () => {
   
   return (
-    <>
-      
+    <>  
       <script async defer src="https://static.cdn.prismic.io/prismic.js?new=true&repo=person"></script>
 
       <Head>
@@ -38,6 +40,8 @@ const imprint = () => {
       </div>
 
       <Nav url="/" title="/ Imprint" gototitle="-> Back" />
+
+      <Scrollbars />
     </>
   )
 }
