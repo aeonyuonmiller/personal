@@ -5,8 +5,6 @@ import Nav from "./components/Nav"
 import Anim from "./components/Anim"
 import Scroll1 from "./components/Scroll1"
 
-
-
 const imprint = () => {
   
   return (

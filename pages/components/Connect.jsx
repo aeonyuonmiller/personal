@@ -1,22 +1,33 @@
-import React from 'react'
 import { motion as m } from "framer-motion"
-
+import Magnetic from "./Magnetic"
 
 const Connect = () => {
+  const group = {
+    hide: { opacity: 0, transition:{ staggerChildren: 0.3, } },
+    show: { opacity: 1, transition:{ staggerChildren: 0.3, }}
+  }
+
+  const item = {
+    hide: { y: 50, opacity: 0 },
+    show: { y: 0, opacity: 1, transition:{ ease: [.64, .62, .23, .99], duration: .8 }}
+  }
+  
   return (
+    <Magnetic>
     <m.div
       drag
       dragConstraints={{ top: 0, bottom: 0, left: 0, right: 0 }}
       whileHover={{ scale: 1.05 }}
       className='connect'
     >
-      <div className='dots'>
-        <m.div whileHover={{ scale:1.5 }} className='dot' />
-        <m.div whileHover={{ scale:1.5 }} className='dot' />
-        <m.div whileHover={{ scale:1.5 }} className='dot' />
-      </div>
+        <m.div variants={group} initial="hide" animate="show" className='dots'>
+        <m.div className='dot' />
+        <m.div className='dot' />
+        <m.div className='dot' />
+      </m.div>
       <span className='description'>Hello</span>
-    </m.div>
+      </m.div>
+    </Magnetic>
   )
 }
 
