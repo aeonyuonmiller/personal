@@ -14,7 +14,8 @@ const item = {
   return (
       <m.svg
         variants={group}
-        viewport={{ amount: 0.2, margin: "150px", once: false }}
+        // viewport={{ amount: 0.4, margin: "150px", once: false }}
+        viewport={{ amount: 0.4, once: false }}
         initial="hide"
         whileInView="show"
         xmlns="http://www.w3.org/2000/svg"
@@ -30,7 +31,7 @@ const item = {
         rx="40"
         transform="scale(-1 1) rotate(-45 139.3 472.868)"
           ></rect></m.g>
-          <m.g variants={item} viewport={{ amount: 0.8, once: false }}>
+          <m.g variants={item}>
       <rect
         width="241"
         height="80"
