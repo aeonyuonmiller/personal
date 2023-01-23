@@ -64,7 +64,7 @@ body {
 .copyright a:hover{ color: #fff; }
 
 h1 {
-  /* viewport 320 to 1600 = font-size 32px to 80px */
+  /* viewport 320 to 1600 = font-size 32px to 60px */
   font-size: calc(32px + (60 - 32) * ((100vw - 320px) / (1600 - 320)));
   letter-spacing: -0.05em;
   color: var(--secondary);
@@ -80,8 +80,8 @@ h5{
 p {
   width: 100%;
   max-width: 60ch;
-  /* viewport 320 to 1600 = font-size 32px to 80px */
-  font-size: calc(16px + (26 - 16) * ((100vw - 320px) / (1600 - 320)));
+  /* viewport 320 to 1600 = font-size 16px to 28px */
+  font-size: calc(16px + (28 - 16) * ((100vw - 320px) / (1600 - 320)));
   letter-spacing: .3%;
   line-height: 1.6em;
   margin-bottom: 1.4em;
