@@ -436,10 +436,6 @@ a {
 } */
 
 @media screen and (max-width:1060px) {
-  h1 {
-    font-size: clamp(2rem, 4vw + 1rem, 2rem);
-  }
-
   .logo {
     top: 50px;
     left: calc(50% - 100px);
