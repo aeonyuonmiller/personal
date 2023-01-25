@@ -9,6 +9,7 @@ import Layout from "./components/Layout"
 import Anim from "./components/Anim"
 import Scroll1 from "./components/Scroll1"
 import Fade from "./components/Fade"
+import Signature from "./components/Signature"
 
 // cms
 // import { PrismicRichText } from '@prismicio/react'
@@ -54,6 +55,7 @@ const about = ({ page }) => {
             <Fade>I have a passion for creating smooth interactive products and building consistent design-systems that provide a seamless user experience. I pride myself on my ability to translate complex design concepts into intuitive and visually appealing interfaces.</Fade>
             <Fade>In my past work, I have successfully collaborated with cross-functional teams to deliver high-quality products. Through my experience in agencies i am confident in my ability to adapt to new challenges and thrive in a fast-paced environment.</Fade>
             <Fade>I am excited to bring my skills and experience to new projects and help bring visions to life.</Fade>
+            <Signature />
           </m.div>
         </div>
       </Layout>
