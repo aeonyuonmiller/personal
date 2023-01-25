@@ -389,7 +389,7 @@ nav:hover a span:nth-child(2) {
 
 .connect {
   position: fixed;
-  top: calc(90% - 20px);
+  top: calc(90% - 5px);
   right: 50px;
   background: white;
   width: 50px;
