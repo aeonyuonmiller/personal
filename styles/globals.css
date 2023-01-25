@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300..900&display=swap');
 
 html{ scroll-behavior: smooth; }
 
@@ -95,8 +95,9 @@ body {
 .copyright{
   position: fixed;
   bottom: 70px;
-  color: grey;
+  color: var(--tertiary);
   font-size: 8px;
+  font-weight: 600;
   left: 80px;
 }
 .copyright span{
@@ -109,7 +110,7 @@ body {
   text-decoration: none;
   margin-left: 2em;
   text-transform: uppercase;
-  font-weight: bold;
+  font-weight: 600;
   letter-spacing: 1px;
   transition: all ease .2s;
 }
@@ -117,7 +118,8 @@ body {
 
 h1 {
   /* viewport 320 to 1600 = font-size 32px to 60px */
-  font-size: calc(32px + (60 - 32) * ((100vw - 320px) / (1600 - 320)));
+  font-size: calc(32px + (90 - 32) * ((100vw - 320px) / (1600 - 320)));
+  font-weight: 400;
   letter-spacing: -0.05em;
   color: var(--secondary);
   margin-bottom: 50px;
@@ -126,6 +128,7 @@ h1 {
 h5{
   text-transform: uppercase;
   letter-spacing: 1px;
+  font-weight: 600;
   margin: 2em 0;
   color: var(--tertiary);
   font-size: 8px;
@@ -140,14 +143,14 @@ p {
   margin-bottom: 1.4em;
 }
 p.intro{
-  font-weight: 400;
+  font-weight: 200;
   color: var(--tertiary);
   width: 100%;
   max-width: 60ch;
   /* viewport 320 to 1600 = font-size 32px to 80px */
-  font-size: calc(18px + (30 - 18) * ((100vw - 320px) / (1600 - 320)));
+  font-size: calc(18px + (36 - 18) * ((100vw - 320px) / (1600 - 320)));
   letter-spacing: 0;
-  line-height: 1.6em;
+  line-height: 1.4em;
   margin-bottom: 1.4em;
 }
 strong{ font-weight: 400;}
@@ -326,7 +329,7 @@ nav a {
 nav a span:nth-child(1) {
   display: inline-block;
   opacity: 1;
-  font-weight: light;
+  font-weight: 600;
   color: var(--tertiary);
   transform: translateX(0);
   transition: all cubic-bezier(.64, .62, .23, .99) 400ms;
@@ -342,7 +345,7 @@ nav:hover a span:nth-child(1) {
 nav a span:nth-child(2) {
   position: absolute;
   width: max-content;
-  font-weight: bold;
+  font-weight: 600;
   color: #fff;
   opacity: 0;
   left: 0;
@@ -435,7 +438,7 @@ nav:hover a span:nth-child(2) {
 
 .connect .description {
   font-size: 8px;
-  font-weight: bold;
+  font-weight: 600;
   transform: translateY(35px);
   opacity: 0;
   transition: all cubic-bezier(.64, .62, .23, .99) .4s;
