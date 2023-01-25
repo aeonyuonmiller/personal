@@ -51,12 +51,13 @@ body {
   overflow: hidden;
 }
 .hero img{
+  position: absolute;
   width: 100%;
   height: auto;
   opacity: .4;
 }
 .hero h1{
-  position:absolute;
+  position: absolute;
   bottom: 30px;
   left: 400px;
   color: white;
@@ -545,6 +546,7 @@ a {
     border-radius: 8px;
     margin: 15vh 5%;
   }
+  .hero img { margin-top: 15%; }
   .content p:last-child,
   .content h5:last-child {
     margin-bottom: 2vh;

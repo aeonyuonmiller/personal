@@ -20,8 +20,8 @@ const Anim = ({ children }) => {
               style={{ display: "inline-block", whiteSpace: "no-wrap" }}
               key={index}
               initial={{ y: 50, opacity: 0 }}
-              animate={{ y: 0, opacity: 1, transition:{ ease:[.76,-0.01,.25,.98], duration: .6, delay: index * 0.1 }}}
-              exit={{ y: -20, opacity: 0, transition:{ ease:[.76,-0.01,.25,.98], duration: .3, delay: index * 0.1, }}}
+              animate={{ y: 0, opacity: 1, transition:{ ease:[.76,-0.01,.25,.98], duration: .6, delay: index * 0.05 }}}
+              exit={{ y: -20, opacity: 0, transition:{ ease:[.76,-0.01,.25,.98], duration: .3, delay: index * 0.05, }}}
             >
               {letter}
             </motion.span>
