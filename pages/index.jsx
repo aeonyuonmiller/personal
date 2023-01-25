@@ -42,7 +42,7 @@ export default function Home() {
       <Nav url="about" title="/ Work" gototitle="-> About" />
 
       <m.div className='scrollcontainer'
-        layoutScroll style={{ overflow: "scroll" }}
+        // layoutScroll style={{ overflow: "scroll" }} 
         initial={{ y: 50, opacity: 0 }}
         animate={{ y: 0, opacity: 1, transition:{ ease: [.64, .62, .23, .99], duration: .8 }}}
         // exit={{ y: 50, opacity: 0, transition: { ease: [.63, 0, .17, .99], duration: .8, delay: .4 }}}

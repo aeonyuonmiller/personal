@@ -3,7 +3,6 @@ import type { AppProps } from 'next/app'
 import { Analytics } from '@vercel/analytics/react';
 import '../styles/globals.css'
 import { AnimatePresence, MotionConfig } from "framer-motion";
-import useSound from 'use-sound';
 
 // components
 import Logo from "./components/Logo"
@@ -15,7 +14,7 @@ export default function App({ Component, pageProps, router }: AppProps) {
 
   return <>
       <MotionConfig reducedMotion="user">
-      <AnimatePresence mode="wait">
+      <AnimatePresence mode="wait" onExitComplete={() => window.scrollTo(0, 0)}>
         <Component {...pageProps} key={router.asPath} />
         <Analytics />
       </AnimatePresence>
