@@ -1,4 +1,5 @@
 import { motion as m, useScroll, useTransform } from "framer-motion"
+import dynamic from "next/dynamic";
 
 const Scrollbars = () => {
     const { scrollYProgress } = useScroll();
@@ -15,4 +16,5 @@ const Scrollbars = () => {
   )
 }
 
-export default Scrollbars
+// export default Scrollbars
+export default dynamic (() => Promise.resolve(Scrollbars), {ssr: false})
