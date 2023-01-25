@@ -502,6 +502,13 @@ a {
     left: calc(50% - 30px);
   }
 
+  .copyright {
+    bottom: 40px;
+    left: 40px;
+    writing-mode: vertical-rl;
+  }
+  .copyright a{ margin-top: 3em;}
+
   .content, .content2 {
     width: 90%;
     top: 45vh;
