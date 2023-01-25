@@ -1,4 +1,4 @@
-import Link from 'next/link'
+import Link from "next/link"
 import { motion as m, AnimatePresence } from "framer-motion"
 import ArrowIcon from "./ArrowIcon"
 
