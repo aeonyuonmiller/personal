@@ -18,7 +18,7 @@ const project = () => {
             
         <AnimatePresence>    
           <m.div className="hero" layoutId="./aloner-script.png" style={{ background: "green" }}>
-            <Anim>KlassikRadio</Anim>
+            <Anim>Klassik_Radio</Anim>
             <Parallax>
                 <m.img initial={{ scale: 1.05 }} animate={{ scale: 1, transition: { easing: "ease", duration: 3 } }} src="./aloner-script.png" />
             </Parallax>
