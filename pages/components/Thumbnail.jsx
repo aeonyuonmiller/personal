@@ -9,7 +9,7 @@ const Thumbnail = ({ title, description, url, src }) => {
     }
     
   return (
-    <Link href={url}>
+    <Link href={url ?? ''}>
       <AnimatePresence>
         <m.div layoutId={src} className="thumbnail-container">
         <m.img variants={zoom} initial="hide" whileInView="show" exit="hide" viewport={{ amount: 0.5, once: true }} src={src} />
