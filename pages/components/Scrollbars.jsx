@@ -1,8 +1,8 @@
-import { motion as m, useScroll, useTransform, circOut } from "framer-motion"
+import { motion as m, useScroll, useTransform } from "framer-motion"
 
 const Scrollbars = () => {
     const { scrollYProgress } = useScroll();
-    const scale = useTransform(scrollYProgress, [0, 1], [0, 100], { ease: circOut });
+    const scale = useTransform(scrollYProgress, [0, 1], [0, 100], { ease: [.3, .62, .23, .99] });
 
     const variant = {
         hide: { opacity: 0 },
