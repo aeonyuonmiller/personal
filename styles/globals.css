@@ -40,6 +40,7 @@ body {
   /* height: -webkit-fill-available; */
   overflow: scroll;
   overscroll-behavior-y: none;
+  overscroll-behavior-x: none;
 }
 
 .hero{
@@ -52,6 +53,7 @@ body {
 .hero img{
   width: 100%;
   height: auto;
+  opacity: .4;
 }
 .hero h1{
   position:absolute;
@@ -336,7 +338,8 @@ nav:hover a span:nth-child(1) {
 nav a span:nth-child(2) {
   position: absolute;
   width: max-content;
-  /* font-weight: bold; */
+  font-weight: bold;
+  color: #fff;
   opacity: 0;
   left: 0;
   transform: translateX(-30px);
