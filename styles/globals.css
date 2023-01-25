@@ -42,6 +42,24 @@ body {
   overscroll-behavior-y: none;
 }
 
+.hero{
+  position: relative;
+  top:0;
+  width: 100%;
+  height: 60vh;
+  overflow: hidden;
+}
+.hero img{
+  width: 100%;
+  height: 60vh;
+}
+.hero h1{
+  position:absolute;
+  bottom: 30px;
+  left: 400px;
+  color: white;
+}
+
 .menu{
   position: fixed;
   padding: 3em;
@@ -191,6 +209,15 @@ a::after {
 .content::-webkit-scrollbar {
   display: none;
 }
+.content2 {
+  position: absolute;
+  top: 70vh;
+  padding-bottom: 30vh;
+  left: 400px;
+  width: 40%;
+  grid-column: 2 / span 2;
+  overflow: scroll;
+}
 
 .scrollcontainer {
   position: absolute;
@@ -217,7 +244,7 @@ a::after {
   gap: 1em;
 
   color: white;
-  background: rgba(0, 0, 0, 1);
+  background: rgb(157, 157, 157);
   width: 600px;
   height: 340px;
   border-radius: 8px;
@@ -244,6 +271,7 @@ box-shadow:
   scale: .5;
   transition: opacity ease .4s .2s, transform ease .3s, scale ease .2s;
 }
+.thumbnail-container:hover { background: rgb(60, 60, 60); }
 .thumbnail-container img {
   height: 100%;
   width: 100%;

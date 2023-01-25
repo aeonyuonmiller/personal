@@ -2,7 +2,10 @@ import { motion } from 'framer-motion';
 import dynamic from "next/dynamic";
 
 const Anim = ({ children }) => {
-  const words = children.split(/\s+/)
+  // const words = children.split(/(\s+)/)
+    const words = children.split(/\b(\s)/)
+
+   
   return (
     <div>
       {words.map((word, index) => (

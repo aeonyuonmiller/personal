@@ -44,10 +44,11 @@ export default function Home() {
       <m.div className='scrollcontainer'
         initial={{ y: 50, opacity: 0 }}
         animate={{ y: 0, opacity: 1, transition:{ ease: [.64, .62, .23, .99], duration: .8 } }}
-        exit={{ y: 50, opacity: 0, transition:{ ease: [.63, 0, .17, .99], duration: .8, delay: .4 }}}>
-        <Thumbnail motive="./img1.png" title="Klassik Radio" description="Online radio for classical music" />
-        <Thumbnail motive="./img2.png" title="RuhrNachrichten" description="News for the ruhr area" />
-        <Thumbnail motive="./img3.png" title="Parkjackr" description="Find your parkingspot" />
+        // exit={{ y: 50, opacity: 0, transition: { ease: [.63, 0, .17, .99], duration: .8, delay: .4 } }}
+      >
+        <Thumbnail url="/project" src="./aloner-script.png" title="Klassik Radio" description="Online radio for classical music" />
+        <Thumbnail url="/" src="./img2.png" title="RuhrNachrichten" description="News for the ruhr area" />
+        <Thumbnail url="/imprint" src="./img3.png" title="Parkjackr" description="Find your parkingspot" />
         {/* <SliceZone slices={page.data.slices} components={components} /> */}
       </m.div>
     </>

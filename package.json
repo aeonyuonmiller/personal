@@ -26,7 +26,8 @@
     "next": "13.1.1",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "typescript": "4.9.4"
+    "typescript": "4.9.4",
+    "use-sound": "^4.0.1"
   },
   "devDependencies": {
     "@prismicio/types": "^0.2.7",

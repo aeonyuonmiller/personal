@@ -1,14 +1,19 @@
-import { motion as m } from 'framer-motion'
+import { motion as m, AnimatePresence } from 'framer-motion'
 import Link from 'next/link';
 
-const Menu = () => {
+const Menu = ({ isModal, setModal }) => {
   return (
-    <m.div className='menu'>
-        <Link href="/">Home</Link>
+    <AnimatePresence>
+      {isModal && (
+        <m.div className='menu'>
+          <Link href="/">Home</Link>
           <Link href="/about">About</Link>
-          <Link href="mailto:aym1@mail.com">Contact</Link>  
-        <Link href="/imprint">Imprint</Link>  
-    </m.div>
+          <Link href="mailto:aym1@mail.com">Contact</Link>
+          <Link href="/imprint">Imprint</Link>
+          <a onClick={() => setModal(false)}>Close</a>
+        </m.div>
+      )}
+    </AnimatePresence>
   )
 }
 
