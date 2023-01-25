@@ -528,6 +528,10 @@ a {
     border-radius: 8px;
     margin: 15vh 15%;
   }
+  .thumbnail-container h5{
+    opacity: 1;
+    transform: translateY(0px);
+  }
 
   p {
     width: 100%;

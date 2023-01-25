@@ -4,8 +4,9 @@ import ArrowIcon from "./ArrowIcon"
 
 const Thumbnail = ({ title, description, url, src }) => {
     const zoom = {
-        hide: { scale: 1.1, transition:{ type:"ease", duration: 8}},
-        show: { scale: 1, transition:{ ease:[.79,.41,.07,.99], duration: 1 }}
+        hide: { scale: 1.1, transition:{ ease:[.79,.41,.07,.99], duration: .5 }},
+        show: { scale: 1, transition:{ ease:[.79,.41,.07,.99], duration: 1}}
+        
     }
     
   return (
