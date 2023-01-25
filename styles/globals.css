@@ -203,15 +203,12 @@ a::after {
 
 .content {
   position: absolute;
-  top: 46vh;
+  top: 34vh;
+  padding-bottom: 47vh;
   left: 400px;
   width: 40%;
   grid-column: 2 / span 2;
   overflow: scroll;
-}
-.content p:last-child, 
-.content h5:last-child{
-  margin-bottom: 48.3vh;
 }
 .content::-webkit-scrollbar {
   display: none;
