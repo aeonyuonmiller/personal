@@ -27,7 +27,7 @@ const item = {
       <rect
         width="280.416"
         height="80"
-        fill="var(--accent)"
+        fill="var(--bg)"
         rx="40"
         transform="scale(-1 1) rotate(-45 139.3 472.868)"
           ></rect></m.g>
@@ -35,7 +35,7 @@ const item = {
       <rect
         width="241"
         height="80"
-        fill="var(--accent)"
+        fill="var(--bg)"
         rx="40"
         transform="scale(1 -1) rotate(90 277 -.432)"
           ></rect></m.g>
@@ -43,7 +43,7 @@ const item = {
       <rect
         width="241"
         height="80"
-        fill="var(--accent)"
+        fill="var(--bg)"
         rx="40"
         transform="matrix(1 0 0 -1 35.568 277.432)"
       ></rect></m.g>
