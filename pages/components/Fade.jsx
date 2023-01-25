@@ -1,4 +1,5 @@
 import { motion as m } from "framer-motion"
+import dynamic from "next/dynamic";
 
 const Fade = ({children}) => {
     const fade = {
@@ -7,8 +8,9 @@ const Fade = ({children}) => {
     }
 
   return (
-    <m.span variants={fade} initial="hide" whileInView="show" exit="hide">{children}</m.span>
+    <m.p variants={fade} initial="hide" whileInView="show" exit="hide" viewport={{ amount: 0.4, once: true }}>{children}</m.p>
   )
 }
 
-export default Fade
+// export default Fade
+export default dynamic (() => Promise.resolve(Fade), {ssr: false})

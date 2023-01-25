@@ -41,6 +41,7 @@ body {
   overflow: scroll;
   overscroll-behavior-y: none;
   overscroll-behavior-x: none;
+  -webkit-overflow-scrolling: touch;
 }
 
 .hero{
