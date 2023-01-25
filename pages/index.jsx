@@ -44,8 +44,8 @@ export default function Home() {
       <m.div className='scrollcontainer'
         layoutScroll style={{ overflow: "scroll" }}
         initial={{ y: 50, opacity: 0 }}
-        animate={{ y: 0, opacity: 1, transition:{ ease: [.64, .62, .23, .99], duration: .8 } }}
-        // exit={{ y: 50, opacity: 0, transition: { ease: [.63, 0, .17, .99], duration: .8, delay: .4 } }}
+        animate={{ y: 0, opacity: 1, transition:{ ease: [.64, .62, .23, .99], duration: .8 }}}
+        // exit={{ y: 50, opacity: 0, transition: { ease: [.63, 0, .17, .99], duration: .8, delay: .4 }}}
       >
         <Thumbnail url="project" src="./aloner-script.png" title="Klassik Radio" description="Online radio for classical music" />
         <Thumbnail url="/" src="./img2.png" title="RuhrNachrichten" description="News for the ruhr area" />
