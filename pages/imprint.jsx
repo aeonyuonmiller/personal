@@ -5,7 +5,7 @@ import Head from 'next/head'
 import Nav from "./components/Nav"
 import Anim from "./components/Anim"
 import Scroll1 from "./components/Scroll1"
-import Scrollbars from './components/Scrollbars'
+// import Scrollbars from './components/Scrollbars'
 
 const imprint = () => {
   
@@ -40,7 +40,7 @@ const imprint = () => {
 
       <Nav url="/" title="/ Imprint" gototitle="-> Back" />
 
-      <Scrollbars />
+      {/* <Scrollbars /> */}
     </>
   )
 }
