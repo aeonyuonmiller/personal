@@ -8,6 +8,7 @@ const BigImage = () => {
             width: 100%;
             height: 300px;
             background: blue;
+            margin-bottom: 4em;
             }
       `}</style>
       </div>
