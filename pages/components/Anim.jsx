@@ -4,7 +4,8 @@ import dynamic from "next/dynamic";
 const Anim = ({ children }) => {
   // const words = children.split("/(\s+)/")
   // const words = children.split(/\b(\s)/)
-  const words = children.split("\\s+")
+  // const words = children.split("\\s+")
+  const words = children.split("/\S/g")
    
   return (
     <div>
