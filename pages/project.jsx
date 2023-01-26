@@ -34,7 +34,6 @@ const project = () => {
             {/* <PrismicRichText field={data.copy} /> */}
             <p className='intro'>Klassik Radio ist eine Streaming-App mit der besten Auswahl an klassischer Musik und weiteren Musikrichtungen.</p>
             <p>Hauptnutzer sind Senioren, die größere Schrift, große Klickflächen und Anpassung an ihre Ohren durch den Equaliser bevorzugen.</p>
-
             <Fade>Hauptnutzer sind Senioren, die größere Schrift, große Klickflächen und Anpassung an ihre Ohren durch den Equaliser bevorzugen.</Fade>
             <Fade>Hauptnutzer sind Senioren, die größere Schrift, große Klickflächen und Anpassung an ihre Ohren durch den Equaliser bevorzugen.</Fade>
             <Fade>Hauptnutzer sind Senioren, die größere Schrift, große Klickflächen und Anpassung an ihre Ohren durch den Equaliser bevorzugen.</Fade>
