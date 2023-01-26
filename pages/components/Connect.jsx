@@ -1,4 +1,3 @@
-import Link from "next/link"
 import { motion as m } from "framer-motion"
 
 const Connect = () => {
@@ -13,7 +12,7 @@ const Connect = () => {
   }
   
   return (
-    <Link href="mailto:aym1@mail.com">
+    <a href="mailto:aym1@mail.com">
     <m.div
       // drag
       // dragConstraints={{ top: 0, bottom: 0, left: 0, right: 0 }}
@@ -27,7 +26,7 @@ const Connect = () => {
       </m.div>
       <span className='description'>Hello</span>
       </m.div>
-    </Link>
+    </a>
   )
 }
 
