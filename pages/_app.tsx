@@ -15,7 +15,7 @@ export default function App({ Component, pageProps, router }: AppProps) {
   return <>
       <MotionConfig reducedMotion="user">
       <AnimatePresence mode="wait" onExitComplete={() => window.scrollTo(0, 0)}>
-        <Component {...pageProps} key={router.asPath} />
+        <Component {...pageProps} key={router.pathname} />
         <Analytics />
       </AnimatePresence>
       <Connect />

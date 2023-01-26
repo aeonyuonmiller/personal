@@ -8,7 +8,7 @@ const Fade = ({children}) => {
     }
 
   return (
-    <m.p variants={fade} initial="hide" whileInView="show" exit="hide" viewport={{ amount: 0.4, once: true }}>
+    <m.p variants={fade} initial="hide" whileInView="show" viewport={{ amount: 0.4, once: true }}>
       {children}
     </m.p>
   )
