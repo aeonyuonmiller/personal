@@ -50,7 +50,7 @@ const about = ({ page }) => {
             animate={{ scale: 1, opacity: 1, y: 0, transition:{ ease: [.64, .62, .23, .99], duration: .8, delay: .4 } }}
             exit={{ opacity: 0, y: 5, transition: { ease: "linear", duration: .4, delay: .3 } }}>
             {/* <PrismicRichText field={data.copy} /> */}
-            <p className='intro'>My name is Andreas Y. Müller or aeonyuonmiller and I am a <strong>UI designer</strong> with over 10 years of experience.</p>
+            <p className='intro'>My name is Andreas Y. Müller or aeonyuonmiller and I am a UI designer with over 10 years of experience.</p>
             <Fade>I work with <strong>Figma</strong> for conception and design and with code – specifically with <strong>React</strong> (Next.js), <strong>Framer-Motion</strong>, <strong>Prismic</strong> and <strong>Snipcart</strong>.</Fade>
             <Fade>I have a passion for creating smooth interactive products and building consistent design-systems that provide a seamless user experience. I pride myself on my ability to translate complex design concepts into intuitive and visually appealing interfaces.</Fade>
             <Fade>In the past, I have successfully collaborated with cross-functional teams to deliver high-quality products. Through my experience in agencies i am confident in my ability to adapt to new challenges and thrive in a fast-paced environment.</Fade>
