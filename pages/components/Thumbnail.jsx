@@ -3,14 +3,14 @@ import { motion as m, AnimatePresence } from "framer-motion"
 import ArrowIcon from "./ArrowIcon"
 
 const Thumbnail = ({ title, description, url, src }) => {
+
     const zoom = {
-        hide: { scale: 1.1, transition:{ ease:[.79,.41,.07,.99], duration: .5 }},
-        show: { scale: 1, transition:{ ease:[.79,.41,.07,.99], duration: 1}}
-        
+      hide: { scale: 1.1, transition:{ ease:[.79,.41,.07,.99], duration: .5 }},
+      show: { scale: 1, transition:{ ease:[.79,.41,.07,.99], duration: 1}}    
     }
-    
+  
   return (
-    <Link href={url ?? ''} prefetch>
+    <Link prefetch href={url ?? ''}>
       <AnimatePresence>
         <m.div layoutId={src} className="thumbnail-container">
           <m.img variants={zoom} initial="hide" whileInView="show" exit="hide" viewport={{ amount: 0.5, once: true }} src={src} />
