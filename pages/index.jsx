@@ -1,23 +1,20 @@
 import Head from 'next/head'
 import Nav from "./components/Nav"
 import { motion as m } from "framer-motion"
-// import { motion as m, useScroll, useTransform } from "framer-motion"
 
-import { PrismicText, PrismicRichText } from '@prismicio/react'
-import { SliceZone } from '@prismicio/react'
+// import { PrismicText, PrismicRichText } from '@prismicio/react'
+// import { SliceZone } from '@prismicio/react'
 // import { components } from "@/slices/index"
-import { createClient } from '../prismicio'
+// import { createClient } from '../prismicio'
 
 // components
 import Thumbnail from "./components/Thumbnail"
 
 export default function Home() {
-  // const { scrollYProgress } = useScroll();
-  // const x = useTransform(scrollYProgress, [0, 1], [0, 600]);
   
   return (
     <>
-      <script async defer src="https://static.cdn.prismic.io/prismic.js?new=true&repo=person"></script>
+      {/* <script async defer src="https://static.cdn.prismic.io/prismic.js?new=true&repo=person"></script> */}
       <Head>
         <title>aym</title>
         <meta name="description" content="website of aeon yuon miller" />
