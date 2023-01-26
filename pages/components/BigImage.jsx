@@ -1,9 +1,7 @@
-import React from 'react'
-
 const BigImage = () => {
   return (
     <div className='big'>
-          <img src="../../public/img1.png" alt="graphics" />
+        <img src="../../public/img1.png" alt="graphics" />
           
         <style jsx>{`
             .big {
