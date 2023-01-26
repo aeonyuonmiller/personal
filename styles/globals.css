@@ -123,10 +123,10 @@ h1 {
   font-weight: 400;
   letter-spacing: -0.05em;
   color: var(--secondary);
-  margin-bottom: 50px;
+  margin-bottom: calc(30px + (50 - 30) * ((100vw - 320px) / (1600 - 320)));
 }
 /* fixing spaces (empty spans) */
-h1 span{  min-width: calc(5px + (16 - 5) * ((100vw - 320px) / (1600 - 320))); }
+h1 span{ min-width: calc(5px + (16 - 5) * ((100vw - 320px) / (1600 - 320))); }
 
 h5{
   text-transform: uppercase;
@@ -377,7 +377,7 @@ nav:hover a span:nth-child(2) {
 }
 
 /* bg-video */
-/* .chrome {
+.chrome {
   width: auto;
   height: 50vh;
   position: fixed;
@@ -386,11 +386,11 @@ nav:hover a span:nth-child(2) {
   z-index: 0;
   mix-blend-mode: darken;
   transform-origin: center center;
-  /* pointer-events: none; 
-}*/ 
+  /* pointer-events: none; */
+}
 
 
-.chrome {
+/* .chrome {
   position: fixed;
   bottom: 0;
   left: 0;
@@ -399,8 +399,8 @@ nav:hover a span:nth-child(2) {
   width: 40vw;
   height: 40vh;
     transform-origin: center center;
-  /* transform-origin: center center; */
-}
+  /* transform-origin: center center; 
+} */
 
 .connect {
   position: fixed;

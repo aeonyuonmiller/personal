@@ -23,7 +23,7 @@ export default function Home() {
       </Head>
 
       
-      <div className='chrome'>
+      {/* <div className='chrome'>
         <Canvas>
           <pointLight position={[10,10,10]} />
           <mesh>
@@ -31,9 +31,9 @@ export default function Home() {
             <meshStandardMaterial color="lightblue" />
           </mesh>
         </Canvas>
-      </div>
+      </div> */}
       
-      {/* <m.video
+      <m.video
         // style={{ x }}
         initial={{ scale: 1.3, opacity: 0 }}
         animate={{ scale: 1, opacity: 1, transition:{ ease: [.64, .62, .23, .99], duration: .8 }}}
@@ -46,7 +46,7 @@ export default function Home() {
         loop>
         <source src="/chromed2-s.mp4" type="video/mp4" />
         Your browser does not support HTML5 video.
-      </m.video> */}
+      </m.video>
 
       <Nav url="about" title="/ Work" gototitle="-> About" />
 
