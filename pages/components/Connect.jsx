@@ -1,5 +1,5 @@
+import Link from "next/link"
 import { motion as m } from "framer-motion"
-import Magnetic from "./Magnetic"
 
 const Connect = () => {
   const group = {
@@ -13,10 +13,10 @@ const Connect = () => {
   }
   
   return (
-    <Magnetic>
+    <Link href="mailto:aym1@mail.com">
     <m.div
-      drag
-      dragConstraints={{ top: 0, bottom: 0, left: 0, right: 0 }}
+      // drag
+      // dragConstraints={{ top: 0, bottom: 0, left: 0, right: 0 }}
       whileHover={{ scale: 1.05 }}
       className='connect'
     >
@@ -27,7 +27,7 @@ const Connect = () => {
       </m.div>
       <span className='description'>Hello</span>
       </m.div>
-    </Magnetic>
+    </Link>
   )
 }
 

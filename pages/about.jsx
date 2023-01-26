@@ -37,7 +37,7 @@ const about = ({ page }) => {
           animate={{ scale: 1.025, opacity: 1, y:0, transition: { ease: [.64, .62, .23, .99], duration: .8 } }}
           exit={{ scale: 1, opacity: 0, transition: { ease: [.63, 0, .17, .99], duration: .8, delay: .2 } }}>
           {/* <Image width="900" height="600" alt="Portrait shot of Aeon Yuon Miller" src="/portrait.png" /> */}
-          <img alt="Portrait shot of Aeon Yuon Miller" src="/portrait.png" />
+          <img loading="lazy" role="presentation" alt="Portrait shot of Aeon Yuon Miller" src="/portrait.png" />
 
         </m.div>
         

@@ -13,7 +13,7 @@ const Thumbnail = ({ title, description, url, src }) => {
     <Link prefetch href={url ?? ''}>
       <AnimatePresence>
         <m.div layoutId={src} className="thumbnail-container">
-          <m.img variants={zoom} initial="hide" whileInView="show" viewport={{ amount: 0.5, once: true }} src={src} />
+          <m.img role="presentation" variants={zoom} initial="hide" whileInView="show" viewport={{ amount: 0.5, once: true }} src={src} />
           <m.h3 initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} exit="hide">{title}</m.h3>
           <h5>{description}</h5>
           <span className="arrow"><ArrowIcon /></span>

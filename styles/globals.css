@@ -4,12 +4,12 @@ html{ scroll-behavior: smooth; }
 
 ::selection {
   color: var(--bg);
-  background: var(--primary);
+  background: var(--accent);
 }
 
 ::-moz-selection {
   color: var(--bg);
-  background: var(--primary);
+  background: var(--accent);
 }
 
 :root {
@@ -19,6 +19,21 @@ html{ scroll-behavior: smooth; }
   --tertiary: #8f8f8f;
   --accent: #ff8c00;
   --gradient-linear: linear-gradient(90deg, #b2ff42 20%, #0d8773 100%);
+
+  --shadow-color: 286deg 36% 55%;
+    --shadow-low:
+      0.3px 0.7px 0.6px hsl(var(--shadow-color) / 1),
+      1px 2.8px 2.2px -5px hsl(var(--shadow-color) / 0.52);
+    --shadow-medium:
+      0.3px 0.7px 0.6px hsl(var(--shadow-color) / 0.97),
+      0.9px 2.3px 1.9px -2.5px hsl(var(--shadow-color) / 0.65),
+      5.1px 13.8px 11px -5px hsl(var(--shadow-color) / 0.32);
+    --shadow-high:
+      0.3px 0.7px 0.6px hsl(var(--shadow-color) / 1),
+      0.7px 1.8px 1.4px -1.2px hsl(var(--shadow-color) / 0.87),
+      3.4px 9.2px 7.4px -2.5px hsl(var(--shadow-color) / 0.65),
+      11px 29.6px 23.7px -3.7px hsl(var(--shadow-color) / 0.43),
+      25.8px 69.2px 55.4px -5px hsl(var(--shadow-color) / 0.22);
 }
 
 * {
@@ -237,6 +252,10 @@ a::after {
   overflow-x: hidden;
   scroll-snap-type: y mandatory;
 
+  /* display: flex;
+  flex-direction: column;
+  gap: 30vh; */
+
   /* scroll snap */
   -ms-overflow-style: none;
   /* IE and Edge */
@@ -252,26 +271,26 @@ a::after {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 1em;
 
   color: white;
-  background: rgb(157, 157, 157);
+  background: rgb(60, 60, 60);
   width: 600px;
   height: 340px;
-  border-radius: 16px;
+  border-radius: 28px;
   overflow: hidden;
-  margin: 20vh 150px 20vh auto;
+  margin-right: 150px;
+  margin-left: auto;
   scroll-snap-align: center;
-  transition: all ease-in-out .3s;
-
-box-shadow:
-    0px 0.7px 2.2px rgba(0, 0, 0, 0.02),
-    0px 1.8px 5.3px rgba(0, 0, 0, 0.028),
-    0px 3.4px 10px rgba(0, 0, 0, 0.035),
-    0px 6px 17.9px rgba(0, 0, 0, 0.042),
-    0px 11.3px 33.4px rgba(0, 0, 0, 0.05),
-    0px 27px 80px rgba(0, 0, 0, 0.07);
+  transition: all ease .15s;
+/*filter: drop-shadow(0 1px 1px rgba(0, 0, 0, 0.1))
+          drop-shadow(0 2px 2px rgba(0, 0, 0, 0.1)) 
+          drop-shadow(0 4px 4px rgba(0, 0, 0, 0.1)) 
+          drop-shadow(0 8px 8px rgba(0, 0, 0, 0.1)) 
+          drop-shadow(0 16px 16px rgba(0, 0, 0, 0.1)) 
+          drop-shadow(0 32px 32px rgba(0, 0, 0, 0.1)); */
 }
+.thumbnail-container:first-child{ margin-top: 50vh; }
+.thumbnail-container:last-child { margin-bottom: 50vh; }
 .thumbnail-container .arrow {
   position: absolute;
   right: 20px;
@@ -282,10 +301,6 @@ box-shadow:
   scale: .5;
   filter: drop-shadow(5px 5px 5px rgba(30, 30, 30, 0.1));
   transition: opacity ease .4s .2s, transform ease .3s, scale ease .2s;
-}
-.thumbnail-container:hover { 
-  background: rgb(60, 60, 60);
-  border-radius: 30px; 
 }
 .thumbnail-container img {
   height: 100%;
@@ -312,7 +327,6 @@ box-shadow:
   transform: translateY(0px);
 }
 .thumbnail-container:hover .arrow{
-  /* transform: translate(2px,2px); */
   scale: .6;
 }
 .thumbnail-container:hover img{

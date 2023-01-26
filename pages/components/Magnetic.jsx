@@ -22,7 +22,7 @@ const Magnetic = ({children}) => {
   }, [isProximity, x, y])
 
   return (
-    <m.div
+    <m.div style={{minWidth: 1, minHeight:1}}
       onMouseEnter={() => setIsProximity(true)}
       onMouseLeave={() => setIsProximity(false)}
       animate={{

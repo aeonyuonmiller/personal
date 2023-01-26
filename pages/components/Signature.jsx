@@ -3,8 +3,8 @@ import { motion as m } from "framer-motion"
 function Signature() {
 
   const line = {
-    hide: { pathLength: 0, strokeDasharray:"0 1", transition:{ duration: 4 }},
-    show: { pathLength: 1, strokeDasharray:"0 1"}
+    hide: { pathLength: 0, transition:{ duration: 4 }},
+    show: { pathLength: 1, }
   }
 
   return (
@@ -13,6 +13,7 @@ function Signature() {
         width="250"
         fill="none"
         viewBox="0 0 771 236"
+        strokeDasharray="0 1"
       >
       <m.path
         stroke="var(--tertiary)"
