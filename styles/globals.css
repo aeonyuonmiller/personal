@@ -231,8 +231,10 @@ a::after {
 .scrollcontainer {
   position: absolute;
   right: 0;
-  overflow: scroll;
   height: 100vh;
+  width: 100%;
+  overflow: scroll;
+  overflow-x: hidden;
   scroll-snap-type: y mandatory;
 
   /* scroll snap */
@@ -258,7 +260,7 @@ a::after {
   height: 340px;
   border-radius: 16px;
   overflow: hidden;
-  margin: 25vh 150px;
+  margin: 20vh 150px 20vh auto;
   scroll-snap-align: center;
   transition: all ease-in-out .3s;
 
@@ -548,6 +550,7 @@ a {
   .hero h1{
     left: 5%;
     width: 90%;
+    bottom: 5px;
   }
 
   .scrollcontainer {
