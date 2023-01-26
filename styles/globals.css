@@ -154,7 +154,7 @@ p.intro{
   line-height: 1.4em;
   margin-bottom: 1.4em;
 }
-strong{ font-weight: 400;}
+strong{ font-weight: 500; opacity: .9;}
 
 img,
 picture,
