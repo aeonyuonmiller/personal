@@ -3,13 +3,13 @@
 html{ scroll-behavior: smooth; }
 
 ::selection {
-  color: var(--bg);
-  background: var(--accent);
+  color: rgba(255, 255, 255, 0.7);
+  background: #000;
 }
 
 ::-moz-selection {
-  color: var(--bg);
-  background: var(--accent);
+  color: rgba(255, 255, 255, 0.7);
+  background: #000;
 }
 
 :root {
