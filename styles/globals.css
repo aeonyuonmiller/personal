@@ -184,7 +184,7 @@ svg {
 }
 
 /* extend click-area of a-tags */
-a::after {
+/* a::after {
   --tap-increment: -32px;
   content: "";
   position: absolute;
@@ -192,7 +192,7 @@ a::after {
   left: var(--tap-increment);
   right: var(--tap-increment);
   bottom: var(--tap-increment);
-}
+} */
 
 .layout {
   display: grid;
@@ -435,7 +435,6 @@ nav:hover a span:nth-child(2) {
   letter-spacing: 2px;
 
   display: flex;
-  gap: 4px;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -454,7 +453,8 @@ nav:hover a span:nth-child(2) {
 .connect::after {
   --tap-increment: -16px;
   content: "";
-  position: absolute;
+  /* position: absolute; */
+  border: 1px solid rgb(0, 255, 94);
   top: var(--tap-increment);
   left: var(--tap-increment);
   right: var(--tap-increment);

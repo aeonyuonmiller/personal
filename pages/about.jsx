@@ -1,6 +1,5 @@
 import React from 'react'
 import { motion as m } from "framer-motion"
-import Image from 'next/image'
 import Head from 'next/head'
 
 // components
