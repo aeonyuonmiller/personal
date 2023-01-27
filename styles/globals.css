@@ -53,7 +53,8 @@ body {
   min-height: 100vh;
   min-height: 100dvh;
   /* height: -webkit-fill-available; */
-  overflow: scroll;
+  overflow-y: scroll;
+  overflow-x: hidden;
   overscroll-behavior-y: none;
   overscroll-behavior-x: none;
   -webkit-overflow-scrolling: touch;
@@ -548,8 +549,8 @@ a {
     writing-mode: vertical-rl;
   }
   .copyright a{ margin-top: 3em;}
-
-  .content, .content2 {
+  .content { top: 15vh; width: 90%; left: 5%; }
+  .content2 {
     width: 90%;
     top: 45vh;
     left: 5%;
@@ -576,7 +577,6 @@ a {
   .thumbnail-container {
     width: 70%;
     height: 45%;
-    border-radius: 8px;
     margin: 15vh 15%;
   }
   .thumbnail-container h5{
@@ -598,7 +598,6 @@ a {
   .thumbnail-container {
     width: 90%;
     height: 300px;
-    border-radius: 8px;
     margin: 15vh 5%;
   }
   .hero img { margin-top: 15%; }
