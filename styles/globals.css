@@ -421,6 +421,7 @@ nav:hover a span:nth-child(2) {
 .connect {
   position: fixed;
   /* top: calc(90% - 5px); */
+  overflow: hidden;
   bottom: 50px;
   right: 50px;
   background: white;

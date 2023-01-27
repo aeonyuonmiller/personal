@@ -1,9 +1,14 @@
 import { motion as m } from "framer-motion"
 
 const Connect = () => {
+  const enter = {
+    hide: { y: 200, rotate: 8 },
+    show: { y: 0, rotate: 0, transition: { type: 'spring', damping: 100, mass: 50, delay: .1 }}
+  }
+
   const group = {
-    hide: { opacity: 0, transition:{ staggerChildren: 0.3, } },
-    show: { opacity: 1, transition:{ staggerChildren: 0.3, }}
+    hide: { transition:{ duration: .6, staggerChildren: 0.2 }},
+    show: { transition:{ duration: .6, staggerChildren: 0.1 }}
   }
 
   const item = {
@@ -13,16 +18,19 @@ const Connect = () => {
   
   return (
     <a href="mailto:aym1@mail.com">
-    <m.div
+      <m.div
+        variants={enter}
+        initial="hide"
+        animate="show"
       // drag
       // dragConstraints={{ top: 0, bottom: 0, left: 0, right: 0 }}
       whileHover={{ scale: 1.05 }}
       className='connect'
     >
-        <m.div variants={group} initial="hide" animate="show" className='dots'>
-        <m.div className='dot' />
-        <m.div className='dot' />
-        <m.div className='dot' />
+      <m.div variants={group} initial="hide" animate="show" className='dots'>
+        <m.div variants={item} className='dot' />
+        <m.div variants={item} className='dot' />
+        <m.div variants={item} className='dot' />
       </m.div>
       <span className='description'>Hello</span>
       </m.div>
