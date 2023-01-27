@@ -60,6 +60,26 @@ body {
   -webkit-overflow-scrolling: touch;
 }
 
+.videoz{ position: relative; }
+.videoz button{
+  position: absolute;
+  bottom: 2em;
+  right: 2em;
+  padding: 1em 1.6em;
+  border-radius: 30px;
+  border: 0;
+  background: black;
+  color: white;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.videoz video{ 
+  pointer-events: none;
+  background: grey;
+  border-radius: 4px;
+  width: 100%; 
+}
+
 .hero{
   position: relative;
   top:0;

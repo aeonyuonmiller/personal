@@ -7,13 +7,17 @@ import Nav from "./components/Nav"
 import Parallax from "./components/Parallax"
 import Fade from "./components/Fade"
 import BigImage from "./components/BigImage"
+import Video from "./components/Video"
+import Mp3Player from "./components/Mp3Player"
+
+
 
 const project = () => {
 
   const heroVariant = {
     hide: { clipPath: 'polygon(0 0, 100% 0, 100% 0, 0 0)' },
-    show: { clipPath: 'polygon(0 0, 100% 0, 100% 100%, 0% 100%)', transition:{ ease:[.79,.41,.07,.99], duration: .8 }},
-    exit: { clipPath: 'polygon(0 0, 100% 0, 100% 0, 0 0)' }
+    show: { clipPath: ['polygon(0 0, 100% 0, 100% 0, 0 0)', 'polygon(0 0, 100% 0, 100% 80%, 0 33%)', 'polygon(0 0, 100% 0, 100% 100%, 0% 100%)'], transition:{ ease:"circOut", duration: .8 }},
+    exit: { clipPath: 'polygon(0 0, 100% 0, 100% 0, 0 0)', transition:{ ease:[.79,.41,.07,.99], duration: .8 } }
   }
 
     return (
@@ -46,7 +50,9 @@ const project = () => {
             <BigImage />
             <h5>Lösung</h5>
             <Fade>Hauptnutzer sind Senioren, die größere Schrift, große Klickflächen und Anpassung an ihre Ohren durch den Equaliser bevorzugen.</Fade>
+            <Video src="../chromed2-s.mp4"/>
             <Fade>Hauptnutzer sind Senioren, die größere Schrift, große Klickflächen und Anpassung an ihre Ohren durch den Equaliser bevorzugen.</Fade>
+            <Mp3Player />
             <Fade>Hauptnutzer sind Senioren, die größere Schrift, große Klickflächen und Anpassung an ihre Ohren durch den Equaliser bevorzugen.</Fade>
             <Fade>Hauptnutzer sind Senioren, die größere Schrift, große Klickflächen und Anpassung an ihre Ohren durch den Equaliser bevorzugen.</Fade>
             <Fade>Hauptnutzer sind Senioren, die größere Schrift, große Klickflächen und Anpassung an ihre Ohren durch den Equaliser bevorzugen.</Fade>

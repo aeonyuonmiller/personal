@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
 import dynamic from "next/dynamic";
 
+// H1 letter animation component
 const Anim = ({ children }) => {
   // const words = children.split("/(\s+)/")
   // const words = children.split(/\b(\s)/)
