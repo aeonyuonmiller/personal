@@ -10,6 +10,12 @@ import BigImage from "./components/BigImage"
 
 const project = () => {
 
+  const heroVariant = {
+    hide: { clipPath: 'polygon(0 0, 100% 0, 100% 0, 0 0)' },
+    show: { clipPath: 'polygon(0 0, 100% 0, 100% 100%, 0% 100%)', transition:{ ease:[.79,.41,.07,.99], duration: .8 }},
+    exit: { clipPath: 'polygon(0 0, 100% 0, 100% 0, 0 0)' }
+  }
+
     return (
     <>
         <Head>
@@ -19,7 +25,7 @@ const project = () => {
         </Head>
             
         <AnimatePresence>    
-          <m.div className="hero" layoutId="./aloner-script.png" style={{ background: "green" }}>
+          <m.div className="hero" variants={heroVariant} initial="hide" animate="show" exit="exit" style={{ background: "green" }}>
             <Anim>Klassik Radio</Anim>
             <Parallax>
                 <m.img initial={{ scale: 1.05 }} animate={{ scale: 1, transition: { easing: "ease", duration: 3 } }} src="./aloner-script.png" />

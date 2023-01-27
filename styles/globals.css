@@ -278,18 +278,20 @@ svg {
   width: 600px;
   height: 340px;
   border-radius: 28px;
+  /* clip-path: inset(0 0 0 0 round 28px); */
   overflow: hidden;
   margin-right: 150px;
   margin-left: auto;
   scroll-snap-align: center;
   transition: all ease .15s;
-/*filter: drop-shadow(0 1px 1px rgba(0, 0, 0, 0.1))
+  /* filter: drop-shadow(0 1px 1px rgba(0, 0, 0, 0.1))
           drop-shadow(0 2px 2px rgba(0, 0, 0, 0.1)) 
           drop-shadow(0 4px 4px rgba(0, 0, 0, 0.1)) 
           drop-shadow(0 8px 8px rgba(0, 0, 0, 0.1)) 
           drop-shadow(0 16px 16px rgba(0, 0, 0, 0.1)) 
-          drop-shadow(0 32px 32px rgba(0, 0, 0, 0.1)); */
+          drop-shadow(0 32px 32px rgba(0, 0, 0, 0.1));  */
 }
+.thumbnail-container::after{ content:""; filter: drop-shadow(0 1px 1px rgba(0, 0, 0, 0.1)) drop-shadow(0 2px 2px rgba(0, 0, 0, 0.1)) drop-shadow(0 4px 4px rgba(0, 0, 0, 0.1)) drop-shadow(0 8px 8px rgba(0, 0, 0, 0.1)) drop-shadow(0 16px 16px rgba(0, 0, 0, 0.1)) drop-shadow(0 32px 32px rgba(0, 0, 0, 0.1));}
 .thumbnail-container:first-child{ margin-top: 50vh; }
 .thumbnail-container:last-child { margin-bottom: 50vh; }
 .thumbnail-container .arrow {
@@ -453,8 +455,7 @@ nav:hover a span:nth-child(2) {
 .connect::after {
   --tap-increment: -16px;
   content: "";
-  /* position: absolute; */
-  border: 1px solid rgb(0, 255, 94);
+  position: absolute;
   top: var(--tap-increment);
   left: var(--tap-increment);
   right: var(--tap-increment);

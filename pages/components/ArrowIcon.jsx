@@ -15,7 +15,7 @@ const item = {
       <m.svg
         variants={group}
         // viewport={{ amount: 0.4, margin: "150px", once: false }}
-        viewport={{ amount: 0.4, once: true }}
+        viewport={{ amount: 0.4, once: false }}
         initial="hide"
         whileInView="show"
         xmlns="http://www.w3.org/2000/svg"
