@@ -22,11 +22,9 @@ const Connect = () => {
         variants={enter}
         initial="hide"
         animate="show"
-      // drag
-      // dragConstraints={{ top: 0, bottom: 0, left: 0, right: 0 }}
-      whileHover={{ scale: 1.05 }}
-      className='connect'
-    >
+        whileHover={{ scale: 1.05 }}
+        className='connect'
+      >
       <m.div variants={group} initial="hide" animate="show" className='dots'>
         <m.div variants={item} className='dot' />
         <m.div variants={item} className='dot' />
