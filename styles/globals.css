@@ -609,7 +609,8 @@ nav:hover a span:nth-child(2) {
 @media screen and (max-width:720px) {
   .thumbnail-container {
     width: 90%;
-    height: 300px;
+    /* height: 300px; */
+    aspect-ratio: 16 / 9;
     margin: 15vh 5%;
   }
   .hero img { margin-top: 15%; }
