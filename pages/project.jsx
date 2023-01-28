@@ -9,13 +9,11 @@ import Fade from "./components/Fade"
 import BigImage from "./components/BigImage"
 import Video from "./components/Video"
 
-
-
 const project = () => {
 
   const heroVariant = {
     hide: { clipPath: 'polygon(0 0, 100% 0, 100% 0, 0 0)' },
-    show: { clipPath: ['polygon(0 0, 100% 0, 100% 0, 0 0)', 'polygon(0 0, 100% 0, 100% 80%, 0 33%)', 'polygon(0 0, 100% 0, 100% 100%, 0% 100%)'], transition:{ ease:"circOut", duration: .8 }},
+    show: { clipPath: 'polygon(0 0, 100% 0, 100% 100%, 0% 100%)', transition:{ ease:"easeOut", duration: .6, delay: .1 }},
     exit: { clipPath: 'polygon(0 0, 100% 0, 100% 0, 0 0)', transition:{ ease:[.79,.41,.07,.99], duration: .8 } }
   }
 
@@ -31,7 +29,7 @@ const project = () => {
           <m.div className="hero" variants={heroVariant} initial="hide" animate="show" exit="exit" style={{ background: "green" }}>
             <Anim>Klassik Radio</Anim>
             <Parallax>
-                <m.img initial={{ scale: 1.05 }} animate={{ scale: 1, transition: { easing: "ease", duration: 3 } }} src="./aloner-script.png" />
+                <m.img initial={{ scale: 1.05 }} animate={{ scale: 1, transition: { easing: "circOut", duration: 3 } }} src="./aloner-script.png" />
             </Parallax>
           </m.div>
         </AnimatePresence>
