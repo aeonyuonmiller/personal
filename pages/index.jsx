@@ -33,7 +33,6 @@ export default function Home() {
       </div> */}
       
       <m.video
-        // style={{ x }}
         initial={{ scale: 1.3, opacity: 0 }}
         animate={{ scale: 1, opacity: 1, transition:{ ease: [.64, .62, .23, .99], duration: .8 }}}
         exit={{ scale: 0.95, opacity: 0, transition:{ ease: [.63, 0, .17, .99], duration: .8, delay: .4 }}}
@@ -43,21 +42,20 @@ export default function Home() {
         preload="auto"
         autoPlay
         loop>
-        <source src="/chromed2-s.mp4" type="video/mp4" />
-        Your browser does not support HTML5 video.
+          <source src="/chromed2-s.mp4" type="video/mp4" />
+          Your browser does not support HTML5 video.
       </m.video>
 
       <Nav url="about" title="/ Work" gototitle="-> About" />
 
       <m.div className='scrollcontainer'
-        // layoutScroll style={{ overflow: "scroll" }} 
         initial={{ y: 50, opacity: 0 }}
         animate={{ y: 0, opacity: 1, transition:{ ease: [.64, .62, .23, .99], duration: .8 }}}
         exit={{ y: 50, opacity: 0, transition: { ease: [.63, 0, .17, .99], duration: .8 }}}
       >
-        <Thumbnail url="project" src="./aloner-script.png" title="Klassik Radio" description="Online radio for classical music" />
-        <Thumbnail url="/" src="./img2.png" title="RuhrNachrichten" description="News for the ruhr area" />
-        <Thumbnail url="imprint" src="./img3.png" title="Parkjackr" description="Find your parkingspot" />
+        <Thumbnail url="/project" src="./aloner-script.png" title="Klassik Radio" description="Online radio for classical music" />
+        <Thumbnail url="/project" src="./img2.png" title="RuhrNachrichten" description="News for the ruhr area" />
+        <Thumbnail url="/imprint" src="./img3.png" title="Parkjackr" description="Find your parkingspot" />
         {/* <SliceZone slices={page.data.slices} components={components} /> */}
       </m.div>
     </>

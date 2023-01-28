@@ -36,9 +36,8 @@ html{ scroll-behavior: smooth; }
       25.8px 69.2px 55.4px -5px hsl(var(--shadow-color) / 0.22);
 }
 
-* {
+*{
   box-sizing: border-box;
-  /* border: 1px solid rgb(0, 255, 94); */
   padding: 0;
   margin: 0;
   z-index: 1;
@@ -64,17 +63,6 @@ a {
   color: rgb(111, 111, 111);
   text-decoration: none;
 }
-/* extend click-area of a-tags */
-/* a::after {
-  content: "";
-  position: absolute;
-  --tap-increment: -16px;
-  top: var(--tap-increment);
-  left: var(--tap-increment);
-  right: var(--tap-increment);
-  bottom: var(--tap-increment);
-  background: rgba(255, 76, 76, 0.601);
-} */
 
 .videoz{ 
   position: relative; 
@@ -144,41 +132,6 @@ a {
   justify-content: center;
 }
 
-.scrollbar{
-  position: fixed;
-  display: inline-block;
-  right: 2em;
-  top: 2em;
-  width: 5px;
-  height: 1px;
-  transform-origin: top;
-  background: rgba(0, 0, 0, 0.15);
-}
-
-.copyright{
-  position: fixed;
-  bottom: 70px;
-  color: var(--tertiary);
-  font-size: 8px;
-  font-weight: 600;
-  left: 80px;
-}
-.copyright span{
-  position: relative;
-  top: 1.4px;
-  font-size: 12px;
-}
-.copyright a{
-  color: var(--bg);
-  text-decoration: none;
-  margin-left: 2em;
-  text-transform: uppercase;
-  font-weight: 600;
-  letter-spacing: 1px;
-  transition: all ease .2s;
-}
-.copyright a:hover{ color: #fff; }
-
 h1 {
   /* viewport 320 to 1600 = font-size 32px to 60px */
   font-size: calc(32px + (90 - 32) * ((100vw - 320px) / (1600 - 320)));
@@ -231,7 +184,7 @@ svg {
 
 .layout {
   display: grid;
-  grid-template-columns: 20% 40% 40%;
+  grid-template-columns: 20% 50% 30%;
   gap: 10px;
   width: 100%;
   height: 100vh;
@@ -266,7 +219,8 @@ svg {
   grid-column: 2 / span 2;
   overflow: scroll;
 }
-.content::-webkit-scrollbar {
+.content::-webkit-scrollbar,
+.content2::-webkit-scrollbar {
   display: none;
 }
 .content2 {
@@ -282,7 +236,7 @@ svg {
 .scrollcontainer {
   position: absolute;
   height: 100vh;
-  width: 100%;
+  width: 100vw;
   overflow-y: scroll;
   overflow-x: hidden;
   scroll-snap-type: y mandatory;
@@ -378,7 +332,16 @@ nav a {
   word-spacing: 10px;
   text-transform: uppercase;
 }
-
+/* extend click-area of a-tags */
+nav a::after {
+  content: "";
+  position: absolute;
+  --tap-increment: -16px;
+  top: var(--tap-increment);
+  left: var(--tap-increment);
+  right: var(--tap-increment);
+  bottom: var(--tap-increment);
+}
 nav a span:nth-child(1) {
   display: inline-block;
   opacity: 1;
@@ -413,7 +376,7 @@ nav:hover a span:nth-child(2) {
 
 .logo {
   position: fixed;
-  top: calc(50% - 4px);
+  top: calc(50% - 6px);
   left: 80px;
   width: 100px;
   height: 30px;
@@ -432,8 +395,6 @@ nav:hover a span:nth-child(2) {
   transform-origin: center center;
   /* pointer-events: none; */
 }
-
-
 /* .chrome {
   position: fixed;
   bottom: 0;
@@ -476,7 +437,6 @@ nav:hover a span:nth-child(2) {
     0px 27px 80px rgba(0, 0, 0, 0.07);
   transition: box-shadow ease-in-out .3s;
 }
-
 .connect::after {
   --tap-increment: -16px;
   content: "";
@@ -486,7 +446,6 @@ nav:hover a span:nth-child(2) {
   right: var(--tap-increment);
   bottom: var(--tap-increment);
 }
-
 .dots {
   flex-direction: row;
   display: flex;
@@ -494,7 +453,6 @@ nav:hover a span:nth-child(2) {
   position: absolute;
   top: 12px;
 }
-
 .connect .dot {
   position: relative;
   width: 5px;
@@ -502,7 +460,6 @@ nav:hover a span:nth-child(2) {
   border-radius: 20px;
   background: rgb(76, 76, 76);
 }
-
 .connect .description {
   font-size: 8px;
   font-weight: 600;
@@ -510,7 +467,6 @@ nav:hover a span:nth-child(2) {
   opacity: 0;
   transition: all cubic-bezier(.64, .62, .23, .99) .4s;
 }
-
 .connect:hover {
   box-shadow: 0px 0.7px 2.2px -41px rgba(0, 0, 0, 0.008),
     0px 1.7px 5.3px -41px rgba(0, 0, 0, 0.012),
@@ -519,10 +475,44 @@ nav:hover a span:nth-child(2) {
     0px 10.4px 33.4px -41px rgba(0, 0, 0, 0.022),
     0px 25px 80px -41px rgba(0, 0, 0, 0.03);
 }
-
 .connect:hover .description {
   opacity: 1;
   transform: translateY(30px);
+}
+
+.copyright {
+  position: fixed;
+  bottom: 70px;
+  color: var(--tertiary);
+  font-size: 8px;
+  font-weight: 600;
+  left: 80px;
+}
+.copyright span {
+  position: relative;
+  top: 1.4px;
+  font-size: 12px;
+}
+.copyright a {
+  color: var(--bg);
+  text-decoration: none;
+  margin-left: 2em;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 1px;
+  transition: all ease .2s;
+}
+.copyright a:hover {
+  color: #fff;
+}
+.copyright a::after {
+  content: "";
+  position: absolute;
+  --tap-increment: -16px;
+  top: var(--tap-increment);
+  left: var(--tap-increment);
+  right: var(--tap-increment);
+  bottom: var(--tap-increment);
 }
 
 /* @media (prefers-color-scheme: dark) {

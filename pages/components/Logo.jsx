@@ -1,5 +1,5 @@
-import { motion as m } from "framer-motion"
 import Link from 'next/link'
+import { motion as m } from "framer-motion"
 import LogoIcon from "./LogoIcon"
 
 const Logo = () => {

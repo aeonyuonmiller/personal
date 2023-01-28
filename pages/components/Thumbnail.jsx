@@ -10,7 +10,7 @@ const Thumbnail = ({ title = "", description = "", url = "", src = "" }) => {
     }
   
   return (
-    <>
+    <div>
       <AnimatePresence mode="wait">
         {/* <Link prefetch href={url ?? ''}> */}
         <Link prefetch href={url}>
@@ -22,7 +22,7 @@ const Thumbnail = ({ title = "", description = "", url = "", src = "" }) => {
           </m.div>
         </Link>
       </AnimatePresence>
-    </>
+    </div>
   )
 }
 
