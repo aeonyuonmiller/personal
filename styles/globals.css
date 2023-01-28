@@ -60,6 +60,22 @@ body {
   -webkit-overflow-scrolling: touch;
 }
 
+a {
+  color: rgb(111, 111, 111);
+  text-decoration: none;
+}
+/* extend click-area of a-tags */
+/* a::after {
+  content: "";
+  position: absolute;
+  --tap-increment: -16px;
+  top: var(--tap-increment);
+  left: var(--tap-increment);
+  right: var(--tap-increment);
+  bottom: var(--tap-increment);
+  background: rgba(255, 76, 76, 0.601);
+} */
+
 .videoz{ position: relative; }
 .videoz button{
   position: absolute;
@@ -203,17 +219,6 @@ svg {
   max-width: 100%;
 }
 
-/* extend click-area of a-tags */
-/* a::after {
-  --tap-increment: -32px;
-  content: "";
-  position: absolute;
-  top: var(--tap-increment);
-  left: var(--tap-increment);
-  right: var(--tap-increment);
-  bottom: var(--tap-increment);
-} */
-
 .layout {
   display: grid;
   grid-template-columns: 20% 40% 40%;
@@ -266,28 +271,22 @@ svg {
 
 .scrollcontainer {
   position: absolute;
-  right: 0;
   height: 100vh;
   width: 100%;
-  overflow: scroll;
+  overflow-y: scroll;
   overflow-x: hidden;
   scroll-snap-type: y mandatory;
 
-  /* display: flex;
-  flex-direction: column;
-  gap: 30vh; */
-
   /* scroll snap */
-  -ms-overflow-style: none;
-  /* IE and Edge */
-  scrollbar-width: none;
-  /* Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
 }
 .scrollcontainer::-webkit-scrollbar {
   display: none;
 }
-.thumbnail-container {
+.thumbnail-container{
   position: relative;
+
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -298,20 +297,16 @@ svg {
   width: 600px;
   height: 340px;
   border-radius: 28px;
-  /* clip-path: inset(0 0 0 0 round 28px); */
   overflow: hidden;
   margin-right: 150px;
   margin-left: auto;
   scroll-snap-align: center;
   transition: all ease .15s;
-  /* filter: drop-shadow(0 1px 1px rgba(0, 0, 0, 0.1))
-          drop-shadow(0 2px 2px rgba(0, 0, 0, 0.1)) 
-          drop-shadow(0 4px 4px rgba(0, 0, 0, 0.1)) 
-          drop-shadow(0 8px 8px rgba(0, 0, 0, 0.1)) 
-          drop-shadow(0 16px 16px rgba(0, 0, 0, 0.1)) 
-          drop-shadow(0 32px 32px rgba(0, 0, 0, 0.1));  */
+  filter: drop-shadow(0 2px 2px rgba(0, 0, 0, 0.05)) 
+          drop-shadow(0 4px 4px rgba(0, 0, 0, 0.05)) 
+          drop-shadow(0 8px 8px rgba(0, 0, 0, 0.07));
 }
-.thumbnail-container::after{ content:""; filter: drop-shadow(0 1px 1px rgba(0, 0, 0, 0.1)) drop-shadow(0 2px 2px rgba(0, 0, 0, 0.1)) drop-shadow(0 4px 4px rgba(0, 0, 0, 0.1)) drop-shadow(0 8px 8px rgba(0, 0, 0, 0.1)) drop-shadow(0 16px 16px rgba(0, 0, 0, 0.1)) drop-shadow(0 32px 32px rgba(0, 0, 0, 0.1));}
+/* .thumbnail-container::after{ content:""; filter: drop-shadow(0 1px 1px rgba(0, 0, 0, 0.1)) drop-shadow(0 2px 2px rgba(0, 0, 0, 0.1)) drop-shadow(0 4px 4px rgba(0, 0, 0, 0.1)) drop-shadow(0 8px 8px rgba(0, 0, 0, 0.1)) drop-shadow(0 16px 16px rgba(0, 0, 0, 0.1)) drop-shadow(0 32px 32px rgba(0, 0, 0, 0.1));} */
 .thumbnail-container:first-child{ margin-top: 50vh; }
 .thumbnail-container:last-child { margin-bottom: 50vh; }
 .thumbnail-container .arrow {
@@ -326,10 +321,10 @@ svg {
   transition: opacity ease .4s .2s, transform ease .3s, scale ease .2s;
 }
 .thumbnail-container img {
+  position: absolute;
   height: 100%;
   width: 100%;
   padding: -2rem;
-  position: absolute;
   object-fit: cover;
   opacity: 1;
   transition: opacity ease .8s;
@@ -518,11 +513,6 @@ nav:hover a span:nth-child(2) {
 .connect:hover .description {
   opacity: 1;
   transform: translateY(30px);
-}
-
-a {
-  color: rgb(111, 111, 111);
-  text-decoration: none;
 }
 
 /* @media (prefers-color-scheme: dark) {
