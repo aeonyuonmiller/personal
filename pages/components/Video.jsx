@@ -1,4 +1,5 @@
 import React, { useState, useRef } from 'react'
+import { motion as m } from "framer-motion"
 
 const VideoPlayer = ({src = "", placeholder = ""}) => {
     const [playing, setPlaying] = useState(false)
@@ -17,13 +18,13 @@ const VideoPlayer = ({src = "", placeholder = ""}) => {
     return (
         <div className="videoz">
             <video autoplay ref={videoRef} onPlay={() => setPlaying(true)} onPause={() => setPlaying(false)}
-            preload="none" poster={placeholder}>
+            preload="metadata" poster={placeholder}>
                 <source src={src} type="video/mp4" />
                 <p>Your browser doesn't support HTML5 video.</p>
             </video>
-            <button onClick={handlePlayPause}>
+            <m.button initial={{scale:0}} whileInView={{scale:1}} whileHover={{scale: 1.05}} whileTap={{scale:.99}} onClick={handlePlayPause}>
                 {playing ? 'Pause' : 'Play'}
-            </button>
+            </m.button>
         </div>
     )
 }

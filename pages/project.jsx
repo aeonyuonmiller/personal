@@ -8,7 +8,6 @@ import Parallax from "./components/Parallax"
 import Fade from "./components/Fade"
 import BigImage from "./components/BigImage"
 import Video from "./components/Video"
-import Mp3Player from "./components/Mp3Player"
 
 
 
@@ -52,7 +51,6 @@ const project = () => {
             <Fade>Hauptnutzer sind Senioren, die größere Schrift, große Klickflächen und Anpassung an ihre Ohren durch den Equaliser bevorzugen.</Fade>
             <Video src="../chromed2-s.mp4"/>
             <Fade>Hauptnutzer sind Senioren, die größere Schrift, große Klickflächen und Anpassung an ihre Ohren durch den Equaliser bevorzugen.</Fade>
-            <Mp3Player />
             <Fade>Hauptnutzer sind Senioren, die größere Schrift, große Klickflächen und Anpassung an ihre Ohren durch den Equaliser bevorzugen.</Fade>
             <Fade>Hauptnutzer sind Senioren, die größere Schrift, große Klickflächen und Anpassung an ihre Ohren durch den Equaliser bevorzugen.</Fade>
             <Fade>Hauptnutzer sind Senioren, die größere Schrift, große Klickflächen und Anpassung an ihre Ohren durch den Equaliser bevorzugen.</Fade>

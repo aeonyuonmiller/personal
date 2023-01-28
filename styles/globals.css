@@ -76,13 +76,21 @@ a {
   background: rgba(255, 76, 76, 0.601);
 } */
 
-.videoz{ position: relative; }
+.videoz{ 
+  position: relative; 
+  display: flex;
+  justify-content: end;
+  align-items: end;
+}
 .videoz button{
   position: absolute;
-  bottom: 2em;
-  right: 2em;
-  padding: 1em 1.6em;
-  border-radius: 30px;
+  /* bottom: 2em;
+  right: 2em; */
+  margin: 4.2em 2em;
+
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
   border: 0;
   background: black;
   color: white;
@@ -91,9 +99,11 @@ a {
 }
 .videoz video{ 
   pointer-events: none;
-  background: grey;
+  background: black;
   border-radius: 4px;
-  width: 100%; 
+  width: 100%;
+  height: 100%;
+  margin-bottom: 2em;
 }
 
 .hero{
@@ -302,9 +312,9 @@ svg {
   margin-left: auto;
   scroll-snap-align: center;
   transition: all ease .15s;
-  filter: drop-shadow(0 2px 2px rgba(0, 0, 0, 0.05)) 
+  /* filter: drop-shadow(0 2px 2px rgba(0, 0, 0, 0.05)) 
           drop-shadow(0 4px 4px rgba(0, 0, 0, 0.05)) 
-          drop-shadow(0 8px 8px rgba(0, 0, 0, 0.07));
+          drop-shadow(0 8px 8px rgba(0, 0, 0, 0.07)); */
 }
 /* .thumbnail-container::after{ content:""; filter: drop-shadow(0 1px 1px rgba(0, 0, 0, 0.1)) drop-shadow(0 2px 2px rgba(0, 0, 0, 0.1)) drop-shadow(0 4px 4px rgba(0, 0, 0, 0.1)) drop-shadow(0 8px 8px rgba(0, 0, 0, 0.1)) drop-shadow(0 16px 16px rgba(0, 0, 0, 0.1)) drop-shadow(0 32px 32px rgba(0, 0, 0, 0.1));} */
 .thumbnail-container:first-child{ margin-top: 50vh; }
