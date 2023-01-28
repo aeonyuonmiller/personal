@@ -587,7 +587,8 @@ nav:hover a span:nth-child(2) {
 
   .thumbnail-container {
     width: 70%;
-    height: 45vh;
+    /* height: 45vh; */
+    aspect-ratio: 16 / 9;
     margin: 15vh 15%;
   }
   .thumbnail-container h5{
