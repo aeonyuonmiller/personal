@@ -20,7 +20,7 @@ html{ scroll-behavior: smooth; }
   --accent: #ff8c00;
   --gradient-linear: linear-gradient(90deg, #b2ff42 20%, #0d8773 100%);
 
-  --shadow-color: 286deg 36% 55%;
+  --shadow-color: rgba(0, 0, 0, 0.116);
     --shadow-low:
       0.3px 0.7px 0.6px hsl(var(--shadow-color) / 1),
       1px 2.8px 2.2px -5px hsl(var(--shadow-color) / 0.52);
@@ -92,6 +92,29 @@ a {
   width: 100%;
   height: 100%;
   margin-bottom: 2em;
+}
+
+.close {
+  user-select: none;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 50px;
+  right: 50px;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 600;
+  color: white;
+  z-index: 5;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  filter: drop-shadow(0 2px 2px rgba(0, 0, 0, 0.1)) drop-shadow(0 4px 4px rgba(0, 0, 0, 0.1)) drop-shadow(0 8px 8px rgba(0, 0, 0, 0.1));
 }
 
 .hero{

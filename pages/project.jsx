@@ -1,4 +1,4 @@
-import { motion as m, AnimatePresence } from "framer-motion"
+import { motion as m } from "framer-motion"
 import Head from 'next/head'
 
 // components
@@ -8,6 +8,7 @@ import Parallax from "./components/Parallax"
 import Fade from "./components/Fade"
 import BigImage from "./components/BigImage"
 import Video from "./components/Video"
+import Close from "./components/Close"
 
 const project = () => {
 
@@ -28,9 +29,11 @@ const project = () => {
           <m.div className="hero" variants={heroVariant} initial="hide" animate="show" exit="exit" style={{ background: "green" }}>
             <Anim>Klassik Radio</Anim>
             <Parallax>
-                <m.img initial={{ scale: 1.08 }} animate={{ scale: 1, transition: { easing: "circOut", duration: 2 }}} src="./aloner-script.png" />
+                <m.img initial={{ scale: 1.08 }} exit={{ y: "40%", transition:{ duration: 1.1 }}} animate={{ scale: 1, transition: { easing: "circOut", duration: 2 }}} src="./aloner-script.png" />
             </Parallax>
-          </m.div>
+        </m.div>
+        
+        <Close />
             
         <div className='content2'>
           {/* <h1><PrismicRichText field={page.data.title} /></h1> */}          
