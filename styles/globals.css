@@ -64,6 +64,17 @@ a {
   text-decoration: none;
 }
 
+.scroll-down{
+  position: fixed;
+  bottom: 100px;
+  right: 25%;
+  color: white;
+}
+.scroll-down svg{
+  transform: rotate(45deg);
+  width: 30px;
+}
+
 .videoz{ 
   position: relative; 
   display: flex;
@@ -449,16 +460,6 @@ nav:hover a span:nth-child(2) {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  will-change: box-shadow;
-
-  box-shadow:
-    0px 0.7px 2.2px rgba(0, 0, 0, 0.02),
-    0px 1.8px 5.3px rgba(0, 0, 0, 0.028),
-    0px 3.4px 10px rgba(0, 0, 0, 0.035),
-    0px 6px 17.9px rgba(0, 0, 0, 0.042),
-    0px 11.3px 33.4px rgba(0, 0, 0, 0.05),
-    0px 27px 80px rgba(0, 0, 0, 0.07);
-  transition: box-shadow ease-in-out .3s;
 }
 .connect::after {
   --tap-increment: -16px;
