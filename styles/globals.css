@@ -624,8 +624,8 @@ nav:hover a span:nth-child(2) {
   }
 
   .portrait {
+    display: none;
     position: relative;
-    background: rgba(255, 255, 255, 0.6);
   }
 }
 
