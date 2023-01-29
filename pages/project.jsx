@@ -15,7 +15,7 @@ const project = () => {
   const heroVariant = {
     hide: { clipPath: 'polygon(0 0, 100% 0, 100% 0, 0 0)' },
     show: { clipPath: 'polygon(0 0, 100% 0, 100% 100%, 0% 100%)', transition:{ ease:"easeOut", duration: .6, delay: .1 }},
-    exit: { y: "-100%", clipPath: 'polygon(0 0, 100% 0, 100% 0, 0 0)', transition:{ ease:"easeInOut", duration: 1.2 } }
+    exit: { y: "-111%", skewY: 4, clipPath: 'polygon(0 0, 100% 0, 100% 0, 0 0)', transition:{ ease:"easeInOut", duration: 1.2 } }
   }
 
     return (
