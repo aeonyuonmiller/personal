@@ -14,7 +14,7 @@ const project = () => {
   const heroVariant = {
     hide: { clipPath: 'polygon(0 0, 100% 0, 100% 0, 0 0)' },
     show: { clipPath: 'polygon(0 0, 100% 0, 100% 100%, 0% 100%)', transition:{ ease:"easeOut", duration: .6, delay: .1 }},
-    exit: { clipPath: 'polygon(0 0, 100% 0, 100% 0, 0 0)', transition:{ ease:[.79,.41,.07,.99], duration: .8 } }
+    exit: { y: "-100%", clipPath: 'polygon(0 0, 100% 0, 100% 0, 0 0)', transition:{ ease:"easeInOut", duration: 1.2 } }
   }
 
     return (
@@ -25,14 +25,12 @@ const project = () => {
         <link rel="icon" href="/favicon.ico" />
         </Head>
             
-        <AnimatePresence>    
           <m.div className="hero" variants={heroVariant} initial="hide" animate="show" exit="exit" style={{ background: "green" }}>
             <Anim>Klassik Radio</Anim>
             <Parallax>
-                <m.img initial={{ scale: 1.05 }} animate={{ scale: 1, transition: { easing: "circOut", duration: 3 } }} src="./aloner-script.png" />
+                <m.img initial={{ scale: 1.08 }} animate={{ scale: 1, transition: { easing: "circOut", duration: 2 }}} src="./aloner-script.png" />
             </Parallax>
           </m.div>
-        </AnimatePresence>
             
         <div className='content2'>
           {/* <h1><PrismicRichText field={page.data.title} /></h1> */}          
