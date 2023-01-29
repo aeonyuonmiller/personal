@@ -236,7 +236,7 @@ svg {
 .content {
   position: absolute;
   top: 34vh;
-  padding-bottom: 47vh;
+  padding-bottom: 30vh;
   left: 400px;
   width: 40%;
   grid-column: 2 / span 2;
