@@ -39,7 +39,6 @@ const about = ({ page }) => {
           <Image priority width="600" height="700" alt="Portrait shot of Aeon Yuon Miller" src="/portrait.png" />
           {/* <img loading="lazy" role="presentation" alt="Portrait shot of Aeon Yuon Miller" src="/portrait.png" /> */}
         </m.div>
-        
 
         <div className='content'>
           {/* <h1><PrismicRichText field={page.data.title} /></h1> */}
