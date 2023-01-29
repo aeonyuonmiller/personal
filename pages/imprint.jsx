@@ -23,7 +23,7 @@ const imprint = () => {
         <m.div initial={{ opacity: 0, y: 20 }}
           animate={{ scale: 1, opacity: 1, y: 0, transition:{ ease: [.64, .62, .23, .99], duration: .8, delay: .4 } }}
           exit={{ opacity: 0, y: 5, transition: { ease: "linear", duration: .4, delay: .3 } }}>
-          <h5>This website is owned and operated by</h5>
+          <h5>This website is owned, operated, designed and developed by</h5>
           <p className='intro'>Andreas Y. Müller<br />
           Stuttgarter Strasse 41<br />
           aym1@mail.com</p>
