@@ -6,6 +6,7 @@ const Copyright = () => {
     <div className="copyright">
       <span>&copy;</span> {new Date().getFullYear()}
       <Link href="/imprint">Imprint</Link>
+      <Link href="/about">About</Link>
     </div>
   )
 }

@@ -20,6 +20,8 @@ html{ scroll-behavior: smooth; }
   --accent: #ff8c00;
   --gradient-linear: linear-gradient(90deg, #b2ff42 20%, #0d8773 100%);
 
+  --tap-increment: -16px;
+
   --shadow-color: rgba(0, 0, 0, 0.116);
     --shadow-low:
       0.3px 0.7px 0.6px hsl(var(--shadow-color) / 1),
@@ -317,7 +319,6 @@ svg {
           drop-shadow(0 4px 4px rgba(0, 0, 0, 0.05)) 
           drop-shadow(0 8px 8px rgba(0, 0, 0, 0.07)); */
 }
-.thumbnail-container:snapped { outline: 1px solid red; }
 /* .thumbnail-container::after{ content:""; filter: drop-shadow(0 1px 1px rgba(0, 0, 0, 0.1)) drop-shadow(0 2px 2px rgba(0, 0, 0, 0.1)) drop-shadow(0 4px 4px rgba(0, 0, 0, 0.1)) drop-shadow(0 8px 8px rgba(0, 0, 0, 0.1)) drop-shadow(0 16px 16px rgba(0, 0, 0, 0.1)) drop-shadow(0 32px 32px rgba(0, 0, 0, 0.1));} */
 .thumbnail-container:first-child{ margin-top: 40vh; }
 .thumbnail-container:last-child { margin-bottom: 40vh; }
@@ -384,7 +385,6 @@ nav a {
 nav a::after {
   content: "";
   position: absolute;
-  --tap-increment: -16px;
   top: var(--tap-increment);
   left: var(--tap-increment);
   right: var(--tap-increment);
@@ -476,7 +476,6 @@ nav:hover a span:nth-child(2) {
   align-items: center;
 }
 .connect::after {
-  --tap-increment: -16px;
   content: "";
   position: absolute;
   top: var(--tap-increment);
@@ -539,19 +538,20 @@ nav:hover a span:nth-child(2) {
   font-weight: 600;
   letter-spacing: 1px;
   transition: all ease .2s;
+  border: 1px sold red;
+  width: fit-content;
 }
 .copyright a:hover {
   color: #fff;
 }
-.copyright a::after {
+/* .copyright a::after {
   content: "";
   position: absolute;
-  --tap-increment: -16px;
   top: var(--tap-increment);
   left: var(--tap-increment);
   right: var(--tap-increment);
   bottom: var(--tap-increment);
-}
+} */
 
 /* @media (prefers-color-scheme: dark) {
   html {
