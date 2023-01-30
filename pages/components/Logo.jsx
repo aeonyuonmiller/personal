@@ -4,7 +4,7 @@ import LogoIcon from "./LogoIcon"
 
 const Logo = () => {
   return (
-    <m.div whileHover={{scale:1.03}} whileTap={{scale:.99}} className='logo'>
+    <m.div whileHover={{scale:1.03}} whileTap={{x:-10}} className='logo'>
       <Link href="/">
         <LogoIcon/>
       </Link>
