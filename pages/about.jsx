@@ -1,5 +1,5 @@
 import React from 'react'
-import { motion as m, useScroll, useTransform } from "framer-motion"
+import { motion as m } from "framer-motion"
 import Head from 'next/head'
 import Image from 'next/image'
 
@@ -19,9 +19,7 @@ import Signature from "./components/Signature"
 
 // view
 const About = ({ page }) => {
-  const { scrollY } = useScroll()
-  const pathLength = useTransform(scrollY, [0, 200], [0, 1])
-  
+
   return (
     <>
       <script async defer src="https://static.cdn.prismic.io/prismic.js?new=true&repo=person"></script>
