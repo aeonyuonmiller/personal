@@ -59,7 +59,7 @@ const project = () => {
           </m.div>
         </div>
             
-        <Nav url="/" title="/ Project" gototitle="-> Work" />
+        <Nav title="Project"/>
     </>
   )
 }
