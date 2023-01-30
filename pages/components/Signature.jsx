@@ -5,7 +5,7 @@ function Signature() {
   // const pathLength = useTransform(scrollY, [0, 200], [0, 1])
   const draw = {
     hidden: { pathLength: 0 },
-    animate: { pathLength: 1, transition:{ duration: 2, type: "ease" }}
+    animate: { pathLength: 1, transition:{ duration: 1.4, type: "ease" }}
   }
 
   return (
@@ -31,7 +31,7 @@ function Signature() {
           strokeLinecap="round"
           strokeWidth="5"
           variants={draw}
-          custom="2"
+          custom={2}
           d="M151.023 126.527c8.48-6.938 24.634-6.919 34.889-7.555 79.14-4.912 159.78 3.972 238.333 12.222 44.947 4.72 89.678 11.033 134.778 14.222 5.355.379 26.219 5.987 24-2.889"
         />
     </motion.svg>
