@@ -50,12 +50,13 @@ export default function Home() {
 
       <Nav url="about" title="/ Work" gototitle="-> About" />
 
+      <ScrollDown />
+
       <m.div className='scrollcontainer'
         initial={{ y: 50, opacity: 0 }}
         animate={{ y: 0, opacity: 1, transition:{ ease: [.64, .62, .23, .99], duration: .8 }}}
         exit={{ y: 50, opacity: 0, transition: { ease: [.63, 0, .17, .99], duration: .8 }}}
       >
-        <ScrollDown />
         <Thumbnail url="/project" src="./aloner-script.png" title="Klassik Radio" description="Online radio for classical music" />
         <Thumbnail url="/project" src="./img2.png" title="RuhrNachrichten" description="News for the ruhr area" />
         <Thumbnail url="/imprint" src="./img3.png" title="Parkjackr" description="Find your parkingspot" />

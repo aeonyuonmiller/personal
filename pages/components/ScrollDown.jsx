@@ -5,9 +5,12 @@ import ArrowIcon from "./ArrowIcon"
 
 const ScrollDown = () => {
   return (
-      <m.div initial={{ y: null }} animate={{ y: [0, 10, 0], transition: { repeat: Infinity, duration: 1 } }} exit={{opacity:0}} className='scroll-down'>
+    <m.div initial={{ opacity:0 }} animate={{opacity:1, transition:{duration: 1, delay:2}}} exit={{opacity:0}}>
+      <m.div initial={{ y: 0 }} whileInView={{ y: [0, 10, 0], transition: { repeat: Infinity, duration: 1 } }} className='scroll-down'>
         <ArrowIcon />
+        Scroll down
       </m.div>
+    </m.div>
   )
 }
 
