@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import Nav from "./components/Nav"
-import { motion as m, useMotionValue } from "framer-motion"
-import { Canvas } from "@react-three/fiber"
+import { motion as m } from "framer-motion"
+// import { Canvas } from "@react-three/fiber"
 
 // import { PrismicText, PrismicRichText } from '@prismicio/react'
 // import { SliceZone } from '@prismicio/react'
@@ -14,7 +14,6 @@ import ScrollDown from "./components/ScrollDown"
 
 
 export default function Home() {
-  const scrollY = useMotionValue(0)
   
   return (
     <>
@@ -54,7 +53,6 @@ export default function Home() {
       <ScrollDown />
 
       <m.div className='scrollcontainer'
-        onScroll={(e) => scrollY.set(e.target.scrollTop)}
         initial={{ y: 50, opacity: 0 }}
         animate={{ y: 0, opacity: 1, transition:{ ease: [.64, .62, .23, .99], duration: .8 }}}
         exit={{ y: 50, opacity: 0, transition: { ease: [.63, 0, .17, .99], duration: .8 }}}
