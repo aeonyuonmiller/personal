@@ -66,12 +66,12 @@ a {
 
 .scroll-down{
   position: fixed;
-  bottom: 50px;
+  bottom: 60px;
   width: 100px;
   right: calc(50% - 50px);
-  color: white;
-  font-size: 7px;
-  font-weight: 300;
+  color: var(--tertiary);
+  font-size: 9px;
+  font-weight: 800;
   text-transform: uppercase;
   letter-spacing: 2px;
   display: flex;
@@ -285,9 +285,8 @@ svg {
   display: flex;
   flex-direction: column;
   gap: 30vh;
-  /* scroll-padding: 50% 0 50% 0; */
 
-  overscroll-behavior-y: auto;
+  overscroll-behavior-y: contain;
   overflow-y: scroll;
   overflow-x: hidden;
   /* scroll snap */
@@ -318,6 +317,7 @@ svg {
           drop-shadow(0 4px 4px rgba(0, 0, 0, 0.05)) 
           drop-shadow(0 8px 8px rgba(0, 0, 0, 0.07)); */
 }
+.thumbnail-container:snapped { outline: 1px solid red; }
 /* .thumbnail-container::after{ content:""; filter: drop-shadow(0 1px 1px rgba(0, 0, 0, 0.1)) drop-shadow(0 2px 2px rgba(0, 0, 0, 0.1)) drop-shadow(0 4px 4px rgba(0, 0, 0, 0.1)) drop-shadow(0 8px 8px rgba(0, 0, 0, 0.1)) drop-shadow(0 16px 16px rgba(0, 0, 0, 0.1)) drop-shadow(0 32px 32px rgba(0, 0, 0, 0.1));} */
 .thumbnail-container:first-child{ margin-top: 40vh; }
 .thumbnail-container:last-child { margin-bottom: 40vh; }
@@ -570,6 +570,7 @@ nav:hover a span:nth-child(2) {
     left: calc(50% - 100px);
   }
 
+  .scroll-down{ bottom: 100px; }
   .layout {
     grid-template-columns: 30% 30% 30%;
     margin: 0 20px;

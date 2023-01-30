@@ -30,6 +30,17 @@ interface AboutDocumentData {
      *
      */
     copy: prismicT.RichTextField;
+    /**
+     * Portrait field in *About*
+     *
+     * - **Field Type**: Image
+     * - **Placeholder**: *None*
+     * - **API ID Path**: about.portrait
+     * - **Tab**: Main
+     * - **Documentation**: https://prismic.io/docs/core-concepts/image
+     *
+     */
+    portrait: prismicT.ImageField<never>;
 }
 /**
  * About document from Prismic

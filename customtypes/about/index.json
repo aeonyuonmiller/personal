@@ -22,6 +22,14 @@
           "allowTargetBlank": true,
           "single": "paragraph,heading5,strong,em,heading4,heading3"
         }
+      },
+      "portrait": {
+        "type": "Image",
+        "config": {
+          "label": "Portrait",
+          "constraint": {},
+          "thumbnails": []
+        }
       }
     }
   }
