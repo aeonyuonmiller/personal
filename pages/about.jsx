@@ -1,5 +1,5 @@
 import React from 'react'
-import { motion as m } from "framer-motion"
+import { motion as m, useScroll, useTransform } from "framer-motion"
 import Head from 'next/head'
 import Image from 'next/image'
 
@@ -18,7 +18,9 @@ import Signature from "./components/Signature"
 // import { components } from '../slices'
 
 // view
-const about = ({ page }) => {
+const About = ({ page }) => {
+  const { scrollY } = useScroll()
+  const pathLength = useTransform(scrollY, [0, 200], [0, 1])
   
   return (
     <>
@@ -56,7 +58,7 @@ const about = ({ page }) => {
             <Fade>I am excited to bring my skills and experience to new projects and help bring visions to life.</Fade>
             <Signature />
           </m.div>
-        </div>
+          </div>
       </Layout>
         
       <Nav url="/" title="/ About" gototitle="-> Work" />
@@ -64,7 +66,7 @@ const about = ({ page }) => {
   )
 }
 
-export default about
+export default About
 
 // // fetch content
 // export async function getStaticProps() {

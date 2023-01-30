@@ -360,7 +360,7 @@ svg {
 .thumbnail-container:hover .arrow{
   scale: .6;
 }
-.thumbnail-container:hover img{
+.thumbnail-container:hover > img{
   opacity: .6;
 }
 
@@ -475,18 +475,11 @@ nav:hover a span:nth-child(2) {
   justify-content: center;
   align-items: center;
 }
-.connect::after {
-  content: "";
-  position: absolute;
-  top: var(--tap-increment);
-  left: var(--tap-increment);
-  right: var(--tap-increment);
-  bottom: var(--tap-increment);
-}
 .dots {
   flex-direction: row;
   display: flex;
   gap: 4px;
+  margin: 0 -3px;
   position: absolute;
   top: 12px;
 }
