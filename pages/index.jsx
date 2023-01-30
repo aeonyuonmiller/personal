@@ -49,7 +49,7 @@ export default function Home() {
           Your browser does not support HTML5 video.
       </m.video>
 
-      <Nav url="about" title="/ Work" gototitle="-> About" />
+      <Nav url="about" title="Work" />
 
       <ScrollDown />
 

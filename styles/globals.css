@@ -367,12 +367,18 @@ svg {
 
 nav {
   position: fixed;
-  top: calc(50% - 1px);
+  top: calc(50% + 1px);
   left: 200px;
 
   display: flex;
   justify-content: center;
   align-items: center;
+
+  font-size: 10px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: .02rem;
+  color: var(--tertiary);
 
   z-index: 10;
 }
@@ -391,21 +397,31 @@ nav a::after {
   right: var(--tap-increment);
   bottom: var(--tap-increment);
 }
-nav a span:nth-child(1) {
+/* nav a span:nth-child(1) {
   display: inline-block;
   opacity: 1;
   font-weight: 600;
   color: var(--tertiary);
   transform: translateX(0);
   transition: all cubic-bezier(.64, .62, .23, .99) 400ms;
+  user-select: none;
+} */
+nav span:nth-child(1) {
+  display: inline-block;
+  opacity: 1;
+
+  transform: translateX(0);
+  margin-left: 1.4em;
+  transition: all cubic-bezier(.64, .62, .23, .99) 400ms;
+  user-select: none;
 }
 
-nav:hover a span:nth-child(1) {
+/* nav:hover a span:nth-child(1) {
   opacity: 0;
   visibility: hidden;
   transform: translateX(20px);
   text-shadow: 0 0 5px rgb(84, 84, 84), 0 0 10px rgb(84, 84, 84), 0 0 15px rgb(84, 84, 84);
-}
+} */
 
 nav a span:nth-child(2) {
   position: absolute;

@@ -59,7 +59,7 @@ const About = ({ page }) => {
           </div>
       </Layout>
         
-      <Nav url="/" title="/ About" gototitle="-> Work" />
+      <Nav title="About" />
       </>
   )
 }

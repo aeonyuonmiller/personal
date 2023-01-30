@@ -38,7 +38,7 @@ const imprint = () => {
         </m.div>
       </div>
 
-      <Nav url="/" title="/ Imprint" gototitle="-> Back" />
+      <Nav url="/" title="Imprint" />
     </>
   )
 }
