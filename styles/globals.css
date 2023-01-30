@@ -20,7 +20,7 @@ html{ scroll-behavior: smooth; }
   --accent: #ff8c00;
   --gradient-linear: linear-gradient(90deg, #b2ff42 20%, #0d8773 100%);
 
-  --tap-increment: -16px;
+  --tap-increment: -8px;
 
   --shadow-color: rgba(0, 0, 0, 0.116);
     --shadow-low:
@@ -388,15 +388,6 @@ nav a {
   word-spacing: 10px;
   text-transform: uppercase;
 }
-/* extend click-area of a-tags */
-nav a::after {
-  content: "";
-  position: absolute;
-  top: var(--tap-increment);
-  left: var(--tap-increment);
-  right: var(--tap-increment);
-  bottom: var(--tap-increment);
-}
 /* nav a span:nth-child(1) {
   display: inline-block;
   opacity: 1;
@@ -561,7 +552,7 @@ nav:hover a span:nth-child(2) {
   left: var(--tap-increment);
   right: var(--tap-increment);
   bottom: var(--tap-increment);
-} */
+}  */
 
 /* @media (prefers-color-scheme: dark) {
   html {
