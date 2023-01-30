@@ -5,8 +5,8 @@ const Copyright = () => {
   return (
     <div className="copyright">
       <span>&copy;</span> {new Date().getFullYear()}
-      <Link href="/imprint">Imprint</Link>
-      <Link href="/about">About</Link>
+      <Link tabIndex={4} href="/imprint">Imprint</Link>
+      <Link tabIndex={3} href="/about">About</Link>
     </div>
   )
 }
