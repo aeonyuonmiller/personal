@@ -259,7 +259,7 @@ svg {
 
 .content {
   position: absolute;
-  top: 29vh;
+  top: 28vh;
   padding-bottom: 31vh;
   left: 400px;
   width: 40%;
@@ -320,7 +320,6 @@ svg {
           drop-shadow(0 4px 4px rgba(0, 0, 0, 0.05)) 
           drop-shadow(0 8px 8px rgba(0, 0, 0, 0.07)); */
 }
-/* .thumbnail-container::after{ content:""; filter: drop-shadow(0 1px 1px rgba(0, 0, 0, 0.1)) drop-shadow(0 2px 2px rgba(0, 0, 0, 0.1)) drop-shadow(0 4px 4px rgba(0, 0, 0, 0.1)) drop-shadow(0 8px 8px rgba(0, 0, 0, 0.1)) drop-shadow(0 16px 16px rgba(0, 0, 0, 0.1)) drop-shadow(0 32px 32px rgba(0, 0, 0, 0.1));} */
 .thumbnail-container:first-child{ margin-top: 40vh; }
 .thumbnail-container:last-child { margin-bottom: 40vh; }
 .thumbnail-container .arrow {
@@ -405,29 +404,6 @@ nav span:nth-child(1) {
   margin-left: 1.4em;
   transition: all cubic-bezier(.64, .62, .23, .99) 400ms;
   user-select: none;
-}
-
-/* nav:hover a span:nth-child(1) {
-  opacity: 0;
-  visibility: hidden;
-  transform: translateX(20px);
-  text-shadow: 0 0 5px rgb(84, 84, 84), 0 0 10px rgb(84, 84, 84), 0 0 15px rgb(84, 84, 84);
-} */
-
-nav a span:nth-child(2) {
-  position: absolute;
-  width: max-content;
-  font-weight: 600;
-  color: #fff;
-  opacity: 0;
-  left: 0;
-  transform: translateX(-30px);
-  transition: all cubic-bezier(.64, .62, .23, .99) 400ms;
-}
-
-nav:hover a span:nth-child(2) {
-  opacity: 1;
-  transform: translateX(0);
 }
 
 .logo {
