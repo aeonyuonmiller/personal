@@ -186,6 +186,7 @@ h1 {
   letter-spacing: -0.05em;
   color: var(--secondary);
   margin-bottom: calc(30px + (50 - 30) * ((100vw - 320px) / (1600 - 320)));
+  user-select: none;
 }
 /* fixing spaces (empty spans) */
 h1 span{ min-width: calc(5px + (16 - 5) * ((100vw - 320px) / (1600 - 320))); }
