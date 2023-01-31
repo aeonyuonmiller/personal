@@ -7,7 +7,7 @@ import Nav from "./components/Nav"
 import Parallax from "./components/Parallax"
 import Fade from "./components/Fade"
 import BigImage from "./components/BigImage"
-import Video from "./components/Video"
+// import Video from "./components/Video"
 import Close from "./components/Close"
 
 const project = () => {
@@ -54,7 +54,7 @@ const project = () => {
           <BigImage src="/img2.png" alt="okokookokkkkk" marginBottom={60} />
             <h5>Lösung</h5>
             <Fade>Hauptnutzer sind Senioren, die größere Schrift, große Klickflächen und Anpassung an ihre Ohren durch den Equaliser bevorzugen.</Fade>
-            <Video src="../chromed2-s.mp4"/>
+            {/* <Video src="../chromed2-s.mp4"/> */}
             <Fade>Hauptnutzer sind Senioren, die größere Schrift, große Klickflächen und Anpassung an ihre Ohren durch den Equaliser bevorzugen.</Fade>
             <Fade>Hauptnutzer sind Senioren, die größere Schrift, große Klickflächen und Anpassung an ihre Ohren durch den Equaliser bevorzugen.</Fade>
             <Fade>Hauptnutzer sind Senioren, die größere Schrift, große Klickflächen und Anpassung an ihre Ohren durch den Equaliser bevorzugen.</Fade>
@@ -63,7 +63,7 @@ const project = () => {
             <Fade>Hauptnutzer sind Senioren, die größere Schrift, große Klickflächen und Anpassung an ihre Ohren durch den Equaliser bevorzugen.</Fade>
         </m.div>
             
-        <Nav title="Project"/>
+        <Nav title=""/>
     </>
   )
 }

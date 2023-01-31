@@ -1,12 +1,11 @@
 // import Link from 'next/link';
 import { motion as m } from "framer-motion"
 
-const Nav = ({ title, gototitle, url }) => {
+const Nav = ({ title }) => {
 
     return (
     <m.nav>
         {/* <Link href={`/${url}`}> */}
-            /
             <m.span
                 initial={{ opacity: 0, y: -10 }}
                 animate={{ opacity: 1, y: 0, transition: { duration: .2, ease: [1, -0.01, 0, .99] } }}

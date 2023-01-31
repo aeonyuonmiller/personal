@@ -249,12 +249,12 @@ svg {
     /* IE and Edge */
     scrollbar-width: none;
     /* Firefox */
-  }
+}
   
 .layout::-webkit-scrollbar {
     display: none;
     width: 0 !important;
-  }
+}
 
 /* .portrait {
   grid-column: -2 / span 2;
@@ -393,7 +393,7 @@ svg {
 nav {
   position: fixed;
   top: calc(50% + 1px);
-  left: 200px;
+  left: 195px;
 
   display: flex;
   justify-content: center;
@@ -406,30 +406,6 @@ nav {
   color: var(--tertiary);
 
   z-index: 10;
-}
-
-nav a {
-  font-size: 14px;
-  word-spacing: 10px;
-  text-transform: uppercase;
-}
-/* nav a span:nth-child(1) {
-  display: inline-block;
-  opacity: 1;
-  font-weight: 600;
-  color: var(--tertiary);
-  transform: translateX(0);
-  transition: all cubic-bezier(.64, .62, .23, .99) 400ms;
-  user-select: none;
-} */
-nav span:nth-child(1) {
-  display: inline-block;
-  opacity: 1;
-
-  transform: translateX(0);
-  margin-left: 1.4em;
-  transition: all cubic-bezier(.64, .62, .23, .99) 400ms;
-  user-select: none;
 }
 
 .logo {
