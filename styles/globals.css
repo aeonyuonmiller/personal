@@ -267,13 +267,15 @@ svg {
   bottom: 0;
 } */
 .portrait {
-  max-width: 690px;
+  max-width: 670px;
+  width: 35vw;
   height: auto;
   position: fixed;
   right: 0;
   bottom: 0;
   pointer-events: none;
   user-select: none;
+  overflow-y: hidden;
 }
 
 .content {
