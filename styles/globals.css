@@ -307,6 +307,7 @@ svg {
 }
 .scrollcontainer::-webkit-scrollbar {
   display: none;
+  width: 0 !important
 }
 .thumbnail-container{
   position: relative;
