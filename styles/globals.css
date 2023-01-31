@@ -557,7 +557,7 @@ nav span:nth-child(1) {
     left: calc(50% - 100px);
   }
 
-  .scroll-down{ bottom: 100px; }
+  .scroll-down{ bottom: 16.5vh; }
   .layout {
     grid-template-columns: 30% 30% 30%;
     margin: 0 20px;
@@ -581,9 +581,9 @@ nav span:nth-child(1) {
   }
 
   .copyright {
-    bottom: 40px;
+    bottom: 200px;
     left: 40px;
-    writing-mode: vertical-rl;
+    writing-mode: vertical-lr;
   }
   .copyright a{ margin-top: 3em;}
   .content { top: 15vh; width: 90%; left: 5%; }
