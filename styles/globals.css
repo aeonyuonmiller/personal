@@ -244,7 +244,17 @@ svg {
   gap: 10px;
   width: 100vw;
   height: 100vh;
-}
+
+  -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+  }
+  
+.layout::-webkit-scrollbar {
+    display: none;
+    width: 0 !important
+  }
 
 /* .portrait {
   grid-column: -2 / span 2;
