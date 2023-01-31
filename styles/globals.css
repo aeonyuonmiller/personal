@@ -253,7 +253,7 @@ svg {
   
 .layout::-webkit-scrollbar {
     display: none;
-    width: 0 !important
+    width: 0 !important;
   }
 
 /* .portrait {
@@ -317,7 +317,7 @@ svg {
 }
 .scrollcontainer::-webkit-scrollbar {
   display: none;
-  width: 0 !important
+  width: 0 !important;
 }
 .thumbnail-container{
   position: relative;
