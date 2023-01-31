@@ -14,11 +14,7 @@ export default function App({ Component, pageProps, router }: AppProps) {
 
   return <>
       <MotionConfig reducedMotion="user">
-      <AnimatePresence mode="wait" onExitComplete={() => {
-      if (typeof window !== 'undefined') {
-        window.scrollTo({ top: 0, behavior: "smooth" })
-      }
-    }}>
+      <AnimatePresence mode="wait">
         <Component {...pageProps} key={router.pathname} />
         <Analytics />
       </AnimatePresence>

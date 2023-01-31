@@ -33,7 +33,7 @@ export default function Home() {
           </mesh>
         </Canvas>
       </div> */}
-      
+
       <m.video
         initial={{ scale: 1.3, opacity: 0 }}
         animate={{ scale: 1, opacity: 1, transition:{ ease: [.64, .62, .23, .99], duration: .8 }}}
@@ -45,7 +45,7 @@ export default function Home() {
         autoPlay
         loop>
           <source src="/chromed2-s.mp4" type="video/mp4" />
-          Your browser does not support HTML5 video.
+        Your browser does not support HTML5 video.
       </m.video>
 
       <Nav url="about" title="Work" />

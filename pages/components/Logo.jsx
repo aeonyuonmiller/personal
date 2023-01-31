@@ -8,6 +8,16 @@ const Logo = () => {
       <Link tabIndex={0} href="/">
         <LogoIcon/>
       </Link>
+
+        {/* <svg className='distort'>
+        <defs>  
+          <filter id="distort">
+            <feTurbulence id="turbulence" stitchTiles="noStitch" baseFrequency="0.025" numOctaves="2" seed="0" />
+            <feDisplacementMap id="displacement" in="SourceGraphic" in2="turbulence" scale="50" />
+          </filter>
+        </defs>
+      </svg> */}
+
     </m.div>
   )
 }
