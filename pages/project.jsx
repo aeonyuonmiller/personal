@@ -29,7 +29,11 @@ const project = () => {
           <m.div className="hero" variants={heroVariant} initial="hide" animate="show" exit="exit" style={{ background: "green" }}>
             <Anim>Klassik Radio</Anim>
             <Parallax>
-                <m.img initial={{ scale: 1.08 }} exit={{ y: "40%", transition:{ duration: 1.1 }}} animate={{ scale: 1, transition: { easing: "circOut", duration: 2 }}} src="./aloner-script.png" />
+              <m.img
+                initial={{ scale: 1.08 }}
+                exit={{ y: "40%", transition: { duration: 1.1 }}}
+                animate={{ scale: 1, transition: { easing: "circOut", duration: 2 } }}
+                src="./aloner-script.png" />
             </Parallax>
         </m.div>
         
