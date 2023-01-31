@@ -554,18 +554,18 @@ nav span:nth-child(1) {
 @media screen and (max-width:1060px) {
   .logo {
     top: 50px;
-    left: calc(50% - 100px);
+    left: calc(50% - 90px);
+  }
+  nav {
+    top: 57px;
+    left: calc(50% + 24px);
   }
 
   .scroll-down{ bottom: 16.5vh; }
+
   .layout {
     grid-template-columns: 30% 30% 30%;
     margin: 0 20px;
-  }
-
-  nav {
-    top: 52px;
-    left: calc(50% + 20px);
   }
 
   .chrome {
