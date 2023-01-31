@@ -11,7 +11,7 @@ import Scroll1 from "./components/Scroll1"
 import Fade from "./components/Fade"
 import Signature from "./components/Signature"
 
-import portrait from "../public/portrait.png"
+// import portrait from "../public/portrait.png"
 
 // cms
 // import { PrismicRichText } from '@prismicio/react'
@@ -19,7 +19,6 @@ import portrait from "../public/portrait.png"
 // import { SliceZone } from '@prismicio/react'
 // import { components } from '../slices'
 
-// view
 const About = ({ page }) => {
 
   return (

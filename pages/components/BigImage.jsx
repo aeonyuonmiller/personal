@@ -1,15 +1,18 @@
-const BigImage = () => {
+import { motion as m } from "framer-motion"
+
+const BigImage = ({src = "", alt = "", marginBottom = ""}) => {
   return (
-    <div className='big'>
-        <img src="../../public/img1.png" alt="graphics" />
+    
+    <div style={{marginBottom}}>
+        <img src={src} alt={alt}/>
           
         <style jsx>{`
-            .big {
-            width: 100%;
-            height: 300px;
-            background: blue;
-            margin-bottom: 4em;
-            }
+          div {
+            position: relative;
+            grid-column: 1 / 4;
+            height: auto;
+          }
+          div img{ width: 100%; }
       `}</style>
       </div>
   )

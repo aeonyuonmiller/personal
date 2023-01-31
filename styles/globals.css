@@ -294,11 +294,15 @@ svg {
 .content2 {
   position: absolute;
   top: 70vh;
+  left: 50px;
   padding-bottom: 31vh;
-  left: 400px;
-  width: 40%;
-  grid-column: 2 / span 2;
+  width: calc(100vw - 100px);
+  display: grid;
+  grid-template-columns: .5fr minmax(300px, 1fr) .5fr;
   overflow: scroll;
+}
+.content2 * {
+  grid-column: 2 / 3;
 }
 
 .scrollcontainer {
@@ -587,7 +591,7 @@ nav span:nth-child(1) {
   }
 
   .connect {
-    position: absolute;
+    position: fixed;
     bottom: 50px;
     top: calc(100vh - 60px);
     left: calc(50% - 30px);
