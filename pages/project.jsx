@@ -21,8 +21,8 @@ const project = () => {
     return (
     <>
         <Head>
-        <title>/ project</title>
-        <meta name="description" content="project description" />
+        <title>Klassik Radio</title>
+        <meta name="description" content="Klassik in höchster Qualität" />
         <link rel="icon" href="/favicon.ico" />
         </Head>
             
