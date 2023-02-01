@@ -48,19 +48,16 @@ const project = () => {
             {/* <PrismicRichText field={data.copy} /> */}
             <h5>Kontext</h5>
             <p className='intro'>Klassik Radio ist eine Streaming-App mit der besten Auswahl an klassischer Musik und weiteren Musikrichtungen.</p>
-            <h5>Aufgabe</h5>
-            <p>Hauptnutzer sind Senioren, die größere Schrift, große Klickflächen und Anpassung an ihre Ohren durch den Equaliser bevorzugen.</p>
-            <BigImage src="/img1.png" alt="okokok" marginBottom={10} />
-          <BigImage src="/img2.png" alt="okokookokkkkk" marginBottom={60} />
+            <h5>Aufgaben</h5>
+            <p>Marktforschung, Nutzer-Interviews, Redesign und native Entwicklung (iOS & Android).</p>
+            <p>Das App-Framework <i>Cordova</i> erfüllt nicht mehr die Ziele der Unternehmensstrategie.</p>
+            <BigImage src="/img1.png" alt="okokok" marginBottom={60} />
             <h5>Lösung</h5>
-            <Fade>Hauptnutzer sind Senioren, die größere Schrift, große Klickflächen und Anpassung an ihre Ohren durch den Equaliser bevorzugen.</Fade>
+            <Fade>Anhand einer umfassenden Benchmark-Analyse sowie User-Interviews haben wir herausgefunden, das die Nutzer viele Funktionen nicht kennen oder benutzen.</Fade>
+            <BigImage src="/img2.png" alt="okokookokkkkk" marginBottom={60} />
             {/* <Video src="../chromed2-s.mp4"/> */}
-            <Fade>Hauptnutzer sind Senioren, die größere Schrift, große Klickflächen und Anpassung an ihre Ohren durch den Equaliser bevorzugen.</Fade>
-            <Fade>Hauptnutzer sind Senioren, die größere Schrift, große Klickflächen und Anpassung an ihre Ohren durch den Equaliser bevorzugen.</Fade>
-            <Fade>Hauptnutzer sind Senioren, die größere Schrift, große Klickflächen und Anpassung an ihre Ohren durch den Equaliser bevorzugen.</Fade>
-            <Fade>Hauptnutzer sind Senioren, die größere Schrift, große Klickflächen und Anpassung an ihre Ohren durch den Equaliser bevorzugen.</Fade>
-            <Fade>Hauptnutzer sind Senioren, die größere Schrift, große Klickflächen und Anpassung an ihre Ohren durch den Equaliser bevorzugen.</Fade>
-            <Fade>Hauptnutzer sind Senioren, die größere Schrift, große Klickflächen und Anpassung an ihre Ohren durch den Equaliser bevorzugen.</Fade>
+            <Fade>Hauptnutzer sind Senioren (50-90 Jahre), die sich lesbare Schrift, große Klickflächen und eine individuelle Anpassung an ihre Ohren durch den Equaliser wünschen. Allerdings nicht auf ein Premium Feel verzichten wollen.</Fade>
+            <Fade>...</Fade>
         </m.div>
             
         <Nav title=""/>
