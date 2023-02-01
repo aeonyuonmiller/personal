@@ -3,22 +3,22 @@ import { motion as m } from "framer-motion"
 function Icon({ color = "white" }) {
     const draw1 = {
         hide: { display: "none", pathLength: 0, filter: "blur(6px)" },
-        show: { display: "visible", pathLength: 1, filter: "blur(0px)", transition:{ duration: .2, type: "easeOut", delay: 2.3 }}
+        show: { display: "visible", pathLength: 1, filter: "blur(0px)", transition:{ duration: .2, type: "easeOut", delay: 2.4 }}
     }
     const draw2 = {
         hide: { display: "none", pathLength: 0, filter: "blur(6px)" },
-        show: { display: "visible", pathLength: 1, filter: "blur(0px)", transition:{ duration: .6, type: "easeIn", delay: 2.4 }}
+        show: { display: "visible", pathLength: 1, filter: "blur(0px)", transition:{ duration: .2, type: "easeIn", delay: 2.3 }}
     }
     
   return (
     <m.svg
-    style={{display:"inline", top: "4px"}}
+    style={{display:"inline", translateY: "-0.5px", marginLeft: "2px" }}
     initial="hide"
     whileInView="show"
     viewport={{ amount: 0.4, once: false }}
     xmlns="http://www.w3.org/2000/svg"
     // width="50"
-    height="10"
+    height="11"
     fill="none"
     viewBox="0 0 50 50"
     >
