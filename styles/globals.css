@@ -225,7 +225,7 @@ p.intro{
   font-size: calc(18px + (36 - 18) * ((100vw - 320px) / (1600 - 320)));
   letter-spacing: 0;
   line-height: 1.4em;
-  margin-bottom: 2em;
+  margin-bottom: 3.4em;
 }
 strong{ font-weight: 500; opacity: .9;}
 
@@ -314,10 +314,11 @@ svg {
   flex-direction: column;
   gap: 30vh;
 
-  overscroll-behavior-y: contain;
-  overflow-y: scroll;
-  overflow-x: hidden;
   /* scroll snap */
+  overflow-y: scroll;
+  overscroll-behavior-y: contain;
+
+  /* remove scrollbar */
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
 }
@@ -338,6 +339,7 @@ svg {
   height: 340px;
   border-radius: 28px;
   overflow: hidden;
+  margin: 0;
   margin-right: 150px;
   margin-left: auto;
   scroll-snap-align: center;
@@ -386,7 +388,7 @@ svg {
 .thumbnail-container:hover .arrow{
   scale: .6;
 }
-.thumbnail-container:hover > img{
+.thumbnail-container:hover img{
   opacity: .6;
 }
 
@@ -406,6 +408,9 @@ nav {
   color: var(--tertiary);
 
   z-index: 10;
+}
+nav span{
+  user-select: none;
 }
 
 .logo {
