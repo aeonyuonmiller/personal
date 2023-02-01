@@ -3,11 +3,11 @@ import { motion as m } from "framer-motion"
 function Icon({ color = "white" }) {
     const draw1 = {
         hide: { display: "none", pathLength: 0, filter: "blur(6px)" },
-        show: { display: "visible", pathLength: 1, filter: "blur(0px)", transition:{ duration: .2, type: "easeOut", delay: 2.4 }}
+        show: { display: "visible", pathLength: 1, filter: "blur(0px)", transition:{ duration: .3, type: "easeOut", delay: 1.9 }}
     }
     const draw2 = {
         hide: { display: "none", pathLength: 0, filter: "blur(6px)" },
-        show: { display: "visible", pathLength: 1, filter: "blur(0px)", transition:{ duration: .2, type: "easeIn", delay: 2.3 }}
+        show: { display: "visible", pathLength: 1, filter: "blur(0px)", transition:{ duration: .3, type: "easeIn", delay: 1.8 }}
     }
     
   return (
