@@ -53,7 +53,7 @@ const project = () => {
             <Fade>Das App-Framework <i>Cordova</i> erfüllt nicht mehr die Ziele der Unternehmensstrategie.</Fade>
             <BigImage src="/img1.png" alt="okokok" marginBottom={160} />
             <h5>Lösungen</h5>
-          <Fade>Anhand einer umfassenden Benchmark-Analyse sowie User-Interviews haben wir herausgefunden, das die Nutzer*innen viele Funktionen nicht benutzen oder kennen.</Fade>
+          <Fade>Anhand einer umfassenden Benchmark-Analyse sowie User-Interviews haben wir herausgefunden, das die Nutzer*innen viele Funktionen nicht benutzen oder kennen (z.B. Mixer/Equaliser).</Fade>
           <Fade>Unverständliche Icons konnten wir anhand von HighFidelity Prototype-Tests mit bestehenden Nutzer*innen ausfindig machen können.</Fade>
           <Fade>Musik soll wie im Radio zusammen gemischt werden (Crossfade) und im Alltag oder zu besonderen Events (zum gemeinsamen Kochen mit Freunden oder dem romantischen Dinner) ein ungestörtes Hörerlebnis bieten.</Fade>
             <BigImage src="/img2.png" alt="okokookokkkkk" marginBottom={160} />

@@ -225,7 +225,7 @@ p.intro{
   font-size: calc(18px + (36 - 18) * ((100vw - 320px) / (1600 - 320)));
   letter-spacing: 0;
   line-height: 1.4em;
-  margin-bottom: 1.4em;
+  margin-bottom: 3.4em;
 }
 strong{ font-weight: 500; opacity: .9;}
 
