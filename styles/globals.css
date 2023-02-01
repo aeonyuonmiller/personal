@@ -299,7 +299,7 @@ svg {
   width: calc(100vw - 100px);
   display: grid;
   grid-template-columns: .5fr minmax(300px, 1fr) .5fr;
-  overflow: scroll;
+  /* overflow: scroll; */
 }
 .content2 * {
   grid-column: 2 / 3;
@@ -511,9 +511,10 @@ nav span{
   height: 10px;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 .copyright span:first-child {
-    font-size: 12px;
+  font-size: 12px;
 }
 .copyright a {
   color: var(--bg);
@@ -526,7 +527,7 @@ nav span{
   letter-spacing: 1px;
   transition: all ease .2s;
   border: 1px sold red;
-  width: fit-content;
+
 }
 .copyright a:hover {
   color: #fff;
@@ -534,6 +535,7 @@ nav span{
 /* .copyright a::after {
   content: "";
   position: absolute;
+  background-color: #0d8773;
   top: var(--tap-increment);
   left: var(--tap-increment);
   right: var(--tap-increment);
@@ -580,17 +582,47 @@ nav span{
     left: calc(50% - 30px);
   }
 
+  .close {
+    user-select: none;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 30px;
+    right: 30px;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 600;
+    color: white;
+  }
+
   .copyright {
     bottom: 260px;
-    left: 40px;
+    left: 10px;
     writing-mode: vertical-lr;
   }
   .copyright a{ margin-top: 3em;}
-  .content { top: 15vh; width: 90%; left: 5%; }
+  .copyright svg { margin-top: .5em; }
+  .content { 
+    display: grid;
+    grid-template-columns: 10% 1fr 10%;
+    top: 15vh; 
+    width: 100vw; 
+    left: 0; 
+  }
   .content2 {
-    width: 90%;
-    top: 45vh;
-    left: 5%;
+    display: grid;
+    grid-template-columns: 10% 1fr 10%;
+    top: 50vh;
+    left: 0;
+    width: 100vw;
+    padding-bottom: 10vh;
   }
   .content p:last-child,
   .content h5:last-child {
