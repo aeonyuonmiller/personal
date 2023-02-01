@@ -17,7 +17,7 @@ const Connect = () => {
   }
   
   return (
-    <a tabIndex="5" href="mailto:info@aeonyuonmiller.com">
+    <a tabIndex="5" href="mailto:aym1@mail.com">
       <m.div
         variants={enter}
         initial="hide"

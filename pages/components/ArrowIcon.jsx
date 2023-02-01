@@ -1,16 +1,21 @@
 import { motion as m } from "framer-motion"
 
-function Icon({color}) {
-
-const group = {
-  hide: { opacity: 0, transition:{ staggerChildren: 0.3, } },
-  show: { opacity: 1, transition:{ staggerChildren: 0.3, }}
-}
-
-const item = {
-  hide: { scale: 0.5, opacity: 0 },
-  show: { scale: 1, opacity: 1, transition:{ ease: [.64, .62, .23, .99], duration: .8 }}
-}
+function Icon({ color }) {
+      const group = {
+        hide: { opacity: 0, transition:{ staggerChildren: 0.3, } },
+        show: { opacity: 1, transition:{ staggerChildren: 0.3, }}
+      }
+  
+      const item = {
+        hide: { scale: 0.5, opacity: 0 },
+        show: { scale: 1, opacity: 1, transition:{ ease: [.64, .62, .23, .99], duration: .8 }}
+    }
+  
+  const draw = {
+    hidden: { pathLength: 0, filter: "blur(6px)" },
+    animate: { pathLength: 1, filter: "blur(1px)", transition:{ duration: 1.4, type: "ease" }}
+  }
+  
   return (
       <m.svg
         variants={group}
