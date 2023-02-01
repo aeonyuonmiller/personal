@@ -53,7 +53,7 @@ const About = ({ page }) => {
             <Fade>Currently getting into ThreeJS (R3F & Drei).</Fade>
             <Fade>I work with <strong>Figma</strong> for conception and design and with code – specifically with <strong>React</strong> (Next.js), <strong>Framer-Motion</strong>, <strong>Prismic</strong> and <strong>Snipcart</strong>.</Fade>
             <Fade>I have a passion for creating smooth interactive products and building consistent design-systems that provide a seamless user experience. I pride myself on my ability to translate complex design concepts into intuitive and visually appealing interfaces.</Fade>
-            <Fade>In the past, I have successfully collaborated with cross-functional teams to deliver high-quality products. Through my experience in agencies i am confident in my ability to adapt to new challenges and thrive in a fast-paced environment.</Fade>
+            <Fade>In the past, I collaborated with cross-functional teams to deliver high-quality products. Through my experience in agencies i am confident in my ability to adapt to new challenges and thrive in a fast-paced environment.</Fade>
             <Fade>I am excited to bring my skills and experience to new projects and help bring visions to life.</Fade>
             <Signature />
           </m.div>
