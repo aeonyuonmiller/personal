@@ -70,10 +70,10 @@ body {
   100% { filter: url("#distort1");}
 } */
 
-/* a {
+a {
   color: rgb(111, 111, 111);
   text-decoration: none;
-} */
+}
 
 .scroll-down{
   position: fixed;
