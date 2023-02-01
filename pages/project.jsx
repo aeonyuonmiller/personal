@@ -46,10 +46,10 @@ const project = () => {
           {/* <h1><PrismicRichText field={page.data.title} /></h1> */}          
           
             {/* <PrismicRichText field={data.copy} /> */}
-            <h5>Einleitung</h5>
-            <p className='intro'>Klassik Radio ist eine Streaming-App mit der besten Auswahl an klassischer Musik und weiteren Musikrichtungen.</p>
+            <h5>Klassik in höchster Qualität</h5>
+            <p className='intro'>Klassik Radio ist eine Streaming-App mit der besten Auswahl an klassischer Musik sowie weiteren Musikstilen.</p>
             <h5>Aufgaben</h5>
-            <p>Marktforschung, Nutzer-Interviews führen und auswerten, komplettes Redesign der App mittels Design-System und native Entwicklung (iOS & Android).</p>
+            <p>Marktforschung, Nutzer-Interviews führen und auswerten, komplettes Redesign der App (Design-System) und native Entwicklung (iOS & Android).</p>
             <p>Das App-Framework <i>Cordova</i> erfüllt nicht mehr die Ziele der Unternehmensstrategie.</p>
             <BigImage src="/img1.png" alt="okokok" marginBottom={160} />
             <h5>Lösungen</h5>
