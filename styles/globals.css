@@ -209,7 +209,7 @@ h5{
 }
 p {
   width: 100%;
-  max-width: 60ch;
+  /* max-width: 60ch; */
   /* viewport 320 to 1600 = font-size 16px to 28px */
   font-size: calc(16px + (28 - 16) * ((100vw - 320px) / (1600 - 320)));
   letter-spacing: .3%;

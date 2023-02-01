@@ -46,18 +46,21 @@ const project = () => {
           {/* <h1><PrismicRichText field={page.data.title} /></h1> */}          
           
             {/* <PrismicRichText field={data.copy} /> */}
-            <h5>Kontext</h5>
+            <h5>Einleitung</h5>
             <p className='intro'>Klassik Radio ist eine Streaming-App mit der besten Auswahl an klassischer Musik und weiteren Musikrichtungen.</p>
             <h5>Aufgaben</h5>
-            <p>Marktforschung, Nutzer-Interviews, Redesign und native Entwicklung (iOS & Android).</p>
+            <p>Marktforschung, Nutzer-Interviews führen und auswerten, komplettes Redesign der App mittels Design-System und native Entwicklung (iOS & Android).</p>
             <p>Das App-Framework <i>Cordova</i> erfüllt nicht mehr die Ziele der Unternehmensstrategie.</p>
-            <BigImage src="/img1.png" alt="okokok" marginBottom={60} />
-            <h5>Lösung</h5>
-            <Fade>Anhand einer umfassenden Benchmark-Analyse sowie User-Interviews haben wir herausgefunden, das die Nutzer viele Funktionen nicht kennen oder benutzen.</Fade>
-            <BigImage src="/img2.png" alt="okokookokkkkk" marginBottom={60} />
-            {/* <Video src="../chromed2-s.mp4"/> */}
-            <Fade>Hauptnutzer sind Senioren (50-90 Jahre), die sich lesbare Schrift, große Klickflächen und eine individuelle Anpassung an ihre Ohren durch den Equaliser wünschen. Allerdings nicht auf ein Premium Feel verzichten wollen.</Fade>
-            <Fade>...</Fade>
+            <BigImage src="/img1.png" alt="okokok" marginBottom={160} />
+            <h5>Lösungen</h5>
+          <Fade>Anhand einer umfassenden Benchmark-Analyse sowie User-Interviews haben wir herausgefunden, das die Nutzer*innen viele Funktionen nicht benutzen oder kennen.</Fade>
+          <Fade>Unverständliche Icons konnten wir anhand von HighFidelity Prototype-Tests mit bestehenden Nutzer*innen ausfindig machen können.</Fade>
+          <Fade>Musik soll wie im Radio zusammen gemischt werden (Crossfade) und im Alltag oder zu besonderen Events (zum gemeinsamen Kochen mit Freunden oder dem romantischen Dinner) ein ungestörtes Hörerlebnis bieten.</Fade>
+            <BigImage src="/img2.png" alt="okokookokkkkk" marginBottom={160} />
+          {/* <Video src="../chromed2-s.mp4"/> */}
+            <h5>Zielgruppen</h5>
+            <Fade>Hauptnutzer sind Senioren (50-90 Jahre) – die gutlesbare Schrift, große Klickflächen und eine individuelle Anpassung an ihre Ohren (z.B. Hörgeräte) durch den Equaliser wünschen und nicht auf ein Premium Feel verzichten wollen.</Fade>
+            <Fade>Unter den Klassik-Fans fanden sich auch jüngere Nutzer*innen sowie Familien die andere Kanäle (Themenspezifisch wie z.B. Marvel) des Radios mögen.</Fade>
         </m.div>
             
         <Nav title=""/>
