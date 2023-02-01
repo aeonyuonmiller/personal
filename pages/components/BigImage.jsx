@@ -11,7 +11,7 @@ const BigImage = ({src = "", alt = "", marginBottom = ""}) => {
         .image-container {
           position: relative;
           grid-column: 1 / 4;
-          /* height: 100vh; */
+          height: 100vh;
           aspect-ratio: 16 / 9;
         }
         .image{ 
