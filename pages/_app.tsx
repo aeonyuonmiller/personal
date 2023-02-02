@@ -14,7 +14,7 @@ export default function App({ Component, pageProps, router }: AppProps) {
 
   return <>
       <MotionConfig reducedMotion="user">
-      <AnimatePresence mode="wait">
+      <AnimatePresence mode="sync">
         <Component {...pageProps} key={router.pathname} />
         <Analytics />
       </AnimatePresence>

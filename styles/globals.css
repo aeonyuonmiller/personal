@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300..800&display=swap');
 
-html{ scroll-behavior: smooth; }
+html{ scroll-behavior: auto !important; }
 
 ::selection {
   color: rgba(255, 255, 255, 0.7);
@@ -300,7 +300,8 @@ svg {
   grid-template-columns: .5fr minmax(300px, 1fr) .5fr;
   /* overflow: scroll; */
 }
-.content2 * {
+.content2 *,
+.content * {
   grid-column: 2 / 3;
 }
 
