@@ -51,8 +51,7 @@ body {
   color: rgb(94, 94, 94);
   font-family: 'Inter', Helvetica Neue, sans-serif;
   font-weight: 300;
-  min-height: 100vh;
-  min-height: 100dvh;
+  /* min-height: 100dvh; */
   /* height: -webkit-fill-available; */
   overflow-y: scroll;
   overflow-x: hidden;
