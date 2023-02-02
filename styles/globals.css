@@ -553,7 +553,7 @@ nav span{
   }
 } */
 
-@media screen and (max-width:1060px) {
+@media screen and (max-width:1110px) {
   .logo {
     top: 50px;
     left: calc(50% - 90px);
@@ -603,7 +603,7 @@ nav span{
   }
 
   .copyright {
-    bottom: 260px;
+    bottom: 145px;
     left: 10px;
     writing-mode: vertical-lr;
   }
