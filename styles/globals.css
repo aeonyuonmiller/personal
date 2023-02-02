@@ -566,8 +566,6 @@ nav span{
           left: calc(50% + 24px);
         }
 
-        .scroll-down{ bottom: 16.5vh; }
-
         .layout {
           grid-template-columns: 30% 30% 30%;
           margin: 0 20px;
@@ -580,9 +578,8 @@ nav span{
 
         .connect {
           position: fixed;
-          bottom: 50px;
-          top: calc(100vh - 60px);
-          left: calc(50% - 30px);
+          bottom: 30px;
+          right: 30px;
         }
 
         .close {
