@@ -4,7 +4,7 @@ function Icon() {
   
 const group = {
   hide: { opacity: 0 },
-  show: { opacity: 1, transition:{ staggerChildren: 0.1, }}
+  show: { opacity: 1, transition: { staggerChildren: 0.1, }}
 }
 
 const item = {
@@ -16,6 +16,7 @@ const item = {
       variants={group}
       initial="hide"
       animate="show"
+      whileHover="random"
       xmlns="http://www.w3.org/2000/svg"
       width="100"
       fill="none"
