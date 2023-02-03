@@ -20,6 +20,8 @@ html{ scroll-behavior: auto !important; }
   --accent: #ff8c00;
   --gradient-linear: linear-gradient(90deg, #b2ff42 20%, #0d8773 100%);
 
+  --signage: 200px;
+
   --tap-increment: -8px;
 
   --shadow-color: rgba(0, 0, 0, 0.116);

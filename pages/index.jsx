@@ -1,6 +1,8 @@
 import Head from 'next/head'
 import Nav from "./components/Nav"
 import { motion as m } from "framer-motion"
+// import { m } from "framer-motion"
+
 // import { Canvas } from "@react-three/fiber"
 
 // import { PrismicText, PrismicRichText } from '@prismicio/react'

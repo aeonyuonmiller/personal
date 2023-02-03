@@ -11,7 +11,7 @@ function Signature() {
   return (
       <motion.svg
         xmlns="http://www.w3.org/2000/svg"
-        width="250"
+        width="32%"
         fill="none"
         viewBox="0 0 771 236"
         strokeDasharray="0 1"
