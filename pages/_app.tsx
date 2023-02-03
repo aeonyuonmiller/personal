@@ -3,7 +3,7 @@ import type { AppProps } from 'next/app'
 import { useRouter } from 'next/router';
 import { Analytics } from '@vercel/analytics/react';
 import '../styles/globals.css'
-import { AnimatePresence, MotionConfig } from "framer-motion";
+import { LazyMotion, domAnimation, AnimatePresence, MotionConfig } from "framer-motion";
 
 // components
 import Logo from "./components/Logo"
@@ -15,13 +15,15 @@ export default function App({ Component, pageProps, router }: AppProps) {
 
   return <>
       <MotionConfig reducedMotion="user">
+        <LazyMotion features={domAnimation}>
       <AnimatePresence mode="wait">
         <Component {...pageProps} key={router.pathname} />
         <Analytics />
       </AnimatePresence>
       <Connect />
       <Logo />
-      <Copyright />
+        <Copyright />
+        </LazyMotion>
       {/* <Menu /> */}
       </MotionConfig>
   </>

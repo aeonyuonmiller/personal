@@ -1,5 +1,5 @@
 import React from 'react'
-import { motion as m } from "framer-motion"
+import { m } from "framer-motion"
 import Head from 'next/head'
 // import Image from 'next/image'
 

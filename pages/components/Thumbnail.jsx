@@ -1,5 +1,5 @@
 import Link from "next/link"
-import { motion as m, AnimatePresence } from "framer-motion"
+import { m, AnimatePresence } from "framer-motion"
 import ArrowIcon from "./ArrowIcon"
 
 const Thumbnail = ({ title = "", description = "", url = "", src = "" }) => {

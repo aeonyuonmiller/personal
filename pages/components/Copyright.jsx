@@ -1,4 +1,4 @@
-import { motion as m } from "framer-motion"
+import { m } from "framer-motion"
 import Link from 'next/link';
 import ArrowIconPath from "../components/ArrowIconPath"
 

@@ -1,4 +1,4 @@
-import { motion as m, useScroll, useTransform } from "framer-motion"
+import { m, useScroll, useTransform } from "framer-motion"
 
 const Parallax = ({children}) => {
     const { scrollYProgress } = useScroll();

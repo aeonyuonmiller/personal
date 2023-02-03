@@ -1,4 +1,4 @@
-import { motion } from 'framer-motion';
+import { m } from 'framer-motion';
 import dynamic from "next/dynamic";
 
 // H1 letter animation component
@@ -11,14 +11,14 @@ const Anim = ({ children }) => {
   return (
     <div>
       {words.map((word, index) => (
-        <motion.h1
+        <m.h1
           initial={{ opacity: 0 }}
           animate={{ opacity:1 }}
           style={{ marginBottom: 20 }}
           key={index}
         >
           {word.split('').map((letter, index) => (
-            <motion.span
+            <m.span
               style={{ display: "inline-block", whiteSpace: "no-wrap" }}
               key={index}
               initial={{ y: 50, opacity: 0 }}
@@ -26,10 +26,10 @@ const Anim = ({ children }) => {
               exit={{ y: -20, opacity: 0, transition:{ ease:[.76,-0.01,.25,.98], duration: .3, delay: index * 0.05, }}}
             >
               {letter}
-            </motion.span>
+            </m.span>
           ))}
           {" "}
-        </motion.h1>
+        </m.h1>
       ))}
     </div>
   );
