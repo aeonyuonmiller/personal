@@ -20,8 +20,6 @@ html{ scroll-behavior: auto !important; }
   --accent: #ff8c00;
   --gradient-linear: linear-gradient(90deg, #b2ff42 20%, #0d8773 100%);
 
-  --signage: 200px;
-
   --tap-increment: -8px;
 
   --shadow-color: rgba(0, 0, 0, 0.116);
@@ -271,6 +269,7 @@ svg {
 .portrait {
   max-width: 670px;
   width: 35vw;
+  min-width: 550px;
   height: auto;
   position: fixed;
   right: 0;
@@ -278,6 +277,7 @@ svg {
   pointer-events: none;
   user-select: none;
   overflow-y: hidden;
+  transition: right ease .6s;
 }
 
 .content {
@@ -557,6 +557,12 @@ nav span{
     background: black;
   }
 } */
+      @media screen and (max-width:1390px) {
+        .portrait {
+              right: -10vw;
+            }
+      }
+
 
       @media screen and (max-width:1110px) {
         .logo {
