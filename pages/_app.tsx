@@ -17,7 +17,7 @@ export default function App({ Component, pageProps, router }: AppProps) {
       <MotionConfig reducedMotion="user">
         <LazyMotion features={domAnimation}>
       <AnimatePresence mode="wait">
-        <Component {...pageProps} key={router.pathname} />
+        <Component {...pageProps} key={router.route} />
         <Analytics />
       </AnimatePresence>
       <Connect />
