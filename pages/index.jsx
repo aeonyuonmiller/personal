@@ -1,7 +1,9 @@
+import { Suspense } from 'react'
 import Head from 'next/head'
 import Nav from "./components/Nav"
 import { m } from "framer-motion"
 import { Canvas } from '@react-three/fiber'
+import { OrbitControls } from '@react-three/drei'
 
 // import { PrismicText, PrismicRichText } from '@prismicio/react'
 // import { SliceZone } from '@prismicio/react'
@@ -24,14 +26,17 @@ export default function Home() {
       </Head>
 
       <div className='chrome'>
+        <Suspense fallback={<span>loading...</span>}>
         <Canvas frameloop="demand">
           <ambientLight intensity={0.5} />
           <pointLight position={[10,10,10]} color="blue" intensity={1} />
           <mesh>
-            <planeGeometry arg={[0, 0, 32, 32]} />
+            <planeBufferGeometry arg={[0, 0, 32, 32]} />
             <meshStandardMaterial color="hotpink" />
           </mesh>
-        </Canvas>
+          <OrbitControls />
+          </Canvas>
+          </Suspense>
       </div>
 
       {/* <m.video
