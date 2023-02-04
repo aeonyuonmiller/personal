@@ -61,6 +61,11 @@ body {
   font-smooth: always;
 }
 
+body::-webkit-scrollbar{
+  display: none;
+  width: 0 !important;
+}
+
 /* @keyframes distort {
   0%{ filter: url("#distort1");}
   25% { filter: url("#distort2");}
@@ -315,7 +320,7 @@ svg {
   scroll-snap-type: y mandatory;
   display: flex;
   flex-direction: column;
-  gap: 30vh;
+  gap: 25vh;
 
   /* scroll snap */
   overflow-y: scroll;
@@ -352,8 +357,8 @@ svg {
           drop-shadow(0 4px 4px rgba(0, 0, 0, 0.05)) 
           drop-shadow(0 8px 8px rgba(0, 0, 0, 0.07)); */
 }
-.thumbnail-container:first-child{ margin-top: 45vh; }
-.thumbnail-container:last-child { margin-bottom: 45vh; }
+.thumbnail-container:first-child{ margin-top: 50vh; }
+.thumbnail-container:last-child { margin-bottom: 50vh; }
 .thumbnail-container .arrow {
   position: absolute;
   right: 20px;
@@ -377,8 +382,8 @@ svg {
 .thumbnail-container h5 {
   position: absolute;
   background: var(--tertiary);
-  border-radius: 8px;
-  padding: 4px 8px;
+  border-radius: 16px;
+  padding: 4px 12px;
   color: white;
   bottom: 20px;
   opacity: 0;

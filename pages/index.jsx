@@ -1,9 +1,7 @@
 import Head from 'next/head'
 import Nav from "./components/Nav"
 import { m } from "framer-motion"
-// import { m } from "framer-motion"
-
-// import { Canvas } from "@react-three/fiber"
+import { Canvas } from '@react-three/fiber'
 
 // import { PrismicText, PrismicRichText } from '@prismicio/react'
 // import { SliceZone } from '@prismicio/react'
@@ -13,7 +11,6 @@ import { m } from "framer-motion"
 // components
 import Thumbnail from "./components/Thumbnail"
 import ScrollDown from "./components/ScrollDown"
-
 
 export default function Home() {
   
@@ -26,17 +23,18 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      {/* <div className='chrome'>
+      <div className='chrome'>
         <Canvas>
-          <pointLight position={[10,10,10]} />
+          <ambientLight intensity={0.5} />
+          <pointLight position={[10,10,10]} color="blue" />
           <mesh>
-            <planeBufferGeometry arg={[3, 5]} />
-            <meshStandardMaterial color="lightblue" />
+            <planeGeometry arg={[0, 0, 32, 32]} />
+            <meshStandardMaterial color="hotpink" />
           </mesh>
         </Canvas>
-      </div> */}
+      </div>
 
-      <m.video
+      {/* <m.video
         initial={{ scale: 1.3, opacity: 0 }}
         animate={{ scale: 1, opacity: 1, transition:{ ease: [.64, .62, .23, .99], duration: .8 }}}
         exit={{ scale: 0.95, opacity: 0, transition:{ ease: [.63, 0, .17, .99], duration: .8, delay: .4 }}}
@@ -48,7 +46,7 @@ export default function Home() {
         loop>
           <source src="/chromed2-s.mp4" type="video/mp4" />
         Your browser does not support HTML5 video.
-      </m.video>
+      </m.video> */}
 
       <Nav title="Work" />
 

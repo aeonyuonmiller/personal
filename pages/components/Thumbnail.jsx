@@ -20,7 +20,7 @@ const Thumbnail = ({ title = "", description = "", url = "", src = "" }) => {
             <h5>{description}</h5>
             <span className="arrow"><ArrowIcon color="var(--bg)" /></span>
           </m.div>
-        </Link>
+          </Link>
       </AnimatePresence>
     </div>
   )

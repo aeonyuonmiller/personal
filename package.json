@@ -16,6 +16,7 @@
     "@prismicio/next": "^1.0.2",
     "@prismicio/react": "^2.5.1",
     "@prismicio/slice-simulator-react": "^0.2.3",
+    "@react-three/drei": "^9.56.12",
     "@react-three/fiber": "^8.10.1",
     "@types/node": "18.11.18",
     "@types/react": "18.0.26",

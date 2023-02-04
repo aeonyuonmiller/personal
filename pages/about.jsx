@@ -10,6 +10,7 @@ import Anim from "./components/Anim"
 import Scroll1 from "./components/Scroll1"
 import Fade from "./components/Fade"
 import Signature from "./components/Signature"
+// import Accordion from "./components/Accordion"
 
 // import portrait from "../public/portrait.png"
 
@@ -44,6 +45,8 @@ const About = ({ page }) => {
         <div className='content'>
           {/* <h1><PrismicRichText field={page.data.title} /></h1> */}
           <Scroll1><Anim>About</Anim></Scroll1>
+
+        {/* <Accordion>Okey</Accordion> */}
           
           <m.div initial={{ opacity: 0, y: 20 }}
             animate={{ scale: 1, opacity: 1, y: 0, transition:{ ease: [.64, .62, .23, .99], duration: .8, delay: .4 } }}
