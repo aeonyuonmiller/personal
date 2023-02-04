@@ -28,7 +28,7 @@ export default function Home() {
       <div className='chrome'>
         <Suspense fallback={<span>loading...</span>}>
           <Canvas frameloop="demand">
-            <color attach="background" args={[0,0,0,0]} />
+            {/* <color attach="background" args={[0,0,0,0]} /> */}
             <ambientLight intensity={0.5} />
             <pointLight position={[10,10,10]} color="blue" intensity={1} />
             <mesh>
