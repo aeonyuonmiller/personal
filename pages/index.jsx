@@ -24,9 +24,9 @@ export default function Home() {
       </Head>
 
       <div className='chrome'>
-        <Canvas>
+        <Canvas frameloop="demand">
           <ambientLight intensity={0.5} />
-          <pointLight position={[10,10,10]} color="blue" />
+          <pointLight position={[10,10,10]} color="blue" intensity={1} />
           <mesh>
             <planeGeometry arg={[0, 0, 32, 32]} />
             <meshStandardMaterial color="hotpink" />
