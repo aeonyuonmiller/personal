@@ -15,13 +15,13 @@ export default function App({ Component, pageProps, router }: AppProps) {
 
   return <>
       <MotionConfig reducedMotion="user">
-        <LazyMotion features={domAnimation}>
-      <AnimatePresence mode="wait">
-        <Component {...pageProps} key={router.route} />
-        <Analytics />
-      </AnimatePresence>
-      <Connect />
-      <Logo />
+        <LazyMotion strict features={domAnimation}>
+          <AnimatePresence mode="wait">
+            <Component {...pageProps} key={router.route} />
+            <Analytics />
+          </AnimatePresence>
+        <Connect />
+        <Logo />
         <Copyright />
         </LazyMotion>
       {/* <Menu /> */}

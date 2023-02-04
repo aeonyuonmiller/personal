@@ -3,7 +3,7 @@ import Head from 'next/head'
 import Nav from "./components/Nav"
 import { m } from "framer-motion"
 import { Canvas } from '@react-three/fiber'
-import { OrbitControls } from '@react-three/drei'
+import { OrbitControls, Preload } from '@react-three/drei'
 
 // import { PrismicText, PrismicRichText } from '@prismicio/react'
 // import { SliceZone } from '@prismicio/react'
@@ -27,16 +27,18 @@ export default function Home() {
 
       <div className='chrome'>
         <Suspense fallback={<span>loading...</span>}>
-        <Canvas frameloop="demand">
-          <ambientLight intensity={0.5} />
-          <pointLight position={[10,10,10]} color="blue" intensity={1} />
-          <mesh>
-            <planeBufferGeometry arg={[0, 0, 32, 32]} />
-            <meshStandardMaterial color="hotpink" />
-          </mesh>
-          <OrbitControls />
+          <Canvas frameloop="demand">
+            <color attach="background" args={[0,0,0,0]} />
+            <ambientLight intensity={0.5} />
+            <pointLight position={[10,10,10]} color="blue" intensity={1} />
+            <mesh>
+              <boxBufferGeometry arg={[2, 2, 2]} />
+              <meshStandardMaterial color="blue" />
+            </mesh>
+            <OrbitControls />
+          <Preload all />
           </Canvas>
-          </Suspense>
+        </Suspense>
       </div>
 
       {/* <m.video

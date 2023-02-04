@@ -1,4 +1,4 @@
-// import { motion as m } from "framer-motion"
+// import { m } from "framer-motion"
 import Image from "next/image"
 
 const BigImage = ({src = "", alt = "", marginBottom = ""}) => {

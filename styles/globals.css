@@ -433,14 +433,14 @@ nav span{
 
 /* bg-video */
 .chrome {
-  width: auto;
+  width: 50vw;
   height: 50vh;
   position: fixed;
   bottom: 30px;
   left: 0;
   z-index: 0;
-  mix-blend-mode: darken;
-  transform-origin: center center;
+  /* mix-blend-mode: difference; */
+  /* transform-origin: center center; */
   /* pointer-events: none; */
 }
 /* .chrome {

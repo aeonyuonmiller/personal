@@ -1,5 +1,5 @@
 import React, { useState, useRef } from 'react'
-import { motion as m } from "framer-motion"
+import { m } from "framer-motion"
 
 const VideoPlayer = ({src = "", placeholder = ""}) => {
     const [playing, setPlaying] = useState(false)

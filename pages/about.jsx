@@ -32,7 +32,6 @@ const About = ({ page }) => {
       </Head>
 
       <Layout>
-        
         <m.div
           className='portrait'
           initial={{ scale: 1.05, opacity: 0 }}
@@ -64,7 +63,7 @@ const About = ({ page }) => {
       </Layout>
         
       <Nav title="About" />
-      </>
+    </>
   )
 }
 
