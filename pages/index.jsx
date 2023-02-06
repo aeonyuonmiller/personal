@@ -26,8 +26,8 @@ export default function Home() {
       </Head>
 
       <div className='chrome'>
-        <Suspense fallback={<span>loading...</span>}>
           <Canvas frameloop="demand">
+            <Suspense fallback={<span>loading...</span>}/>
             {/* <color attach="background" args={[0,0,0,0]} /> */}
             <ambientLight intensity={0.5} />
             <pointLight position={[10,10,10]} color="blue" intensity={1} />
@@ -38,7 +38,6 @@ export default function Home() {
             <OrbitControls />
           <Preload all />
           </Canvas>
-        </Suspense>
       </div>
 
       {/* <m.video
