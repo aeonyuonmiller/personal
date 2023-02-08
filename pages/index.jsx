@@ -3,7 +3,7 @@ import Head from 'next/head'
 import Nav from "./components/Nav"
 import { m } from "framer-motion"
 import { Canvas } from '@react-three/fiber'
-import { OrbitControls, Preload } from '@react-three/drei'
+import { OrbitControls, Preload, MeshDistortMaterial } from '@react-three/drei'
 
 // import { PrismicText, PrismicRichText } from '@prismicio/react'
 // import { SliceZone } from '@prismicio/react'
@@ -25,20 +25,21 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <div className='chrome'>
+      <m.div initial={{opacity:0, y:20}} animate={{opacity:1, y:0, transition: {duration:1}}} exit={{opacity:0, y:-20, transition: {duration:.4}}} className='chrome'>
           <Canvas frameloop="demand">
             <Suspense fallback={<span>loading...</span>}/>
             {/* <color attach="background" args={[0,0,0,0]} /> */}
             <ambientLight intensity={0.5} />
-            <pointLight position={[10,10,10]} color="blue" intensity={1} />
+            <pointLight position={[10,10,10]} color="hotpink" intensity={1} />
             <mesh>
-              <boxBufferGeometry arg={[2, 2, 2]} />
-              <meshStandardMaterial color="blue" />
+              <planeGeometry args={[1, 1, 32, 32]} />
+              {/* <boxBufferGeometry arg={[2, 2, 2]} /> */}
+              <meshStandardMaterial color="white" />
             </mesh>
             <OrbitControls />
-          <Preload all />
+            <Preload all />
           </Canvas>
-      </div>
+      </m.div>
 
       {/* <m.video
         initial={{ scale: 1.3, opacity: 0 }}
