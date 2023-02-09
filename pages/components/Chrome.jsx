@@ -3,7 +3,7 @@ import { useGLTF, useAnimations } from "@react-three/drei";
 
 export function Chrome(props) {
   const group = useRef();
-  const { nodes, materials, animations } = useGLTF("/aym.gltf");
+  const { nodes, materials, animations } = useGLTF("public/aym.gltf");
   const { actions } = useAnimations(animations, group);
   return (
     <group ref={group} {...props} dispose={null}>
@@ -38,6 +38,6 @@ export function Chrome(props) {
   );
 }
 
-useGLTF.preload("/aym.gltf");
+useGLTF.preload("public/aym.gltf");
 
 export default Chrome
