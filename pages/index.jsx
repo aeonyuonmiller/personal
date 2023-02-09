@@ -28,15 +28,15 @@ export default function Home() {
       </Head>
 
       <m.div initial={{opacity:0, y:20}} animate={{opacity:1, y:0, transition: {duration:1}}} exit={{opacity:0, y:-20, transition: {duration:.4}}} className='chrome'>
-          <Canvas frameloop="demand">
-            <Suspense fallback={<span>loading...</span>}/>
+          <Canvas frameloop="demand" camera={{ position: [-10, 90, 0], fov: 50 }}>
+            <Suspense fallback={<span>loading model...</span>}/>
             {/* <color attach="background" args={[0,0,0,0]} /> */}
-              <ambientLight intensity={0.01} />
-              <pointLight position={[10,10,10]} color="teal" intensity={1} />
+              <ambientLight intensity={0.5} />
+              <pointLight position={[10,10,10]} color="teal" intensity={2} />
               <Stage controls={ref} preset="rembrandt" intensity={0.09}  contactShadow={true} shadows={true} environment="studio">
                 <Chrome />
               </Stage>
-            <OrbitControls ref={ref} autoRotate />
+              <OrbitControls ref={ref} autoRotate scale={.9} />
             <Preload all />
           </Canvas>
       </m.div>
