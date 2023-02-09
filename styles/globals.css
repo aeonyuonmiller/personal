@@ -436,7 +436,7 @@ nav span{
   width: 50vw;
   height: 50vh;
   position: fixed;
-  bottom: 30px;
+  bottom: 0px;
   left: 0;
   z-index: 0;
   /* mix-blend-mode: difference; */
