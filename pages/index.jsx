@@ -1,9 +1,10 @@
-import { Suspense } from 'react'
+import { Suspense, useRef } from 'react'
 import Head from 'next/head'
 import Nav from "./components/Nav"
 import { m } from "framer-motion"
-import { Canvas } from '@react-three/fiber'
-import { OrbitControls, Preload, MeshDistortMaterial } from '@react-three/drei'
+import { Canvas, useLoader } from '@react-three/fiber'
+import { OrbitControls, Preload, Stage } from '@react-three/drei'
+import { Chrome } from './components/Chrome'
 
 // import { PrismicText, PrismicRichText } from '@prismicio/react'
 // import { SliceZone } from '@prismicio/react'
@@ -15,6 +16,7 @@ import Thumbnail from "./components/Thumbnail"
 import ScrollDown from "./components/ScrollDown"
 
 export default function Home() {
+  const ref = useRef()
   
   return (
     <>
@@ -29,14 +31,12 @@ export default function Home() {
           <Canvas frameloop="demand">
             <Suspense fallback={<span>loading...</span>}/>
             {/* <color attach="background" args={[0,0,0,0]} /> */}
-            <ambientLight intensity={0.5} />
-            <pointLight position={[10,10,10]} color="hotpink" intensity={1} />
-            <mesh>
-              <planeGeometry args={[1, 1, 32, 32]} />
-              {/* <boxBufferGeometry arg={[2, 2, 2]} /> */}
-              <meshStandardMaterial color="white" />
-            </mesh>
-            <OrbitControls />
+              <ambientLight intensity={0.01} />
+              <pointLight position={[10,10,10]} color="teal" intensity={1} />
+              <Stage controls={ref} preset="rembrandt" intensity={0.09}  contactShadow={true} shadows={true} environment="studio">
+                <Chrome />
+              </Stage>
+            <OrbitControls ref={ref} autoRotate />
             <Preload all />
           </Canvas>
       </m.div>
