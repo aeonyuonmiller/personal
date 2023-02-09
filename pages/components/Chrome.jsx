@@ -1,9 +1,10 @@
-import React, { useRef } from "react";
+import { useRef } from "react";
 import { useGLTF, useAnimations } from "@react-three/drei";
+import dynamic from "next/dynamic";
 
 export function Chrome(props) {
   const group = useRef();
-  const { nodes, materials, animations } = useGLTF("public/aym.gltf");
+  const { nodes, materials, animations } = useGLTF('/aym.gltf');
   const { actions } = useAnimations(animations, group);
   return (
     <group ref={group} {...props} dispose={null}>
@@ -38,6 +39,7 @@ export function Chrome(props) {
   );
 }
 
-useGLTF.preload("public/aym.gltf");
+useGLTF.preload('/aym.gltf');
 
-export default Chrome
+// export default Chrome
+export default dynamic (() => Promise.resolve(Chrome), {ssr: false})
