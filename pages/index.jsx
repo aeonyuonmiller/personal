@@ -2,7 +2,7 @@ import { Suspense, useRef } from 'react'
 import Head from 'next/head'
 import Nav from "./components/Nav"
 import { m } from "framer-motion"
-import { Canvas, useLoader } from '@react-three/fiber'
+import { Canvas } from '@react-three/fiber'
 import { OrbitControls, Preload, Stage } from '@react-three/drei'
 import { Chrome } from './components/Chrome'
 
@@ -32,7 +32,7 @@ export default function Home() {
             <Suspense fallback={<span>loading model...</span>}/>
             {/* <color attach="background" args={[0,0,0,0]} /> */}
               <ambientLight intensity={0.5} />
-              <pointLight position={[10,20,10]} color="pink" intensity={6} />
+              <pointLight position={[10,30,20]} color="purple" intensity={16} />
               <Stage controls={ref} preset="soft" intensity={0.09}  contactShadow={true} shadows={true} environment="studio">
                 <Chrome />
               </Stage>
