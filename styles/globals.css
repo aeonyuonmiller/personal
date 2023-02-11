@@ -140,6 +140,7 @@ a {
   top: 50px;
   right: 50px;
   backdrop-filter: blur(10px);
+  background-color: #a4a4a441;
   height: 80px;
   width: 80px;
   border-radius: 50%;
