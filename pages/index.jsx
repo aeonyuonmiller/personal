@@ -64,9 +64,9 @@ export default function Home() {
         animate={{ y: 0, opacity: 1, transition:{ ease: [.64, .62, .23, .99], duration: .8 }}}
         exit={{ y: 50, opacity: 0, transition: { ease: [.63, 0, .17, .99], duration: .8 }}}
       >    
-        <Thumbnail url="/project" src="./aloner-script.png" title="Klassik Radio" description="Online radio for classical music" />
+        <Thumbnail url="/project" src="./kr000.png" title="Klassik Radio" description="Online radio for classical music" />
         <Thumbnail url="/project" src="./img2.png" title="RuhrNachrichten" description="News for the ruhr area" />
-        <Thumbnail url="/imprint" src="./img3.png" title="Parkjackr" description="Find your parkingspot" />
+        <Thumbnail url="/imprint" src="./parkjckr-001.png" title="Parkjackr" description="Find your parkingspot" />
         {/* <SliceZone slices={page.data.slices} components={components} /> */}
       </m.div>
     </>
