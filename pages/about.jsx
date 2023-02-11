@@ -10,6 +10,7 @@ import Anim from "./components/Anim"
 import Scroll1 from "./components/Scroll1"
 import Fade from "./components/Fade"
 import Signature from "./components/Signature"
+import Close from "./components/Close"
 // import Accordion from "./components/Accordion"
 
 // import portrait from "../public/portrait.png"
@@ -30,6 +31,8 @@ const About = ({ page }) => {
         <meta name="description" content="portfolio of aeon yuon miller" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+
+      <Close />
 
       <Layout>
         <m.div

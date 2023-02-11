@@ -1,6 +1,7 @@
 import React from 'react'
 import { m } from "framer-motion"
 import Link from 'next/link'
+import CloseIcon from "./CloseIcon"
 
 const Close = () => {
     return (
@@ -12,7 +13,7 @@ const Close = () => {
                 exit={{ scale: 0, rotate: 180, y: -50, transition: { duration: .6, delay: .2 }}}
                 className='close'
             >
-                Close
+                <CloseIcon />
             </m.div>
         </Link>
       )

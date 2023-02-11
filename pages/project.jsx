@@ -26,7 +26,7 @@ const project = () => {
         <link rel="icon" href="/favicon.ico" />
         </Head>
             
-          <m.div className="hero" variants={heroVariant} initial="hide" animate="show" exit="exit" style={{ background: "green" }}>
+          <m.div className="hero" variants={heroVariant} initial="hide" animate="show" exit="exit" style={{ background: "#1d1d1d" }}>
             <Anim>Klassik Radio</Anim>
             <Parallax>
               <m.img

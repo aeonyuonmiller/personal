@@ -6,6 +6,7 @@ import Nav from "./components/Nav"
 import Anim from "./components/Anim"
 import Scroll1 from "./components/Scroll1"
 import Fade from "./components/Fade"
+import Close from "./components/Close"
 
 const imprint = () => {
   
@@ -18,6 +19,9 @@ const imprint = () => {
         <meta name="description" content="website of aeon yuon miller" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+
+      <Close />
+
       <div className='content'>
         <Scroll1><Anim>Imprint</Anim></Scroll1>
         <m.div initial={{ opacity: 0, y: 20 }}

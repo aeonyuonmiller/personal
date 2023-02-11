@@ -1,11 +1,14 @@
-// import { m } from "framer-motion"
+import { m, useScroll, useSpring } from "framer-motion"
 import Image from "next/image"
 
-const BigImage = ({src = "", alt = "", marginBottom = ""}) => {
+const BigImage = ({ src = "", alt = "", marginBottom = "" }) => {
+  const { scrollYProgress } = useScroll()
+  const scaleX = useSpring(scrollYProgress)
+
   return (
   
     <div className="image-container" style={{ marginBottom }}>
-        <Image fill={true} src={src} alt={alt} />
+      <m.span style={{ scaleX }} initial={{ opacity:0 }} whileInView={{ opacity: 1 }} viewport={{ once: true }}><Image fill={true} src={src} alt={alt} /></m.span>
           
       <style jsx>{`
         .image-container {
