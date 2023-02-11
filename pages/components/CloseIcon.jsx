@@ -8,7 +8,7 @@ function CloseIcon() {
 
     const draw = {
         hidden: { pathLength: 0, filter: "blur(18px)", strokeWidth: 20 },
-        animate: { pathLength: 1, filter: "blur(0)", strokeWidth: 3, transition:{ duration: .8, type: "easeOut" }}
+        animate: { pathLength: 1, filter: "blur(0)", strokeWidth: 4, transition:{ duration: .8, type: "easeOut" }}
     }
 
   return (
