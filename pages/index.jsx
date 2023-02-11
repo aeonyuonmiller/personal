@@ -41,20 +41,6 @@ export default function Home() {
           </Canvas>
       </m.div>
 
-      {/* <m.video
-        initial={{ scale: 1.3, opacity: 0 }}
-        animate={{ scale: 1, opacity: 1, transition:{ ease: [.64, .62, .23, .99], duration: .8 }}}
-        exit={{ scale: 0.95, opacity: 0, transition:{ ease: [.63, 0, .17, .99], duration: .8, delay: .4 }}}
-        className='chrome'
-        width="700px"
-        height="auto"
-        preload="auto"
-        autoPlay
-        loop>
-          <source src="/chromed2-s.mp4" type="video/mp4" />
-        Your browser does not support HTML5 video.
-      </m.video> */}
-
       <Nav title="Work" />
 
       <ScrollDown />
