@@ -12,7 +12,7 @@ function CloseIcon() {
     >
       {/* <path fill="#E5E5E5" d="M0 0H198V200H0z"></path> */}
       <g>
-        <rect width="160" height="160" x="19" y="20" fill="#000" rx="80"></rect>
+        <rect width="160" height="160" x="19" y="20" fill="#0000004b" rx="80"></rect>
         <g stroke="#fff" strokeLinecap="round" strokeWidth="5">
           <path d="M69.802 129.906l60.104-60.105"></path>
           <path d="M129.552 129.552L69.448 69.448"></path>

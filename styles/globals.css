@@ -139,7 +139,6 @@ a {
   align-items: center;
   top: 50px;
   right: 50px;
-  background: rgba(255, 31, 31, 0.15);
   backdrop-filter: blur(10px);
   height: 80px;
   width: 80px;
