@@ -1,8 +1,7 @@
 import { m } from "framer-motion"
 
 function Signature() {
-  // const { scrollY } = useScroll()
-  // const pathLength = useTransform(scrollY, [0, 200], [0, 1])
+
   const draw = {
     hidden: { pathLength: 0, filter: "blur(6px)" },
     animate: { pathLength: 1, filter: "blur(1px)", transition:{ duration: 1.4, type: "ease" }}
