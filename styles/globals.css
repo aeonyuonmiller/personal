@@ -439,22 +439,7 @@ nav span{
   bottom: 0px;
   left: 0;
   z-index: 0;
-  /* mix-blend-mode: difference; */
-  /* transform-origin: center center; */
-  /* pointer-events: none; */
 }
-/* .chrome {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  z-index: 0;
-  border: 1px solid black;
-  width: 40vw;
-  height: 40vh;
-    transform-origin: center center;
-  /* transform-origin: center center; 
-} */
-
 .connect {
   position: fixed;
   /* top: calc(90% - 5px); */
