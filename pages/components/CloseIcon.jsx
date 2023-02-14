@@ -7,12 +7,14 @@ function CloseIcon() {
     }
 
     const draw = {
-        hidden: { pathLength: 0, filter: "blur(18px)", strokeWidth: 20 },
-        animate: { pathLength: 1, filter: "blur(0)", strokeWidth: 4, transition:{ duration: .8, type: "easeOut" }}
+      hidden: { pathLength: 0, filter: "blur(18px)", strokeWidth: 20 },
+      animate: { pathLength: 1, filter: "blur(0)", strokeWidth: 4, transition: { duration: .8, type: "easeOut" }},
+      exit: { pathLength: 0, strokeWidth: 20, transition: { duration: .8, type: "easeOut" }},
     }
     const draw2 = {
-        hidden: { opacity: 0, pathLength: 0, filter: "blur(18px)", strokeWidth: 20 },
-        animate: { opacity: 1, pathLength: 1, filter: "blur(0)", strokeWidth: 4, transition:{ duration: .8, delay: .3, type: "easeOut" }}
+      hidden: { opacity: 0, pathLength: 0, filter: "blur(18px)", strokeWidth: 20 },
+      animate: { opacity: 1, pathLength: 1, filter: "blur(0)", strokeWidth: 4, transition: { duration: .8, delay: .3, type: "easeOut" }},
+      exit: { opacity: 0, pathLength: 0, strokeWidth: 20, transition: { duration: .8, type: "easeOut" }},
     }
 
   return (
@@ -25,6 +27,7 @@ function CloseIcon() {
         variants={parent}
         initial="hidden"
         whileInView="animate"
+        exit="exit"
     >
       {/* <path fill="#E5E5E5" d="M0 0H198V200H0z"></path> */}
       <g>
