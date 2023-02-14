@@ -137,8 +137,8 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  top: 50px;
-  right: 50px;
+  top: calc(50vh - 60px);
+  right: 80px;
   backdrop-filter: blur(10px);
   background-color: #a4a4a441;
   height: 80px;
