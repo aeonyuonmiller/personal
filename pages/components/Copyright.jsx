@@ -16,9 +16,9 @@ const Copyright = () => {
     <m.div variants={parent} initial="initial" animate="animate" className="copyright">
       <m.span variants={child}>&copy;&nbsp;</m.span>
       <m.span>{new Date().getFullYear()}</m.span>
-      <m.span className="move" variants={child}><Link tabIndex={5} href="/imprint">Imprint</Link></m.span>
-      <m.span className="move" variants={child}><Link tabIndex={3} href="/about">About</Link></m.span>
-      <m.span variants={child}><a target="_blank" rel="noreferrer" tabIndex={4} href="https://www.linkedin.com/in/andreas-y-m%C3%BCller/">Linkedin<ArrowIconPath/></a></m.span>
+      <m.span className="move" variants={child}><Link tabIndex={3} href="/imprint">Imprint</Link></m.span>
+      <m.span className="move" variants={child}><Link tabIndex={4} href="/about">About</Link></m.span>
+      <m.span variants={child}><a target="_blank" rel="noreferrer" tabIndex={5} href="https://www.linkedin.com/in/andreas-y-m%C3%BCller/">Linkedin<ArrowIconPath/></a></m.span>
     </m.div>
   )
 }

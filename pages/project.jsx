@@ -51,12 +51,12 @@ const project = () => {
             <h5>Aufgaben</h5>
             <Fade>Marktforschung, Nutzer-Interviews führen und auswerten, komplettes Redesign der App (Design-System) und native Entwicklung (iOS & Android).</Fade>
             <Fade>Das App-Framework <i>Cordova</i> erfüllt nicht mehr die Ziele der Unternehmensstrategie.</Fade>
-            <BigImage src="/kr000.png" alt="MaxiPlayer" marginBottom={160} />
+            <BigImage src="/kr000.png" alt="MaxiPlayer" marginBottom={30} />
             <h5>Lösungen</h5>
           <Fade>Anhand einer umfassenden Benchmark-Analyse sowie User-Interviews haben wir herausgefunden, das die Nutzer*innen viele Funktionen nicht benutzen oder kennen (z.B. Mixer/Equaliser).</Fade>
           <Fade>Unverständliche Icons konnten wir anhand von HighFidelity Prototype-Tests mit bestehenden Nutzer*innen ausfindig machen können.</Fade>
           <Fade>Musik soll wie im Radio zusammen gemischt werden (Crossfade) und im Alltag oder zu besonderen Events (zum gemeinsamen Kochen mit Freunden oder dem romantischen Dinner) ein ungestörtes Hörerlebnis bieten.</Fade>
-            <BigImage src="/kr001.png" alt="Main views - homepage, maxiplayer, equaliser & contextmenu" marginBottom={160} />
+            <BigImage src="/kr001.png" alt="Main views - homepage, maxiplayer, equaliser & contextmenu" marginBottom={30} />
           {/* <Video src="../chromed2-s.mp4"/> */}
             <h5>Zielgruppen</h5>
             <Fade>Hauptnutzer sind Senioren (50-90 Jahre) – die gutlesbare Schrift, große Klickflächen und eine individuelle Anpassung an ihre Ohren (z.B. Hörgeräte) durch den Equaliser wünschen und nicht auf ein Premium Feel verzichten wollen.</Fade>

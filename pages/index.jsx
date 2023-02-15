@@ -27,20 +27,6 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <m.div initial={{opacity:0, y:20}} animate={{opacity:1, y:0, transition: {duration:1}}} exit={{opacity:0, y:-20, transition: {duration:.4}}} className='chrome'>
-          <Canvas frameloop="demand" camera={{ position: [-10, 180, 0], fov: 50 }}>
-            <Suspense fallback={<span>loading model...</span>}/>
-            {/* <color attach="background" args={[0,0,0,0]} /> */}
-              <ambientLight intensity={0.5} />
-              <pointLight position={[10,30,20]} color="purple" intensity={16} />
-              <Stage controls={ref} preset="soft" intensity={0.09}  contactShadow={true} shadows={true} environment="studio">
-                <Chrome />
-              </Stage>
-              <OrbitControls ref={ref} scale={.9} />
-            <Preload all />
-          </Canvas>
-      </m.div>
-
       <Nav title="Designer / Frontend Dev" />
 
       <ScrollDown />
@@ -54,6 +40,20 @@ export default function Home() {
         <Thumbnail url="/project" src="./img2.png" title="RuhrNachrichten" description="News for the ruhr area" />
         <Thumbnail url="/imprint" src="./parkjckr-001.png" title="Parkjackr" description="Find your parkingspot" />
         {/* <SliceZone slices={page.data.slices} components={components} /> */}
+      </m.div>
+
+      <m.div initial={{opacity:0, y:20}} animate={{opacity:1, y:0, transition: {duration:1}}} exit={{opacity:0, y:-20, transition: {duration:.4}}} className='chrome'>
+        <Canvas frameloop="demand" camera={{ position: [-10, 180, 0], fov: 50 }}>
+            <Suspense fallback={<span>loading model...</span>}/>
+            {/* <color attach="background" args={[0,0,0,0]} /> */}
+              <ambientLight intensity={0.5} />
+              <pointLight position={[10,30,20]} color="purple" intensity={16} />
+              <Stage controls={ref} preset="soft" intensity={0.09}  contactShadow={true} shadows={true} environment="studio">
+                <Chrome />
+              </Stage>
+              <OrbitControls enablePan={false} enableRotate={true} ref={ref} scale={.9} />
+            <Preload all />
+        </Canvas>
       </m.div>
     </>
   )

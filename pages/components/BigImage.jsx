@@ -7,10 +7,11 @@ const BigImage = ({ src = "", alt = "", marginBottom = "" }) => {
 
   return (
   
-    <div className="image-container" style={{ marginBottom }}>
-      <m.span initial={{ scale: 1.05 }} whileInView={{ scale:1 }}>
-        <Image width={1600} height={700} quality={90} src={src} alt={alt} />
-      </m.span>
+    <>
+      <m.div className="image-container" style={{ marginBottom }} initial={{ scale: 1.05 }} whileInView={{ scale:1 }}>
+        {/* <Image width={1600} height={700} quality={90} src={src} alt={alt} /> */}
+        <img src={src} alt={alt} />
+      </m.div>
           
       <style jsx>{`
         .image-container {
@@ -21,7 +22,7 @@ const BigImage = ({ src = "", alt = "", marginBottom = "" }) => {
           height: auto;
           /* aspect-ratio: 16 / 9; */
           overflow: hidden;
-          object-fit: contain;
+          object-fit: cover;
         }
         .image-container span{
           width: 100%;
@@ -33,7 +34,7 @@ const BigImage = ({ src = "", alt = "", marginBottom = "" }) => {
         }
       `}</style>
 
-    </div>
+    </>
   )
 }
 
