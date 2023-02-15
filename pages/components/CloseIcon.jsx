@@ -3,7 +3,7 @@ import { m } from "framer-motion"
 function CloseIcon() {
     const parent = {
         hidden:{ rotate: -160 },
-        animate:{ rotate: 0, transition:{type: "spring" }}
+        animate:{ rotate: 0, transition:{type: "spring"}}
     }
 
     const draw = {
@@ -13,7 +13,7 @@ function CloseIcon() {
     }
     const draw2 = {
       hidden: { opacity: 0, pathLength: 0, filter: "blur(18px)", strokeWidth: 20 },
-      animate: { opacity: 1, pathLength: 1, filter: "blur(0)", strokeWidth: 4, transition: { duration: .8, delay: .3, type: "easeOut" }},
+      animate: { opacity: 1, pathLength: 1, filter: "blur(0)", strokeWidth: 4, transition: { duration: .8, delay: 0.3, type: "easeOut" }},
       exit: { opacity: 0, pathLength: 0, strokeWidth: 20, transition: { duration: .8, type: "easeOut" }},
     }
 

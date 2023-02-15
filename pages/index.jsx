@@ -36,12 +36,12 @@ export default function Home() {
               <Stage controls={ref} preset="soft" intensity={0.09}  contactShadow={true} shadows={true} environment="studio">
                 <Chrome />
               </Stage>
-              <OrbitControls ref={ref} autoRotate scale={.9} />
+              <OrbitControls ref={ref} scale={.9} />
             <Preload all />
           </Canvas>
       </m.div>
 
-      <Nav title="Work" />
+      <Nav title="Designer / Frontend Dev" />
 
       <ScrollDown />
 
