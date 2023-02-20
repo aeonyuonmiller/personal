@@ -162,13 +162,14 @@ a {
   overflow: hidden;
 }
 .hero img{
+  display: flex;
+  justify-self: center;
   position: absolute;
-  /* viewport 320 to 1600 = font-size 32px to 60px 
-  font-size: calc(32px + (90 - 32) * ((100vw - 320px) / (1600 - 320)));*/
-  margin-top: calc("-3%" + ("-10%" - "-3%") * ((100vw - 320px) / (1600 - 320)));
+  object-fit: cover;
+  margin-top: -20%;
   width: 100%;
   height: auto;
-  opacity: .4;
+  opacity: .8;
 }
 .hero h1{
   position: absolute;
@@ -383,11 +384,12 @@ svg {
 }
 .thumbnail-container h5 {
   position: absolute;
-  background: var(--tertiary);
+  background: rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
   border-radius: 16px;
-  padding: 4px 12px;
+  padding: 8px 12px;
   color: white;
-  bottom: 50px;
+  bottom: 16px;
   opacity: 0;
   transform: translateY(5px);
   transition: opacity ease .4s, transform ease-in-out .2s;
