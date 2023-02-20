@@ -163,6 +163,9 @@ a {
 }
 .hero img{
   position: absolute;
+  /* viewport 320 to 1600 = font-size 32px to 60px 
+  font-size: calc(32px + (90 - 32) * ((100vw - 320px) / (1600 - 320)));*/
+  margin-top: calc("-3%" + ("-10%" - "-3%") * ((100vw - 320px) / (1600 - 320)));
   width: 100%;
   height: auto;
   opacity: .4;
@@ -261,16 +264,6 @@ svg {
     width: 0 !important;
 }
 
-/* .portrait {
-  grid-column: -2 / span 2;
-  align-self: end;
-} */
-/* .portrait {
-  width: 75vh;
-  position: fixed;
-  right: 0;
-  bottom: 0;
-} */
 .portrait {
   max-width: 670px;
   width: 35vw;
@@ -379,13 +372,22 @@ svg {
   opacity: 1;
   transition: opacity ease .8s;
 }
+.thumbnail-container h3 {
+  position: absolute;
+  bottom: 34px;
+  opacity: 1;
+  transition: all ease .4s;
+}
+.thumbnail-container:hover h3 {
+  opacity: 0;
+}
 .thumbnail-container h5 {
   position: absolute;
   background: var(--tertiary);
   border-radius: 16px;
   padding: 4px 12px;
   color: white;
-  bottom: 20px;
+  bottom: 50px;
   opacity: 0;
   transform: translateY(5px);
   transition: opacity ease .4s, transform ease-in-out .2s;
@@ -548,7 +550,7 @@ nav span{
   }
 } */
       @media screen and (max-width:1390px) {
-        .portrait {
+      .portrait {
               right: -10vw;
             }
       }
@@ -672,7 +674,6 @@ nav span{
           aspect-ratio: 16 / 9;
           margin: 15vh 10%;
         }
-        .hero img { margin-top: 15%; }
         .content p:last-child,
         .content h5:last-child {
           margin-bottom: 2vh;

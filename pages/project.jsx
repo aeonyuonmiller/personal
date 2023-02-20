@@ -33,7 +33,7 @@ const project = () => {
                 initial={{ scale: 1.08 }}
                 exit={{ y: "40%", transition: { duration: 1.1 }}}
                 animate={{ scale: 1, transition: { easing: "circOut", duration: 2 } }}
-                src="./kr000.png" />
+                src="./kr-thumb.png" />
             </Parallax>
         </m.div>
         
