@@ -25,6 +25,8 @@ export default function Home() {
     <Thumbnail key={2} url="/project" src="./img2.png" title="RuhrNachrichten" description="News for the ruhr area" />,
     <Thumbnail key={3} url="/imprint" src="./parkjack.png" title="Parkjack" description="Find your parkingspot" />
   ])
+
+  // infinite scroll
   useEffect(() => {
     scrollDiv.current.addEventListener("scroll", (e) => {
       if (scrollDiv.current.scrollHeight - scrollDiv.current.offsetHeight === scrollDiv.current.scrollTop) {

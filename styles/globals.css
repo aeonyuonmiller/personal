@@ -442,7 +442,7 @@ nav span{
   position: fixed;
   bottom: 0px;
   left: 0;
-  z-index: 0;
+  z-index: 10;
 }
 .connect {
   position: fixed;
@@ -510,6 +510,7 @@ nav span{
   display: flex;
   align-items: center;
   justify-content: center;
+  z-index: 50;
 }
 .copyright span:first-child {
   font-size: 12px;
