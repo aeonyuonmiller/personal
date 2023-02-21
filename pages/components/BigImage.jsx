@@ -1,5 +1,5 @@
 import { m } from "framer-motion"
-import Image from "next/image"
+// import Image from "next/image"
 
 const BigImage = ({ src = "", alt = "", marginBottom = "" }) => {
   // const { scrollYProgress } = useScroll()
@@ -7,12 +7,12 @@ const BigImage = ({ src = "", alt = "", marginBottom = "" }) => {
 
   return (
   
-      <m.div className="image-container" style={{ marginBottom }} initial={{ scale: 1.05 }} whileInView={{ scale:1 }}>
+      <m.div className="image-container" style={{ marginBottom }}>
         {/* <Image width={1600} height={700} quality={90} src={src} alt={alt} /> */}
         <img src={src} alt={alt} />
           
       <style jsx>{`
-        .image-container {
+        .image-container{
           /* position: relative; */
           grid-column: 1 / 4;
           width: 100%;

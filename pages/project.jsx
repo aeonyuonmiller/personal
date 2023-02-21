@@ -9,6 +9,7 @@ import Fade from "./components/Fade"
 import BigImage from "./components/BigImage"
 // import Video from "./components/Video"
 import Close from "./components/Close"
+import FooterProject from "./components/FooterProject"
 
 const project = () => {
 
@@ -61,7 +62,9 @@ const project = () => {
             <h5>Zielgruppen</h5>
             <Fade>Hauptnutzer sind Senioren (50-90 Jahre) – die gutlesbare Schrift, große Klickflächen und eine individuelle Anpassung an ihre Ohren (z.B. Hörgeräte) durch den Equaliser wünschen und nicht auf ein Premium Feel verzichten wollen.</Fade>
             <Fade>Unter den Klassik-Fans fanden sich auch jüngere Nutzer*innen sowie Familien die andere Kanäle (Themenspezifisch wie z.B. Marvel) des Radios mögen.</Fade>
+        <FooterProject />
         </m.div>
+
             
         <Nav title=""/>
     </>

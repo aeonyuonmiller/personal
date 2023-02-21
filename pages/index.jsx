@@ -38,7 +38,7 @@ export default function Home() {
       >    
         <Thumbnail url="/project" src="./kr-thumb.png" title="Klassik Radio" description="Online radio for classical music" />
         <Thumbnail url="/project" src="./img2.png" title="RuhrNachrichten" description="News for the ruhr area" />
-        <Thumbnail url="/imprint" src="./parkjckr-001.png" title="Parkjackr" description="Find your parkingspot" />
+        <Thumbnail url="/imprint" src="./parkjack.png" title="Parkjack" description="Find your parkingspot" />
         {/* <SliceZone slices={page.data.slices} components={components} /> */}
       </m.div>
 
