@@ -58,7 +58,7 @@ export default function Home() {
         {/* <SliceZone slices={page.data.slices} components={components} /> */}
       </m.div>
 
-      <m.div initial={{opacity:0, y:20}} animate={{opacity:1, y:0, transition: {duration:1}}} exit={{opacity:0, y:-20, transition: {duration:.4}}} className='chrome'>
+      <m.div initial={{opacity:0, y:20}} animate={{opacity:1, y:0, transition: {duration:1}}} exit={{opacity:0, y:0, scale: .7, transition: {duration:.4}}} className='chrome'>
         <Canvas frameloop="demand" camera={{ position: [-10, 180, 0], fov: 50 }}>
             <Suspense fallback={<span>loading model...</span>}/>
             {/* <color attach="background" args={[0,0,0,0]} /> */}
