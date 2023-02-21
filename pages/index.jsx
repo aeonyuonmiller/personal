@@ -4,7 +4,9 @@ import Nav from "./components/Nav"
 import { m } from "framer-motion"
 import { Canvas } from '@react-three/fiber'
 import { OrbitControls, Preload, Stage } from '@react-three/drei'
-import { Chrome } from './components/Chrome'
+// import { Chrome } from './components/Chrome'
+import { Capsule } from './components/Capsule'
+
 
 // import { PrismicText, PrismicRichText } from '@prismicio/react'
 // import { SliceZone } from '@prismicio/react'
@@ -26,7 +28,7 @@ export default function Home() {
   useEffect(() => {
     scrollDiv.current.addEventListener("scroll", (e) => {
       if (scrollDiv.current.scrollHeight - scrollDiv.current.offsetHeight === scrollDiv.current.scrollTop) {
-        setChildren(prev => [...prev, prev]);
+        setChildren(prev => [...prev, ...prev]);
       }
     })
   }, []);
@@ -61,11 +63,11 @@ export default function Home() {
             <Suspense fallback={<span>loading model...</span>}/>
             {/* <color attach="background" args={[0,0,0,0]} /> */}
               <ambientLight intensity={0.5} />
-              <pointLight position={[10,30,20]} color="purple" intensity={16} />
-              <Stage controls={ref} preset="soft" intensity={0.09}  contactShadow={true} shadows={true} environment="studio">
-                <Chrome />
+              <pointLight position={[10,30,20]} color="blue" intensity={16} />
+              <Stage controls={ref} preset="soft" intensity={0.9}  contactShadow={false} shadows={false} environment="warehouse">
+                <Capsule />
               </Stage>
-              <OrbitControls enablePan={false} enableRotate={true} ref={ref} scale={.9} />
+              <OrbitControls enablePan={false} enableRotate={true} ref={ref} scale={1} />
             <Preload all />
         </Canvas>
       </m.div>
