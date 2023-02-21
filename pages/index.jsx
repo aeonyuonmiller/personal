@@ -1,4 +1,4 @@
-import { Suspense, useRef } from 'react'
+import { Suspense, useRef, useEffect, useState } from 'react'
 import Head from 'next/head'
 import Nav from "./components/Nav"
 import { m } from "framer-motion"
@@ -17,6 +17,19 @@ import ScrollDown from "./components/ScrollDown"
 
 export default function Home() {
   const ref = useRef()
+  const scrollDiv = useRef()
+  const [children, setChildren] = useState([
+    <Thumbnail key={1} url="/project" src="./kr-thumb.png" title="Klassik Radio" description="Online radio for classical music" />,
+    <Thumbnail key={2} url="/project" src="./img2.png" title="RuhrNachrichten" description="News for the ruhr area" />,
+    <Thumbnail key={3} url="/imprint" src="./parkjack.png" title="Parkjack" description="Find your parkingspot" />
+  ])
+  useEffect(() => {
+    scrollDiv.current.addEventListener("scroll", (e) => {
+      if (scrollDiv.current.scrollHeight - scrollDiv.current.offsetHeight === scrollDiv.current.scrollTop) {
+        setChildren(prev => [...prev, prev]);
+      }
+    })
+  }, []);
   
   return (
     <>
@@ -31,14 +44,15 @@ export default function Home() {
 
       <ScrollDown />
 
-      <m.div className='scrollcontainer'
+      <m.div className='scrollcontainer' ref={scrollDiv}
         initial={{ y: 50, opacity: 0 }}
         animate={{ y: 0, opacity: 1, transition:{ ease: [.64, .62, .23, .99], duration: .8 }}}
         exit={{ y: 50, opacity: 0, transition: { ease: [.63, 0, .17, .99], duration: .8 }}}
       >    
-        <Thumbnail url="/project" src="./kr-thumb.png" title="Klassik Radio" description="Online radio for classical music" />
+        {children}
+        {/* <Thumbnail url="/project" src="./kr-thumb.png" title="Klassik Radio" description="Online radio for classical music" />
         <Thumbnail url="/project" src="./img2.png" title="RuhrNachrichten" description="News for the ruhr area" />
-        <Thumbnail url="/imprint" src="./parkjack.png" title="Parkjack" description="Find your parkingspot" />
+        <Thumbnail url="/imprint" src="./parkjack.png" title="Parkjack" description="Find your parkingspot" /> */}
         {/* <SliceZone slices={page.data.slices} components={components} /> */}
       </m.div>
 
