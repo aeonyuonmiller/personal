@@ -23,8 +23,8 @@ export function Capsule(props) {
   useFrame(({ mouse }) => {
     const x = (mouse.x * viewport.width) / 2
     const y = (mouse.y * viewport.height) / 2
-    ref.current.position.set(x/50, y/50, 0)
-    ref.current.rotation.set(-y/50, x/50, 0)
+    ref.current.position.set(x/50, y/20, 0)
+    ref.current.rotation.set(-y/20, x/50, 0)
   })
   return (
     <group ref={group} {...props} dispose={null}>
@@ -32,8 +32,8 @@ export function Capsule(props) {
         <mesh
           ref={ref}
           name="liquid"
-          castShadow
-          receiveShadow
+          // castShadow
+          // receiveShadow
           geometry={nodes.liquid.geometry}
           material={materials.CrackedMetal}
           position={[0, 0, 0]}
