@@ -379,7 +379,7 @@ display: flex;
 }
 .thumbnail-container h3 {
   position: absolute;
-  bottom: 34px;
+  bottom: 30px;
   color: white;
   opacity: 1;
   transition: all ease .4s;
@@ -394,7 +394,7 @@ display: flex;
   border-radius: 16px;
   padding: 8px 12px;
   color: white;
-  bottom: 16px;
+  bottom: 12px;
   opacity: 0;
   transform: translateY(5px);
   transition: opacity ease .4s, transform ease-in-out .2s;
