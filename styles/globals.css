@@ -558,9 +558,8 @@ nav span{
   }
 } */
       @media screen and (max-width:1390px) {
-      .portrait {
-              right: -10vw;
-            }
+      .portrait { right: -10vw; }
+      .thumbnail-container h3{ bottom: 60px; }
       }
 
 
