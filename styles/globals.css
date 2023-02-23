@@ -440,9 +440,9 @@ nav span{
   width: 50vw;
   height: 50vh;
   position: fixed;
-  bottom: 0px;
-  left: 0;
-  z-index: 10;
+  bottom: 20px;
+  left: -6vw;
+  z-index: 1;
 }
 .connect {
   position: fixed;

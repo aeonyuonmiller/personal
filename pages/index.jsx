@@ -69,7 +69,7 @@ export default function Home() {
               <Stage controls={ref} preset="soft" intensity={0.9}  contactShadow={false} shadows={false} environment="warehouse">
                 <Capsule />
               </Stage>
-              <OrbitControls enablePan={false} enableRotate={true} ref={ref} scale={1} />
+              <OrbitControls enableZoom={false} enablePan={false} enableRotate={true} ref={ref} scale={1} />
             <Preload all />
         </Canvas>
       </m.div>
