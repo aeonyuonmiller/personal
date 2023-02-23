@@ -60,7 +60,7 @@ export default function Home() {
         {/* <SliceZone slices={page.data.slices} components={components} /> */}
       </m.div>
 
-      <m.div drag className='chrome' initial={{opacity:0, y:20, x:"10%"}} animate={{opacity:1, y:0, x:0, transition: {duration:1}}} exit={{opacity:0, y:20, rotate: 16, scale: 1.6, transition: {duration:.4}}}>
+      <m.div className='chrome' initial={{opacity:0, y:20, x:"10%"}} animate={{opacity:1, y:0, x:0, transition: {duration:1}}} exit={{opacity:0, y:20, rotate: 16, scale: 1.6, transition: {duration:.4}}}>
         <Canvas frameloop="demand" camera={{ position: [-10, 180, 0], fov: 50 }}>
           {/* <color attach="background" args={[0,0,0,0]} /> */}
           <ambientLight intensity={0.3} />
