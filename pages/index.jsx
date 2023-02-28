@@ -4,7 +4,6 @@ import Nav from "./components/Nav"
 import { m } from "framer-motion"
 import { Canvas } from '@react-three/fiber'
 import { OrbitControls, Preload, Stage, Loader } from '@react-three/drei'
-// import { Chrome } from './components/Chrome'
 import { Capsule } from './components/Capsule'
 // import { PrismicText, PrismicRichText } from '@prismicio/react'
 // import { SliceZone } from '@prismicio/react'
@@ -14,6 +13,7 @@ import { Capsule } from './components/Capsule'
 // components
 import Thumbnail from "./components/Thumbnail"
 import ScrollDown from "./components/ScrollDown"
+
 
 export default function Home() {
   const ref = useRef()
@@ -48,7 +48,7 @@ export default function Home() {
 
       <m.div className='scrollcontainer' ref={scrollDiv}
         initial={{ y: "50%", opacity: 0 }}
-        animate={{ y: 0, opacity: 1, transition:{ ease: [.9, .62, .23, .99], duration: .8, delay: 1 }}}
+        animate={{ y: 0, opacity: 1, transition:{ ease: [.9, .62, .23, .99], duration: .5, delay: 0 }}}
         exit={{ y: "-50%", opacity: [1,0], transition: { ease: [.9, 0, .17, .99], duration: .8 }}}
       >    
         {children}
@@ -60,12 +60,12 @@ export default function Home() {
 
       <m.div className='chrome' initial={{opacity:0, y:20, x:"10%"}} animate={{opacity:1, y:0, x:0, transition: {duration:1}}} exit={{opacity:0, y:20, rotate: 16, scale: 1.6, transition: {duration:.4}}}>
         <Canvas frameloop="demand" camera={{ position: [-10, 180, 0], fov: 50 }}>
-          <Suspense fallback={<span>loading model...</span>} />
-          {/* <color attach="background" args={[0,0,0,0]} /> */}
-          <ambientLight intensity={0.3} />
+          {/* <ambientLight intensity={0.3} /> */}
           <pointLight position={[10,30,20]} color="blue" intensity={10} />
-          <Stage controls={ref} preset="soft" intensity={0.9}  contactShadow={false} shadows={false} environment="warehouse">
-            <Capsule />
+          <Stage controls={ref} preset="soft" intensity={0.9}  contactShadow={false} shadows={false} environment="warehouse"> 
+            <Suspense fallback={<span>loading model...</span>}>
+              <Capsule />
+            </Suspense>
           </Stage>
           <OrbitControls enableZoom={false} enablePan={false} enableRotate={true} ref={ref} />
           <Preload all />
