@@ -5,13 +5,13 @@ import ArrowIcon from "./ArrowIcon"
 const Thumbnail = ({ title = "", description = "", url = "", src = "" }) => {
 
     const parent = {
-      hide: { opacity: null, y: 20, transition:{ ease:[.79,.41,.07,.99], duration: .6 }},
-      show: { opacity:1, y: 0, transition: { ease: [.79, .41, .07, .99], duration: 1 }}
+      hide: { opacity: null, y: 20, transition:{ ease:[.79,.41,.07,.99], duration: .3 }},
+      show: { opacity:1, y: 0, transition: { ease: [.79, .41, .07, .99], duration: .5 }}
     }
 
     const zoom = {
-      hide: { scale: 1.15, opacity: null, transition:{ ease:[.79,.41,.07,.99], duration: .6 }},
-      show: { scale: 1, opacity:1, transition: { ease: [.79, .41, .07, .99], duration: 1 }}
+      hide: { scale: 1.15, opacity: null, transition:{ ease:[.79,.41,.07,.99], duration: .3 }},
+      show: { scale: 1, opacity:1, transition: { ease: [.79, .41, .07, .99], duration: .5 }}
     }
   
   return (
