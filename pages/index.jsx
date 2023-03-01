@@ -48,7 +48,7 @@ export default function Home() {
 
       <m.div className='scrollcontainer' ref={scrollDiv}
         initial={{ y: "50%", opacity: 0 }}
-        animate={{ y: 0, opacity: 1, transition:{ ease: [.9, .62, .23, .99], duration: .5, delay: 0 }}}
+        animate={{ y: 0, opacity: 1, transition:{ ease: [.9, .62, .23, .99], duration: .5, delay: 0.3 }}}
         exit={{ y: "-50%", opacity: [1,0], transition: { ease: [.9, 0, .17, .99], duration: .8 }}}
       >    
         {children}
