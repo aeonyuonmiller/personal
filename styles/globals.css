@@ -404,7 +404,7 @@ display: flex;
   transform: translateY(0px);
 }
 .thumbnail-container:hover .arrow{
-  scale: .6;
+  scale: .61;
 }
 .thumbnail-container:hover img{
   opacity: .6;
