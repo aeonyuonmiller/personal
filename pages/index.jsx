@@ -63,7 +63,7 @@ export default function Home() {
           {/* <ambientLight intensity={0.3} /> */}
           <pointLight position={[10,30,20]} color="blue" intensity={10} />
           <Stage controls={ref} preset="soft" intensity={0.9}  contactShadow={false} shadows={false} environment="warehouse"> 
-            <Suspense fallback={<span>loading model...</span>}>
+            <Suspense fallback={<span>loading...</span>}>
               <Capsule />
             </Suspense>
           </Stage>
