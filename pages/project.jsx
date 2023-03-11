@@ -13,6 +13,7 @@ import FooterProject from "./components/FooterProject"
 
 const project = () => {
 
+
   const heroVariant = {
     hide: { clipPath: 'polygon(0 0, 100% 0, 100% 0, 0 0)' },
     show: { clipPath: 'polygon(0 0, 100% 0, 100% 100%, 0% 100%)', transition:{ ease:"easeOut", duration: .6, delay: .1 }},
